@@ -3,14 +3,20 @@
  * ================================================
  * Loads merged indicator data (with optional AI suggestions),
  * renders Kanban board grouped by department, table view,
- * and detail modal.
+ * and detail modal. Supports write-back to Google Sheets.
  */
+
+// === Config ===
+// 🔧 貼上你的 GAS Web App URL（部署後取得）
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxijoVvZzODBf0zQ6libnIhSEP6_DZ9V3dIY1hScHOsWDl3iPnT1KHhSU_BsJrTZjc2/exec';
+const ALLOWED_EMAIL_DOMAIN = 'taiwancement.com';
 
 // === State ===
 let allData = [];
 let filteredData = [];
 let currentView = 'kanban'; // 'kanban' or 'table'
 let groupByField = '114_相關負責部門'; // Kanban grouping
+let currentModalItem = null; // track current item for draft submission
 
 // === Init ===
 document.addEventListener('DOMContentLoaded', async () => {
@@ -22,13 +28,15 @@ document.addEventListener('DOMContentLoaded', async () => {
 // === Data Loading ===
 async function loadData() {
   try {
-    // Try suggestions_output.json first, fallback to data.json
+    // try suggestions_output.json first, fallback to data.json
+    // Use timestamp to prevent caching old JSON files without compliance data
+    const ts = Date.now();
     let resp;
     try {
-      resp = await fetch('suggestions_output.json');
+      resp = await fetch(`suggestions_output.json?t=${ts}`);
       if (!resp.ok) throw new Error();
     } catch {
-      resp = await fetch('data.json');
+      resp = await fetch(`data.json?t=${ts}`);
     }
     allData = await resp.json();
 
@@ -64,6 +72,7 @@ function populateDeptFilter() {
 function applyFilters() {
   const face = document.getElementById('filterFace').value;
   const status = document.getElementById('filterStatus').value;
+  const compliance = document.getElementById('filterCompliance').value;
   const dept = document.getElementById('filterDept').value;
   const search = document.getElementById('searchInput').value.toLowerCase().trim();
 
@@ -71,6 +80,16 @@ function applyFilters() {
     if (face && d['構面'] !== face) return false;
     if (status && d['狀態標記'] !== status) return false;
     if (dept && d['114_相關負責部門'] !== dept) return false;
+
+    if (compliance) {
+      const score = d.disclosure_analysis && d.disclosure_analysis.compliance_score ? d.disclosure_analysis.compliance_score : 'cannot_assess';
+      if (compliance === 'low') {
+        if (score !== 'partially_compliant' && score !== 'non_compliant') return false;
+      } else {
+        if (score !== compliance) return false;
+      }
+    }
+
     if (search) {
       const haystack = [
         d['編號'], d['評鑑指標'], d['指標說明'],
@@ -115,6 +134,7 @@ function renderStats() {
 function setupEventListeners() {
   document.getElementById('filterFace').addEventListener('change', applyFilters);
   document.getElementById('filterStatus').addEventListener('change', applyFilters);
+  document.getElementById('filterCompliance').addEventListener('change', applyFilters);
   document.getElementById('filterDept').addEventListener('change', applyFilters);
   document.getElementById('searchInput').addEventListener('input', debounce(applyFilters, 200));
 
@@ -222,6 +242,8 @@ function createCard(item) {
   const scoreVal = item['114_得分數值'];
   const scoreText = item['114_自評得分'] || '';
   const hasAI = item['ai_suggestion'] && !item['ai_suggestion']?.error && !item['ai_suggestion']?.parse_error;
+  const da = item['disclosure_analysis'];
+  const complianceBadge = da ? getComplianceBadgeHTML(da.compliance_score, 'small') : '';
 
   let scoreClass = 'na';
   let scoreDisplay = '--';
@@ -235,6 +257,7 @@ function createCard(item) {
     <div class="card-header">
       <span class="card-id ${faceClass}">${id}</span>
       <span class="card-badge ${isNew ? 'new' : 'modified'}">${isNew ? 'NEW' : 'MOD'}</span>
+      ${complianceBadge}
     </div>
     <div class="card-title">${title}</div>
     <div class="card-footer">
@@ -419,6 +442,56 @@ function openModal(item) {
     `;
   }
 
+  // === 📊 揭露合規分析 ===
+  const da = item['disclosure_analysis'];
+  if (da && !da.error) {
+    html += renderComplianceSection(da);
+  } else if (da && da.error) {
+    html += `
+      <div class="modal-section compliance-section">
+        <div class="modal-section-title">&#x1F4CA; 揭露合規分析</div>
+        <div class="ai-placeholder">分析失敗: ${da.error}</div>
+      </div>
+    `;
+  }
+
+  // === 📝 自評草稿區塊 ===
+  const savedEmail = localStorage.getItem('esg_draft_email') || '';
+  const savedName = localStorage.getItem('esg_draft_name') || '';
+
+  html += `
+    <div class="modal-section draft-section">
+      <div class="modal-section-title">&#x1F4DD; 填寫今年度自評草稿</div>
+      <div class="draft-form">
+        <div class="draft-input-row">
+          <div class="draft-field">
+            <label class="draft-label">公司信箱 <span class="draft-required">*</span></label>
+            <input type="email" id="draftEmail" class="draft-input"
+              placeholder="your.name@taiwancement.com"
+              value="${savedEmail}" />
+          </div>
+          <div class="draft-field">
+            <label class="draft-label">姓名</label>
+            <input type="text" id="draftName" class="draft-input"
+              placeholder="王小明"
+              value="${savedName}" />
+          </div>
+        </div>
+        <label class="draft-label">自評內容草稿 <span class="draft-required">*</span></label>
+        <textarea id="draftText" class="draft-textarea" rows="5"
+          placeholder="請輸入本年度自評來源及說明，例如：\n- 已揭露於 113 年報 p.XX\n- 官網 ESG 專區已更新..."></textarea>
+        <div class="draft-actions">
+          <button class="draft-submit-btn" id="btnSubmitDraft" onclick="submitDraft()">
+            <span class="draft-btn-text">📤 送出到 Google Sheets</span>
+            <span class="draft-btn-loading hidden">⏳ 送出中...</span>
+          </button>
+          <div class="draft-status" id="draftStatus"></div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  currentModalItem = item;
   body.innerHTML = html;
   overlay.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
@@ -431,16 +504,49 @@ function closeModal() {
 
 // === Export ===
 function exportCSV() {
-  const headers = ['編號', '狀態標記', '構面', '評鑑指標', '題型',
-    '114_自評得分', '114_相關負責部門', '114_自評來源及說明'];
+  const columns = [
+    { header: '編號', get: d => d['編號'] },
+    { header: '狀態標記', get: d => d['狀態標記'] },
+    { header: '構面', get: d => d['構面'] },
+    { header: '評鑑指標', get: d => d['評鑑指標'] },
+    { header: '115年指標說明', get: d => d['指標說明'] },
+    { header: '114_相關負責部門', get: d => d['114_相關負責部門'] },
+    { header: '114_自評來源及說明', get: d => d['114_自評來源及說明'] },
+    {
+      header: 'AI 填答建議 (Gemini)', get: d => {
+        const ai = d.ai_suggestion;
+        if (!ai || ai.error) return '';
+        if (ai.raw_response) return ai.raw_response;
+        return `【核心要求白話文】\n${ai['核心要求白話文'] || ''}\n\n` +
+          `【差異分析或現況診斷】\n${ai['差異分析或現況診斷'] || ''}\n\n` +
+          `【具體行動與揭露清單】\n${ai['具體行動與揭露清單'] || ''}\n\n` +
+          `【官方參考與較佳案例】\n${ai['官方參考與較佳案例'] || ''}\n\n` +
+          `【分派建議】\n${ai['分派建議'] || ''}`;
+      }
+    },
+    {
+      header: '揭露合規分析及缺口分析', get: d => {
+        const da = d.disclosure_analysis;
+        if (!da || da.error) return '';
+
+        let statusStr = '';
+        if (da.compliance_score === 'fully_compliant') statusStr = '🟢 完全符合';
+        else if (da.compliance_score === 'partially_compliant') statusStr = '🟡 部分符合';
+        else if (da.compliance_score === 'non_compliant') statusStr = '🔴 不符合';
+        else statusStr = '⚪ 無法評估';
+
+        return `[合規狀態: ${statusStr}]\n\n${da.gap_summary || ''}`;
+      }
+    }
+  ];
 
   const bom = '\uFEFF';
-  let csv = bom + headers.join(',') + '\n';
+  let csv = bom + columns.map(c => `"${c.header}"`).join(',') + '\n';
 
   filteredData.forEach(d => {
-    const row = headers.map(h => {
-      let val = d[h] || '';
-      val = String(val).replace(/"/g, '""').replace(/\n/g, ' ');
+    const row = columns.map(c => {
+      let val = c.get(d) || '';
+      val = String(val).replace(/"/g, '""');
       return `"${val}"`;
     });
     csv += row.join(',') + '\n';
@@ -453,6 +559,176 @@ function exportCSV() {
   a.download = 'esg_indicators_export.csv';
   a.click();
   URL.revokeObjectURL(url);
+}
+
+// === Draft Submission ===
+async function submitDraft() {
+  const email = document.getElementById('draftEmail').value.trim().toLowerCase();
+  const name = document.getElementById('draftName').value.trim();
+  const text = document.getElementById('draftText').value.trim();
+  const btn = document.getElementById('btnSubmitDraft');
+  const statusEl = document.getElementById('draftStatus');
+
+  // Validation
+  if (!email) {
+    showDraftStatus(statusEl, '❌ 請填入公司信箱', 'error');
+    return;
+  }
+  if (!email.endsWith('@' + ALLOWED_EMAIL_DOMAIN)) {
+    showDraftStatus(statusEl, `❌ 僅限 @${ALLOWED_EMAIL_DOMAIN} 信箱`, 'error');
+    return;
+  }
+  if (!text) {
+    showDraftStatus(statusEl, '❌ 請填入自評草稿內容', 'error');
+    return;
+  }
+  if (!GAS_URL) {
+    showDraftStatus(statusEl, '⚠️ 尚未設定 Google Sheets 連結 (GAS_URL)', 'error');
+    return;
+  }
+
+  // Save to localStorage
+  localStorage.setItem('esg_draft_email', email);
+  localStorage.setItem('esg_draft_name', name);
+
+  // Show loading
+  btn.disabled = true;
+  btn.querySelector('.draft-btn-text').classList.add('hidden');
+  btn.querySelector('.draft-btn-loading').classList.remove('hidden');
+  showDraftStatus(statusEl, '', '');
+
+  const item = currentModalItem;
+  const payload = {
+    '編號': item['編號'] || '',
+    '構面': item['構面'] || '',
+    '評鑑指標': (item['評鑑指標'] || '').replace(/\n/g, ' ').substring(0, 200),
+    '負責部門': item['114_相關負責部門'] || '',
+    '自評草稿': text,
+    '填寫人信箱': email,
+    '填寫人姓名': name
+  };
+
+  try {
+    // Google Apps Script is tricky with CORS. The most reliable way from a static page
+    // is to send it as form data with no-cors. The response will be opaque.
+    const formData = new URLSearchParams();
+    formData.append('編號', item['編號'] || '');
+    formData.append('構面', item['構面'] || '');
+    formData.append('評鑑指標', (item['評鑑指標'] || '').replace(/\n/g, ' ').substring(0, 200));
+    formData.append('負責部門', item['114_相關負責部門'] || '');
+    formData.append('自評草稿', text);
+    formData.append('填寫人信箱', email);
+    formData.append('填寫人姓名', name);
+
+    await fetch(GAS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: formData.toString()
+    });
+
+    // no-cors always succeeds if the network request goes through, but we can't read the response
+    showDraftStatus(statusEl, '✅ 已成功送出！資料已寫入 Google Sheets', 'success');
+    document.getElementById('draftText').value = '';
+
+  } catch (err) {
+    console.error('Submit error:', err);
+    showDraftStatus(statusEl, `❌ 網路錯誤：${err.message || '無法連線到伺服器'}`, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.querySelector('.draft-btn-text').classList.remove('hidden');
+    btn.querySelector('.draft-btn-loading').classList.add('hidden');
+  }
+}
+
+function showDraftStatus(el, msg, type) {
+  el.textContent = msg;
+  el.className = 'draft-status' + (type ? ` draft-status-${type}` : '');
+}
+
+// === Compliance Helpers ===
+function getComplianceBadgeHTML(score, size = 'normal') {
+  const map = {
+    'fully_compliant': { emoji: '&#x1F7E2;', label: '完全符合', cls: 'compliance-full' },
+    'partially_compliant': { emoji: '&#x1F7E1;', label: '部分符合', cls: 'compliance-partial' },
+    'non_compliant': { emoji: '&#x1F534;', label: '不符合', cls: 'compliance-fail' },
+    'cannot_assess': { emoji: '&#x2B1C;', label: '無法評估', cls: 'compliance-na' }
+  };
+  const info = map[score] || map['cannot_assess'];
+  if (size === 'small') {
+    return `<span class="compliance-badge-sm ${info.cls}" title="${info.label}">${info.emoji}</span>`;
+  }
+  return `<span class="compliance-badge ${info.cls}">${info.emoji} ${info.label}</span>`;
+}
+
+function renderComplianceSection(da) {
+  const score = da.compliance_score || 'cannot_assess';
+  const confidence = da.score_confidence != null ? Math.round(da.score_confidence * 100) : '?';
+  const matched = da.matched_items || [];
+  const missing = da.missing_items || [];
+  const urlAnalysis = da.url_analysis || [];
+
+  let html = `
+    <div class="modal-section compliance-section">
+      <div class="modal-section-title">&#x1F4CA; 揭露合規分析</div>
+      <div class="compliance-header">
+        ${getComplianceBadgeHTML(score)}
+        <span class="compliance-confidence">信心度: ${confidence}%</span>
+        <span class="compliance-urls">已分析 ${da.urls_crawled || 0}/${da.urls_total || 0} 個來源</span>
+      </div>
+  `;
+
+  // Gap summary
+  if (da.gap_summary) {
+    html += `<div class="compliance-gap">${da.gap_summary}</div>`;
+  }
+
+  // Matched items
+  if (matched.length > 0) {
+    html += `<div class="compliance-list-title">&#x2705; 已符合項目 (${matched.length})</div>
+      <ul class="compliance-list matched">`;
+    matched.forEach(m => { html += `<li>${m}</li>`; });
+    html += `</ul>`;
+  }
+
+  // Missing items
+  if (missing.length > 0) {
+    html += `<div class="compliance-list-title">&#x274C; 缺口項目 (${missing.length})</div>
+      <ul class="compliance-list missing">`;
+    missing.forEach(m => { html += `<li>${m}</li>`; });
+    html += `</ul>`;
+  }
+
+  // URL coverage
+  if (urlAnalysis.length > 0) {
+    html += `<div class="compliance-list-title">&#x1F517; 來源覆蓋率分析</div>
+      <div class="url-analysis-grid">`;
+    urlAnalysis.forEach(u => {
+      const icon = u.relevant ? '&#x2705;' : '&#x26AA;';
+      const shortUrl = (u.url || '').replace(/^https?:\/\//, '').substring(0, 50);
+      html += `
+        <div class="url-analysis-item ${u.relevant ? 'relevant' : 'irrelevant'}">
+          <span class="url-icon">${icon}</span>
+          <div class="url-info">
+            <div class="url-path" title="${u.url}">${shortUrl}...</div>
+            <div class="url-summary">${u.summary || ''}</div>
+          </div>
+        </div>`;
+    });
+    html += `</div>`;
+  }
+
+  // Recommendation
+  if (da.recommendation) {
+    html += `<div class="compliance-recommendation">
+      <strong>&#x1F4A1; 建議:</strong> ${da.recommendation}
+    </div>`;
+  }
+
+  html += `</div>`;
+  return html;
 }
 
 // === Utils ===
