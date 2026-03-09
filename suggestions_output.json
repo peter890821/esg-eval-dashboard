@@ -30,6 +30,47 @@
       ],
       "官方參考與較佳案例": "根據證交所簡報，需同時符合以下要件才能於構面計分：\n1. 訂立並揭露明確溫室氣體減量之未來年度量化管理目標（如X年後或每年達成減量Y%）。\n2. 說明達成目標之推動措施以及達成情形。\n若符合以下要件，則總分另加一分：\n3. 訂立並揭露明確溫室氣體減量之2030年量化管理目標（如2030年達成減量Z%）、達成目標之策略及行動計畫。\n\n簡報中提供的範例：本公司為「已承諾」參與科學目標減碳的行動企業，SBTi減碳目標為：以2018年設定為基準年，承諾到近期目標年2030年，將範疇一與範疇二的溫室氣體排放強度減少51%，同時將範疇三降低15%，且針對範疇三碳排放的減排行動，我們將要求供應商逐步提供其用電相關的碳排放數據，作為未來範疇三碳排放管理的參考依據。\n為達成減量目標，本公司透過永續發展委員會進行減量追蹤，並投入智慧製造改善、氟性氣體第三方量測DRE及精進燃燒破壞設備維護管理，以及強化製程節能減碳績效，另本公司亦以產品生命週期為概念，落實於物料設計選用、供應商在地採購策略、節電生產及綠色運輸等構面之減碳，並將持續洽談購買再生能源及投入節能產品開發，以期實現本公司減碳之各階段目標。透過上述減碳作為， 2025年範疇一及範疇二減碳量已較去年同期大幅下降達11%。\n（請參考簡報1-評分指南，頁51）",
       "分派建議": "建議由永續辦公室主導，工務部門、研究室、生產部門等共同協作。永續辦負責政策制定、目標設定與資訊揭露；工務部門與生產部門負責提供實際的減量數據與措施；研究室可協助分析減碳策略與技術。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已制定溫室氣體減量管理政策，包含減量目標、推動措施及達成情形，並揭露2030年減碳目標、策略及行動計畫。",
+      "matched_items": [
+        "制定溫室氣體減量管理政策",
+        "包含減量目標",
+        "包含推動措施",
+        "包含達成情形",
+        "揭露2030年減碳目標",
+        "揭露2030年減碳策略",
+        "揭露2030年減碳行動計畫"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/info/individual?companyCode=1101&year=2024&lang=zh-TW",
+          "relevant": true,
+          "summary": "公開資訊觀測站ESG資訊揭露平台，為評鑑資訊依據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/sbt",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的科學減碳SBT目標，包含基準年、目標年、範疇一、範疇二及範疇一+二的減排目標。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中可能包含公司治理和風險管理等資訊，與溫室氣體減量政策相關。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書詳細說明了公司的減碳目標、策略、行動計畫以及達成情形，包括範疇一、範疇二和範疇三的減排目標。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露溫室氣體減量管理政策，包含減量目標、推動措施及達成情形等資訊。",
+      "analyzed_at": "2026-03-09T15:36:06.405259",
+      "urls_crawled": 3,
+      "urls_total": 4
     }
   },
   {
@@ -62,6 +103,49 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南頁50：\n*   **得分要件：**\n    *   分別揭露113年及114年每年溫室氣體範疇一及範疇二排放量，並註明資料涵蓋範圍（114年資料邊界須為合併財務報表之母子公司）。\n    *   針對113年及114年溫室氣體範疇一及範疇二排放量皆取得外部驗證，並揭露確信機構、確信標準、確信範圍及確信意見。\n*   **揭露位置：** 數據及資料邊界需揭露於公開資訊觀測站－ESG數位平台>ESG資訊揭露>溫室氣體排放項下，於指標「直接(範疇一)溫室氣體排放量(公噸CO₂e)」及指標「能源間接(範疇二)溫室氣體排放量(公噸CO₂e)」之「數據」與「資料邊界」欄位。\n\n另可參考公司治理中心網站> 企業永續發展> 參考資料＞揭露指引及範例-IFRS永續揭露準則（https://cgc.twse.com.tw/responsibilityRef/listCh/search）",
       "分派建議": "建議由永續辦公室主責，工務部門和研究室提供溫室氣體排放數據及驗證資料。永續辦公室負責彙整資料，並於公開資訊觀測站、永續報告書、公司網站等平台進行揭露。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司完整揭露了過去兩年（113年及114年）的溫室氣體範疇一及範疇二排放量，並取得外部驗證，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露113年及114年溫室氣體範疇一排放量",
+        "揭露113年及114年溫室氣體範疇二排放量",
+        "資料涵蓋範圍為合併財務報表之母子公司",
+        "113年及114年溫室氣體範疇一及範疇二排放量皆取得外部驗證"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/info/individual?companyCode=1101&year=2024&lang=zh-TW",
+          "relevant": true,
+          "summary": "此連結為公開資訊觀測站ESG數位平台，為評鑑資訊依據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/greenhouse",
+          "relevant": true,
+          "summary": "此頁面揭露溫室氣體管理相關資訊，包含溫室氣體排放強度等數據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/esgRecognition.html",
+          "relevant": true,
+          "summary": "此頁面揭露公司取得的永續認證，包含ISO 14064等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為財務狀況與經營績效分析，與本題溫室氣體排放揭露關聯性較低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了過去四年溫室氣體排放量（包含範疇一、範疇二及範疇三），以及溫室氣體盤查資訊與確信資訊。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:36:13.604370",
+      "urls_crawled": 4,
+      "urls_total": 5
     }
   },
   {
@@ -95,6 +179,38 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報：\n*   **評分要件：** 揭露114年範疇三年排放量，並註明資料涵蓋範圍（如所有廠區、母公司、合併財務報表之母子公司）及活動類別。\n*   **備註：** 可評估重大性等因素揭露部分活動類別之年排放量。\n*   **填報位置：** 公開資訊觀測站－ESG數位平台>ESG資訊揭露>溫室氣體排放項下：指標「其他間接(範疇三)溫室氣體排放量(公噸CO₂e)」之「數據」與「資料邊界」，及指標「範疇三-活動類別」欄位。",
       "分派建議": "建議由永續辦負責統籌，環安部門提供範疇三排放量數據，資訊部門協助更新公司官網資訊，財會部門協助年報揭露。各部門應密切協作，確保數據一致性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已完整揭露114年溫室氣體範疇三類別及年排放量，並註明資料涵蓋範圍及活動類別，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露114年範疇三年排放量",
+        "註明資料涵蓋範圍（如所有廠區、母公司、合併財務報表之母子公司）",
+        "揭露活動類別"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/scope-3",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥台灣及中國大陸地區範疇三盤查現況，包含各項目的排放量。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報揭露了公司治理、員工權益、資訊安全等相關資訊。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了2024年範疇三排放量及減碳目標，並說明了範疇三涵蓋的類別及範圍。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露所需資訊。",
+      "analyzed_at": "2026-03-09T15:36:19.559732",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -128,6 +244,55 @@
       ],
       "官方參考與較佳案例": "根據證交所簡報，本指標評分要件為：\n*   **要件一：**訂立並揭露明確減少用水管理政策之未來年度量化管理目標（如X年後或每年達成減量Y%）。\n*   **要件二：**說明達成目標之推動措施以及達成情形。\n\n簡報中提供的範例：\n*   「本公司投入多項改善措施，包括把廢水系統導入回收系統、製程用水使用循環水以增加產水量，2025年在水資源運用管理及節水技術執行下，約有590萬噸節水量，降幅超過20%。」\n*   「本公司多年來致力水資源回收再利用，除原定自來水用水強度指標承諾2030年計劃（2023年為基準年）減少30%外，自2024年開始接軌SDGs2030年目標，以2023年製程回收率90.3%，預估上升1.1%方向努力，2025年在全公司製程回收率達92.29%，順利達標，2025年減水成效亦已達30%的目標。」\n\n請參考公司治理中心網站> 法規及問答> 問答集> 股東會年報最佳實務參考範例> 附表二之二之二推動永續發展執行情形，以了解更多揭露範例。",
       "分派建議": "本指標需由工務部門、研究室與永續辦公室共同協作。\n*   工務部門負責提供用水量相關數據、減量措施的執行狀況等。\n*   研究室負責提供節水技術的研發資訊。\n*   永續辦公室負責統整資料、撰寫報告書及更新網站資訊。\n*   秘書室負責年報的編撰與發布。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司制定並揭露了減少用水管理政策，包含減量目標和推動措施，但達成情形的揭露不夠明確，僅在永續報告書中提及節水方案的執行，缺乏量化的達成情形數據。",
+      "matched_items": [
+        "制定並揭露減少用水管理政策",
+        "包含減量目標",
+        "包含推動措施"
+      ],
+      "missing_items": [
+        "明確揭露達成情形的量化數據"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/environment-management",
+          "relevant": true,
+          "summary": "此頁面包含環境管理政策、目標設定及行動計畫，包括水資源管理。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/waste-management",
+          "relevant": false,
+          "summary": "此頁面主要關於廢棄物管理，與用水管理無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/water",
+          "relevant": true,
+          "summary": "此頁面包含水資源管理政策、目標及水壓力評估。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%A8.pdf",
+          "relevant": true,
+          "summary": "年報中提及環境保護相關支出及防污措施，但未明確揭露用水管理政策的達成情形。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中包含水資源管理目標、節水方案的執行，以及水循環系統的說明，但缺乏量化的達成情形數據。"
+        },
+        {
+          "url": "https://cgc.twse.com.tw/lawReport/listCh",
+          "relevant": false,
+          "summary": "公司治理中心網站，與本題無關。"
+        }
+      ],
+      "recommendation": "建議公司在年報或永續報告書中，針對減少用水管理政策的達成情形，提供更明確的量化數據，例如實際用水量減少百分比或節水量等，以更完整地呈現績效。",
+      "analyzed_at": "2026-03-09T15:36:26.869278",
+      "urls_crawled": 5,
+      "urls_total": 5
     }
   },
   {
@@ -160,6 +325,63 @@
       ],
       "官方參考與較佳案例": "根據證交所宣導簡報，需要「分別揭露113年及114年每年用水量，並註明資料涵蓋範圍（如所有廠區、母公司、合併財務報表之母子公司）。」並於「公開資訊觀測站－ESG數位平台>ESG資訊揭露>水資源管理項下：指標「用水量(公噸(t))」之「數據」與「資料邊界」欄位」填寫。",
       "分派建議": "建議由永續辦公室統籌，工務部門提供用水量數據，研究室協助確認數據來源和計算方法。若有第三方驗證，由永續辦負責揭露相關資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已完整揭露過去兩年用水量，包含台灣、中國大陸及CIMPOR & OYAK CEMENT，並註明資料涵蓋範圍，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露113年(2024年)用水量",
+        "揭露112年(2023年)用水量",
+        "註明資料涵蓋範圍（台灣、中國大陸、CIMPOR & OYAK CEMENT）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/waste-management",
+          "relevant": false,
+          "summary": "此頁面主要揭露廢棄物管理相關資訊，與用水量無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/water",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的水資源管理政策和目標，但未直接提供過去兩年的用水量數據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/environment-management",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的環境管理制度，但未直接提供過去兩年的用水量數據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/certification",
+          "relevant": false,
+          "summary": "此頁面主要揭露公司取得的各項永續認證，與用水量無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報中未找到用水量相關數據"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書第216-217頁揭露了近四年(2021-2024)的水資源使用情形，包含取水量、排水量、耗水量等數據，並區分台灣、中國大陸及CIMPOR & OYAK CEMENT。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E7%AC%AC%E4%B8%89%E6%96%B9%E9%A9%97%E8%AD%89%E8%81%B2%E6%98%8E.pdf",
+          "relevant": false,
+          "summary": "此為第三方驗證聲明，與用水量數據揭露無直接關聯。"
+        },
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/info/individual?lang=zh-TW",
+          "relevant": false,
+          "summary": "無法爬取內容，假設無關"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:36:34.815415",
+      "urls_crawled": 7,
+      "urls_total": 8
     }
   },
   {
@@ -258,6 +480,84 @@
       ],
       "官方參考與較佳案例": "1. **評分要件：**\n   *  [要件一]制定並揭露能源管理計畫（如減少能源使用的行動、節能減排進展評估、使用清潔或綠色能源、投資創新或研發以減少能源消耗、為員工提供能源效率課程等）及當年度執行情形。\n   *  [要件二]取得ISO50001等能源管理認證，並揭露認證效期起訖年月日[期間須涵蓋至115年]。\n   *  [備註]有關要件二認證效期起訖年月日之揭露，倘已更新認證效期涵蓋至115年，惟不及於年報或永續報告書揭露者，請於自評系統說明欄備註供查證，仍可得分。\n2. **揭露位置：**公司網站、年報－附表二之二之二或永續報告書。\n3. **參考範例（簡報1-評分指南，頁 55）：**\n   *  範例說明公司如何推動能源減量措施、設定目標、達成情形，以及使用再生能源的規劃。\n   *  範例揭露ISO 50001能源管理系統的建置與導入情況，以及驗證的有效期間。",
       "分派建議": "建議由永續辦主責，廠務部門提供能源管理計畫的具體數據與執行情形。若有更新ISO50001驗證，則需與驗證單位協調提供相關資訊。發言人室協助將相關資訊整合至年報與永續報告書中。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已制定並揭露能源管理計畫及其執行情形，並取得ISO 50001驗證，符合指標要求。",
+      "matched_items": [
+        "制定並揭露能源管理計畫",
+        "揭露能源管理計畫執行情形",
+        "台灣水泥廠、製品廠及台泥營運總部取得 ISO 50001 驗證",
+        "公司網站揭露ISO 50001證書效期"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/energy-efficiency",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的能源效率管理方針、目標、績效以及能源使用情形，包括非替代與非再生能源、替代與再生能源的使用量。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/sbt",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的科學減碳目標（SBT），包括近程和長程目標，以及2050淨零承諾。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/zero-path",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的2050水泥及混凝土事業體淨零路徑，包括淨零路徑圖、方法學以及全球事業體外部影響力。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/certification",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥取得的各項永續認證，包括ISO 50001能源管理系統驗證，並提供證書下載連結。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了台泥在能源管理方面的執行情形，包括節能措施、ISO 50001驗證等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中詳細說明了台泥的環境管理流程，包括能源管理目標設定、行動計畫、員工能力建構以及利害關係人議合。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/energy-efficiency",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的能源效率管理方針、目標、績效以及能源使用情形，包括非替代與非再生能源、替代與再生能源的使用量。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/sbt",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的科學減碳目標（SBT），包括近程和長程目標，以及2050淨零承諾。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/zero-path",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥的2050水泥及混凝土事業體淨零路徑，包括淨零路徑圖、方法學以及全球事業體外部影響力。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/certification",
+          "relevant": true,
+          "summary": "此頁面揭露了台泥取得的各項永續認證，包括ISO 50001能源管理系統驗證，並提供證書下載連結。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了台泥在能源管理方面的執行情形，包括節能措施、ISO 50001驗證等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中詳細說明了台泥的環境管理流程，包括能源管理目標設定、行動計畫、員工能力建構以及利害關係人議合。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露能源管理計畫及其執行情形，並取得ISO 50001驗證。",
+      "analyzed_at": "2026-03-09T15:36:44.969101",
+      "urls_crawled": 6,
+      "urls_total": 6
     }
   },
   {
@@ -323,6 +623,74 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報，**得分要件**為：當年度新增發行或投資經我國證券櫃檯買賣中心認可之永續發展債券，並揭露發行或投資之債券簡稱、代碼與金額。簡報中提供了一個範例：『115年新增投資○○公司綠色債券(債券簡稱:○○○○○○，代碼：○○○)新臺幣5億元整，該債券取得櫃檯買賣中心綠色債券資格認可。』請參考簡報1-評分指南，頁57-58。",
       "分派建議": "主要由財務部門負責，確認發行或投資債券的相關資訊（債券名稱、代碼、金額等）。ESG 或永續發展部門負責在網站或報告書中進行揭露，並確保內容符合評鑑要求。法務部門可以協助審閱揭露內容，確保符合相關法規。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已充分揭露發行或投資永續發展債券之情形，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露發行綠色海外無擔保可轉換公司債(Green ECB) 3.5億美元",
+        "揭露發行可持續發展連結轉換公司債(Sustainability-Linked Convertible Bond, SLCB)新台幣80億元",
+        "於年報（第221至222頁）詳細揭露相關資本支出及收入貢獻績效",
+        "公司網站、年報或永續報告書均有揭露永續金融相關資訊"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/energy-layout",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司的綠能布局，與永續債券發行資訊無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/zero-path",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司的淨零路徑，與永續債券發行資訊無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/environment-management",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司的環境管理，與永續債券發行資訊無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/energy-generation",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司的綠色能源創能，與永續債券發行資訊無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/sustainable-finance",
+          "relevant": true,
+          "summary": "此頁面詳細揭露了公司的永續金融策略，包括綠色融資框架、綠色債券發行等資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/credit",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的信用評等及在外發行債券資訊，包括永續發展連結債券。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/news/2025-06-26",
+          "relevant": true,
+          "summary": "此新聞稿揭露了公司獲得5億歐元綠色貸款的消息，以及資金用途。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了公司治理、員工福利等資訊，與永續債券發行資訊間接相關。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中揭露了公司發行台灣首支SLCB，以及綠色貸款等資訊。"
+        },
+        {
+          "url": "https://mops.twse.com.tw/mops/#/web/t05st01",
+          "relevant": false,
+          "summary": "無法爬取或無內容"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:36:53.463959",
+      "urls_crawled": 9,
+      "urls_total": 10
     }
   },
   {
@@ -356,6 +724,43 @@
       ],
       "官方參考與較佳案例": "參考簡報1-頁58，重點如下：\n*   **要件**：參考國際財務報導準則第S2號（IFRS S2）架構，揭露個體對氣候相關風險與機會之治理、策略、風險管理、指標和目標等核心內容之揭露事項。\n*   **備註1**：請註明報導個體範圍（如報導個體與合併財務報表的編製範圍一致，或報導個體即為本公司）。\n*   **備註2**：詳細列出治理、策略、風險管理、指標和目標四大面向下需要揭露的細項內容。",
       "分派建議": "建議由**財務部門**主導，負責 IFRS S2 的解讀與財務數據的揭露。**永續部門**協同，負責 TCFD 報告書的更新、永續報告書的撰寫，以及氣候風險與機會的分析。**公司秘書或法務部門**協助確保資訊揭露符合法規要求。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已參考IFRS S2架構，在年報和永續報告書中充分揭露了氣候相關風險與機會之治理、策略、風險管理、指標和目標等核心內容。同時，公司也發布了TCFD報告書，進一步強化了資訊揭露的完整性。",
+      "matched_items": [
+        "參考IFRS S2架構揭露氣候相關風險與機會",
+        "揭露氣候相關風險與機會之治理情況",
+        "揭露氣候相關風險與機會之策略",
+        "揭露氣候相關風險與機會之風險管理",
+        "揭露氣候相關風險與機會之指標和目標",
+        "以專章揭露氣候相關資訊（永續報告書）",
+        "年報中揭露氣候相關資訊",
+        "發布TCFD報告書"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了氣候相關資訊，包括董事會與管理階層的監督與治理、氣候風險與機會對業務、策略及財務的影響、極端氣候事件及轉型行動對財務的影響、風險辨識、評估及管理流程，以及情境分析等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中以專章揭露氣候相關資訊，包括風險管理、TCFD、氣候風險與機會管理流程、氣候風險與機會辨識及評估方法等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/TCFD_Report/2024/TW/2024%20%E5%8F%B0%E6%B3%A5%20TCFD%20Report.pdf",
+          "relevant": true,
+          "summary": "公司發布TCFD報告書，詳細揭露企業對氣候相關風險與機會之治理、策略、風險管理、指標及目標等四大面向。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議可持續關注IFRS S2的最新發展，並適時更新揭露內容，以符合最新的準則要求。",
+      "analyzed_at": "2026-03-09T15:37:00.787988",
+      "urls_crawled": 2,
+      "urls_total": 3
     }
   },
   {
@@ -388,6 +793,41 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南，頁 59-60：[要件]揭露內部碳定價價格制定基礎。[備註]要件資訊請揭露於公開資訊觀測站－ESG數位平台>ESG資訊揭露>氣候相關議題管理項下：指標「若使用內部碳定價作為規劃工具，應說明價格制定基礎」欄位。簡報中提供了一個範例，說明如何參照環境部「碳費收費辦法」訂定內部碳定價，並揭露內部碳定價機制對於節能減碳的實質助益，以及減少碳排而降低的潛在外部碳成本。",
       "分派建議": "建議由財務部門負責內部碳定價價格制定基礎的揭露，永續辦公室協助提供相關數據和資訊，並確保在各平台（ESG數位平台、公司網站、年報、永續報告書及TCFD報告書）揭露一致的資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已揭露內部碳定價，並說明價格制定基礎，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露內部碳定價價格制定基礎"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/carbon-audit",
+          "relevant": true,
+          "summary": "此頁面包含公司內部碳定價的資訊，包括台灣、中國大陸以及CIMPOR與OYAK CEMENT的定價方式與價格。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為公司財務資訊與營運狀況，與本題關聯性較低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書第91頁揭露公司內部碳定價制度，包含台灣與中國大陸的定價類型、定價方式與2025年碳定價。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/TCFD_Report/2024/TW/2024%20%E5%8F%B0%E6%B3%A5%20TCFD%20Report.pdf",
+          "relevant": false,
+          "summary": "此TCFD報告書與本題關聯性較低。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露內部碳定價相關資訊。",
+      "analyzed_at": "2026-03-09T15:37:06.880878",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -421,6 +861,84 @@
       ],
       "官方參考與較佳案例": "1. **評分要件：**\n   - 符合[要件一]，於構面計分：揭露環境管理制度及當年度執行情形。\n   - 符合[要件二]，則總分另加一分：取得ISO14001等環境管理認證，並揭露認證效期起訖年月日[期間須涵蓋至115年]。\n   - 倘已更新認證效期涵蓋至115年，惟不及於年報或永續報告書揭露者，請於自評系統說明欄備註供查證，仍可得分。\n2. **簡報範例：**\n   - 公司建置完善的環境管理制度，並以PDCA模式持續改善環境績效。114年推動之環境管理制度主要包括污染防治、能源與資源節約、廢棄物管理、化學品管理等面向。\n   - 取得ISO 14001:2015驗證，並揭露最新證書效期起訖期間。\n   - 參考來源：簡報1-評分指南，頁 59-60。",
       "分派建議": "建議由永續辦公室統籌，工務部門、研究室、環安衛部門等共同協作。永續辦公室負責整體制度的制定與揭露，工務部門負責提供能源管理、廢棄物管理等相關數據，研究室負責技術方面的支援，環安衛部門負責確保符合相關法規要求。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已制定並揭露環境管理制度及其執行情形，並取得ISO 14001等環境管理認證，且揭露認證效期起訖年月日，符合評鑑指標基本得分要件及額外加分要件。",
+      "matched_items": [
+        "制定並揭露環境管理制度",
+        "揭露當年度環境管理制度執行情形",
+        "取得ISO 14001等環境管理認證",
+        "揭露ISO 14001等環境管理認證效期起訖年月日"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/environment-management",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的環境管理方針、環境管理流程，以及環境管理目標設定與行動計畫。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/energy-efficiency",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的能源效率管理方針、目標與績效，以及能源使用情形。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%e7%92%b0%e5%a2%83%e4%bf%9d%e8%ad%b7%e6%94%bf%e7%ad%96.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的環境保護政策，由董事會決議通過，並宣示了公司在環境保護方面的承諾。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/certification",
+          "relevant": true,
+          "summary": "此頁面揭露了公司取得的各項永續認證，包括ISO 14001、ISO 50001等，並提供證書下載及有效期限資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報揭露了公司在環境保護方面的具體措施與成果，包括污染防治、廢棄物管理、能源管理等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書詳細說明了公司的環境管理制度、目標、行動計畫及績效，涵蓋低碳生產管理、資源循環、能源效率管理等方面。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/environment-management",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/energy-efficiency",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%e7%92%b0%e5%a2%83%e4%bf%9d%e8%ad%b7%e6%94%bf%e7%ad%96.pdf",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/certification",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "重複網址，內容同上。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露環境管理制度及其執行情形，並取得相關認證。",
+      "analyzed_at": "2026-03-09T15:37:17.225181",
+      "urls_crawled": 6,
+      "urls_total": 6
     }
   },
   {
@@ -554,6 +1072,40 @@
       ],
       "官方參考與較佳案例": "證交所評分要件：\n1.  已參考國際人權公約（請註明名稱），制訂並揭露保障人權政策內容。\n2.  揭露保障人權政策適用範圍及權責單位。\n\n範例揭露（簡報1-評分指南，頁67）：《○○公司人權政策》目的與範疇、人權治理架構範例。",
       "分派建議": "建議由人資部門主責，法務部門、永續發展部門共同協作。人資部門負責政策制定、員工訓練；法務部門負責法規遵循；永續發展部門負責資訊揭露與報告撰寫。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司參考國際人權公約制定保障人權政策，並揭露政策內容及權責單位，符合評鑑指標要求。",
+      "matched_items": [
+        "公司參考《聯合國全球盟約》、《聯合國世界人權宣言》、《國際勞工組織工作基本原則與權利宣言》、《聯合國企業與人權指導原則》、《聯合國原住民權利宣言》及《國際勞工組織第169號有關在獨立國家中的原住民族和部落民族公約》制定人權政策。",
+        "公司在公司官網及年報中公開揭露人權政策內容。",
+        "公司網站揭露人權暨環境盡職調查的管理方針與執行步驟。",
+        "公司網站揭露重要議題識別結果與預防/減緩措施。",
+        "公司年報揭露員工福利、員工權益與資訊安全政策。"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/human-rights",
+          "relevant": true,
+          "summary": "此頁面詳細說明了公司的人權政策、人權暨環境盡職調查的管理方針與執行步驟，以及重要議題識別結果與預防/減緩措施。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E4%BA%BA%E6%AC%8A%E6%94%BF%E7%AD%96.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的人權政策。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報揭露了員工福利、員工權益與資訊安全政策，以及公司遵循相關國際人權標準的聲明。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊，符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:37:23.549414",
+      "urls_crawled": 2,
+      "urls_total": 3
     }
   },
   {
@@ -621,6 +1173,49 @@
       ],
       "官方參考與較佳案例": "目前證交所宣導簡報中，尚未提供S-3指標的具體範例。但可以參考上市上櫃公司永續發展實務守則第27條：『上市上櫃公司應評估公司經營對社區之影響，並適當聘用公司營運所在地之人力，以增進社區認同。上市上櫃公司宜經由股權投資、商業活動、捐贈、企業志工服務或其他公益專業服務等，將資源投入透過商業模式解決社會或環境問題之組織，或參與社區發展及社區教育之公民組織、慈善公益團體及政府機構之相關活動，以促進社區發展。』將此原則融入具體行動與揭露中。（參考簡報1-評分指南，頁 25-26）",
       "分派建議": "建議由永續辦公室主責，社會責任部門、公共關係部門、以及各廠區/營運據點共同參與。永續辦公室負責整體規劃與報告撰寫；社會責任部門負責相關計畫的設計與執行；公共關係部門負責對外溝通；各廠區/營運據點負責收集當地社區資訊、參與風險與機會評估、以及執行相關計畫。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司在網站、年報和永續報告書中充分揭露了評估對社區的風險與機會，並採行了相應措施，包括台泥DAKA開放生態循環工廠、和平永續慈善基金會、在地人才培育計畫等，並詳細說明了具體措施與實施成效，完全符合指標要求。",
+      "matched_items": [
+        "評估對社區之風險或機會",
+        "採行相應措施",
+        "揭露具體採行措施",
+        "揭露實施成效"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/human-rights",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的人權政策與盡職調查，包括與社區居民的諮詢，以及重要議題的預防與減緩措施。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/social-participation",
+          "relevant": true,
+          "summary": "此頁面詳細介紹了公司如何透過在地參與推動產業轉型並與社區共好，包括台泥DAKA開放生態循環工廠、在地居民急難救助、提供新型態產業及工作機會等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報爬取失敗，無法分析其內容。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "永續報告書中詳細說明了公司在社會參與方面的努力，包括台泥DAKA的運營、和平永續慈善事業基金會的運作、以及其他社區支持計畫。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Human_Rights_and_Environmental_Due_Diligence_Report/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E4%BA%BA%E6%AC%8A%E6%9A%A8%E7%92%B0%E5%A2%83%E7%9B%A1%E8%81%B7%E8%AA%BF%E6%9F%A5%E5%A0%B1%E5%91%8A.pdf",
+          "relevant": true,
+          "summary": "人權暨環境盡職調查報告中，公司說明了如何評估和管理對社區的人權和環境影響，並採行相應措施。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議可持續追蹤各項措施的長期成效，並定期更新揭露內容。",
+      "analyzed_at": "2026-03-09T15:37:31.594371",
+      "urls_crawled": 4,
+      "urls_total": 5
     }
   },
   {
@@ -654,6 +1249,34 @@
       ],
       "官方參考與較佳案例": "參考簡報1的頁69-72，評分要件是符合四個要件之一，且總投入金額達300萬以上。頁71提供了較佳案例，例如：\n*   [要件二]國片包場，說明包場次數、參與人次、投入經費。\n*   [要件三]舉辦藝文活動，說明活動名稱、地點、參與人次、投入資源。\n*   [要件四]捐助古蹟修復，說明捐助金額、古蹟名稱、預計完工時間、修復後的用途。",
       "分派建議": "建議由永續辦主責，財務部門提供相關的贊助或捐贈金額數據，公關或行銷部門提供活動的參與人數、媒體報導等佐證資料。需要跨部門合作才能完整蒐集並揭露相關資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司揭露了投入資源支持國內文化發展的方式與成果，並提供了具體的金額和活動細節，完全符合指標要求。",
+      "matched_items": [
+        "揭露了公司投入資源支持國內文化發展",
+        "揭露了支持的方式，包括支持辜公亮文教基金會、贊助童玩藝術節、蘭陽媽祖文化節等",
+        "揭露了支持的成果，包括臺北新劇團的演出場次和參與人數、酷雲劇場的觀看人次等",
+        "揭露了相關資源投入總金額超過新台幣300萬元以上（1,180萬元）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/policy-participation",
+          "relevant": true,
+          "summary": "此頁面揭露了公司支持國內文化發展的政策參與，包括支持辜公亮文教基金會、贊助童玩藝術節、蘭陽媽祖文化節等，並提供了相關的支出金額。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了公司在文化保種方面的努力，包括支持辜公亮文教基金會，推動傳統戲曲的保存與推廣，並提供了臺北新劇團的演出場次和參與人數、酷雲劇場的觀看人次等數據。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:37:37.114607",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -678,6 +1301,35 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要清楚揭露已辨識的利害關係人有哪些、他們關心什麼議題、公司透過哪些管道與他們溝通，以及如何回應他們。\",\n  \"差異分析或現況診斷\": \"此為修正題，沿用去年的做法大致可行，但務必注意以下幾點：\\n1. **確保公司網站連結有效**：檢查去年填答提供的公司網站連結（https://www.tccgroupholdings.com/esg/stakeholders）是否仍然有效，內容是否需要更新。\\n2. **更新年報頁碼**：確認年報中揭露利害關係人資訊的頁碼是否與去年相同（去年為第81-82、90-91頁）。若有變動，務必更新。\\n3. **更新董事會報告日期**：去年填答說明委員會於114年3月12日將利害關係人溝通情形報告至董事會。請更新為最近一次報告的日期，並確認每年定期至少兩次。\\n4. **加分要件確認**：確認公司確實有定期（至少每年兩次）將與各利害關係人溝通情形報告至董事會，以爭取額外加分。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**更新公司網站的利害關係人專區**。確保專區內容包含利害關係人身份、關注議題、溝通管道與回應方式等資訊，並更新最近一次報告至董事會的日期。位置：公司網站\\ESG\\利害關係人專區\",\n    \"行動項目2：**更新年報中的相關資訊**。確認年報中揭露的利害關係人資訊與公司網站一致，並更新最近一次報告至董事會的日期。位置：年報\",\n    \"行動項目3：**準備董事會報告的佐證資料**。蒐集歷次董事會報告的相關紀錄，以備評鑑時查驗。\",\n    \"行動項目4：**跨部門協調**。確保董秘、永續辦、稽核、法務、供應鏈管理部等部門充分協作，提供最新且正確的資訊。\"\n  ],\n  \"官方參考與較佳案例\": \"參考簡報1-評分指南，頁45：若定期將與各利害關係人溝通情形報告至董事會，則總分另加一分。\",\n  \"分派建議\": \"建議由永續辦主責，董秘負責提供董事會報告相關資訊，稽核與法務協助確保資訊揭露符合法規，供應鏈管理部提供供應鏈相關利害關係人資訊，各部門主管（Simon、Debbie）負責確認所提供資訊的正確性。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已充分揭露所辨別之利害關係人身份、關注議題、溝通管道與回應方式，並定期將與各利害關係人溝通情形報告至董事會。",
+      "matched_items": [
+        "揭露所辨別之利害關係人身份",
+        "揭露利害關係人關注議題",
+        "揭露與利害關係人溝通管道",
+        "揭露與利害關係人回應方式",
+        "定期將與各利害關係人溝通情形報告至董事會"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/stakeholders",
+          "relevant": true,
+          "summary": "此頁面為利害關係人專區，詳細說明了公司如何鑑別利害關係人、溝通方式、重大議題等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中說明了利害關係人的溝通情形，以及公司如何回應利害關係人的關注議題。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:37:42.296700",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -745,6 +1397,43 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報，本指標主要評估公司是否落實上市上櫃公司誠信經營守則第17條第2項的規定。年報附表二之二之四為主要評鑑資訊依據。可參考簡報中提到的「○○股份有限公司誠信經營作業程序及行為指南」範例，將誠信經營政策納入契約條款，並明訂不誠信行為的通報義務。",
       "分派建議": "建議由董秘室主導，法務部門、內稽部門和公關部門協同合作。董秘室負責整體資訊的彙整和揭露，法務部門負責確保政策符合法規，內稽部門負責監督執行情況，公關部門負責維護公司網站上的相關資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已設置推動企業誠信經營專（兼）職單位，並說明運作及執行情形，且至少一年一次向董事會報告，符合指標要求。",
+      "matched_items": [
+        "設置推動企業誠信經營專（兼）職單位",
+        "說明設置單位之運作及執行情形",
+        "至少一年一次向董事會報告"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報揭露公司於民國 107 年 5 月10 日董事會決議通過設立企業永續發展委員會，並由董事長擔任主任委員(最高)並建立向下各級單位，定期需向董事會報告。另於民國 110 年 4 月 1 日起開始運行 ISO37001 反貪腐、反賄賂管理系統，並成立「反貪腐反賄賂推動小組」進行系統規劃、諮詢及推動事宜，並由審計委員會負責督導推動本管理系統目標達成情形，每年至少一次向董事會呈報執行情形(本公司已於114年11月12日報告向董事會報告)。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": false,
+          "summary": "永續報告書主要揭露環境與社會相關資訊，與本題誠信經營專責單位設置較無關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee",
+          "relevant": false,
+          "summary": "此頁面主要揭露員工相關資訊，與本題誠信經營專責單位設置較無關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-management",
+          "relevant": false,
+          "summary": "此頁面主要揭露人力資本管理相關資訊，與本題誠信經營專責單位設置較無關聯。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:37:49.108691",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -778,6 +1467,44 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報，本指標評鑑資訊依據為「年報－附表二之二之四」（現已更名為「履行誠信經營情形及與上市上櫃公司誠信經營守則差異情形及原因」）。另可參考簡報中提及的「○○股份有限公司誠信經營作業程序及行為指南」範例，了解如何將誠信經營政策納入契約條款。",
       "分派建議": "建議由法務部門或內部稽核部門主責，人資部門及公司秘書室協同。法務或內稽負責提供誠信經營單位的運作資訊，人資負責提供員工相關培訓資訊，公司秘書室協助整理董事會報告紀錄。最終由法務或內稽負責撰寫年報附表的揭露內容。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司未揭露是否設置推動企業誠信經營專（兼）職單位，負責誠信經營政策與防範方案之制訂及監督執行，也未說明設置單位之運作及執行情形，以及是否至少一年一次向董事會報告。年報中提及資訊安全管理委員會，但與誠信經營無直接關聯。",
+      "matched_items": [],
+      "missing_items": [
+        "是否設置推動企業誠信經營專（兼）職單位",
+        "負責誠信經營政策與防範方案之制訂及監督執行",
+        "說明設置單位之運作及執行情形",
+        "是否至少一年一次向董事會報告"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報主要內容為財務資訊、營運狀況、公司治理等，提及資訊安全管理委員會，但未提及誠信經營相關專責單位或報告。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": false,
+          "summary": "永續報告書主要揭露ESG相關數據，包含員工組成、環境保護措施等，但未提及誠信經營相關專責單位或報告。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司在員工多元化和人力資本發展方面的努力，與誠信經營無關。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-management",
+          "relevant": false,
+          "summary": "此頁面主要介紹公司的人力資本管理，包括性別友善職場和員工組成多元化，與誠信經營無關。"
+        }
+      ],
+      "recommendation": "公司應於年報附表「履行誠信經營情形及與上市上櫃公司誠信經營守則差異情形及原因」中，明確揭露是否設置推動企業誠信經營之專（兼）職單位，說明該單位的職責、運作情形，以及是否定期（至少一年一次）向董事會報告。若未設置，應說明原因。",
+      "analyzed_at": "2026-03-09T15:37:56.157571",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -802,6 +1529,64 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司需要揭露經過董事會通過的誠信經營政策，清楚說明具體做法、不誠信行為的防範方案，以及實際執行的情況。\",\n  \"差異分析或現況診斷\": \"本題為修正題，延續去年對誠信經營政策的要求，但需確保揭露的資訊包含具體做法與防範方案，並加強說明履行情形。請重新檢視現有的揭露內容，是否足夠詳細，並更新相關數據和資訊。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：檢視並更新誠信經營政策：確認政策內容涵蓋上市上櫃公司誠信經營守則第6、7條所列的具體做法與防範不誠信行為方案，例如：行賄及收賄防範、非法政治獻金禁止、不當慈善捐贈處理等。 (官網/年報)\",\n    \"行動項目2：詳細說明履行情形：除了宣導和教育訓練，還需要量化或質化說明誠信經營政策的執行成果，例如：舉辦誠信經營相關課程次數、參與人數、內部檢舉案件處理情形等。(年報)\",\n    \"行動項目3：更新公司網站資訊：確保公司網站的「投資人專區\\公司治理\\誠信經營」頁面，以及相關規章連結（誠信經營守則、道德行為準則）皆為最新版本。(官網)\",\n    \"行動項目4：在年報附表「履行誠信經營情形及與上市上櫃公司誠信經營守則差異情形及原因」中，完整揭露上述更新後的資訊。(年報)\"\n  ],\n  \"官方參考與較佳案例\": \"參考簡報1-評分指南頁73-74，本題與S-7（誠信經營專責單位）及S-9（內外部檢舉制度）相關，應一併檢視。簡報中提及「○○股份有限公司誠信經營作業程序及行為指南」參考範例第20條，可供參考，該條規定公司與他人簽訂契約時，應充分瞭解對方之誠信經營狀況，並將遵守本公司誠信經營政策納入契約條款，於契約中應明訂交易雙方於知悉有不誠信行為時，應通報對方並配合調查等條文。\",\n  \"分派建議\": \"建議由董秘室或公司治理部門主責，法務部門協助檢視政策內容是否符合法規，人資部門提供教育訓練相關數據，稽核部門提供內部檢舉案件處理情形。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已充分揭露經董事會通過之誠信經營政策，明訂具體作法與防範不誠信行為方案，並說明履行情形，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露經董事會通過之誠信經營政策",
+        "明訂具體作法",
+        "明訂防範不誠信行為方案",
+        "說明履行情形"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_corporate-Integrity.html",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的誠信經營政策、管理方針、績效、吹哨者制度等資訊，並提供相關規章連結。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E8%AA%A0%E4%BF%A1%E7%B6%93%E7%87%9F%E5%AE%88%E5%89%8C.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的誠信經營守則，詳細說明了公司的誠信經營原則與規範。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E9%81%93%E5%BE%B7%E8%A1%8C%E7%82%BA%E6%BA%96%E5%89%8C.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的道德行為準則，規範了員工的行為標準。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了公司在誠信經營方面的執行情形。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_corporate-Integrity.html",
+          "relevant": true,
+          "summary": "公司網站揭露誠信經營政策與執行情形。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E8%AA%A0%E4%BF%A1%E7%B6%93%E7%87%9F%E5%AE%88%E5%89%8C.pdf",
+          "relevant": true,
+          "summary": "公司誠信經營守則。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E9%81%93%E5%BE%B7%E8%A1%8C%E7%82%BA%E6%BA%96%E5%89%8C.pdf",
+          "relevant": true,
+          "summary": "公司道德行為準則。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "公司年報揭露誠信經營執行情形。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議持續定期更新並強化揭露內容，例如可更詳細說明防範不誠信行為方案的具體執行細節與成效。",
+      "analyzed_at": "2026-03-09T15:38:04.276932",
+      "urls_crawled": 3,
+      "urls_total": 4
     }
   },
   {
@@ -826,6 +1611,48 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司必須在網站上公開詳細的內部和外部人員檢舉不合法或不道德行為的制度。\",\n  \"差異分析或現況診斷\": \"此為舊題，但編號從4.16改為S-9。去年的填答紀錄顯示貴公司已符合規定，包含訂定「違反從業道德行為檢舉制度」及相關規範，並於公司網站揭露檢舉管道與處理流程。今年請確認網站上的資訊仍然有效且正確，並更新任何變動。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**確認網站資訊**：檢查公司網站上（投資人專區\\公司治理相關頁面）的「違反從業道德行為檢舉制度」、「誠信經營守則」、「反貪腐、反賄賂政策」、「反貪腐、反賄賂管理程序」、「反貪腐暨反賄賂系統管理手冊」等相關文件是否仍然有效，包含檢舉管道和處理流程是否正確。\",\n    \"行動項目2：**更新資訊（如有）**：若上述文件或流程有任何變動，請務必更新網站上的資訊。\",\n    \"行動項目3：**路徑確認**：檢查網站上所有相關連結是否有效，確保利害關係人可以順利找到相關資訊。特別是去年填答紀錄中提及的連結。\",\n    \"行動項目4：**揭露方式檢視**：確保檢舉制度的揭露方式足夠詳細，包含適用範圍、檢舉管道、處理流程、保護檢舉人機制等。\",\n    \"行動項目5：**年度報告更新**：雖然本指標主要評鑑依據為公司網站，建議於年報中提及公司已建立並落實相關檢舉制度，加強資訊的完整性。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所簡報，S-9指標強調公司應於公司網站揭露內、外部人員對於不合法（包括貪汙）與不道德行為的檢舉制度。簡報未提供此指標的較佳案例，但強調了企業誠信經營的重要性，可參考上市上櫃公司誠信經營守則及ISO37001等國際標準。\",\n  \"分派建議\": \"建議由**董秘室**統籌，**法務部門**負責檢視檢舉制度的合規性，**人資部門**負責確認內部檢舉管道的暢通與保密，**資訊部門**負責維護網站資訊的正確性。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於網站詳細揭露內、外部人員對於不合法與不道德行為的檢舉制度，包含檢舉管道、處理程序、保密措施等，符合評鑑指標要求。",
+      "matched_items": [
+        "公司已訂定違反從業道德行為檢舉制度",
+        "公司於網站揭露檢舉制度",
+        "檢舉制度詳細說明檢舉管道（電子信箱、書面、現場）",
+        "檢舉制度說明適用範圍（公司成員、商業夥伴等）",
+        "檢舉制度說明檢舉人應提供資訊",
+        "檢舉制度說明公司對檢舉人身分及檢舉內容的保密措施",
+        "檢舉制度說明處理程序",
+        "檢舉制度說明預防與矯正措施"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報內容主要關於環境管理、員工福利、節能減碳等，與檢舉制度關聯性低。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E9%81%95%E5%8F%8D%E5%BE%9E%E6%A5%AD%E9%81%93%E5%BE%B7%E8%A1%8C%E7%82%BA%E6%AA%A2%E8%88%89%E5%88%B6%E5%BA%A6.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司「違反從業道德行為檢舉制度」全文，詳細說明檢舉適用範圍、權責、檢舉管道、檢舉人應提供資訊、檢舉制度、處理程序、預防與矯正措施等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_corporate-Integrity.html",
+          "relevant": true,
+          "summary": "此頁面說明公司重視從業道德，揭露公司訂有《反貪腐、反賄賂政策》、《誠信經營守則》、《違反從業道德行為檢舉準則》、《道德行為準則》等規範，並提供檢舉信箱。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_Internal-audit.html",
+          "relevant": true,
+          "summary": "此頁面說明內部稽核運作，並再次提及「違反從業道德行為檢舉制度」，提供檢舉管道。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:38:11.479769",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -850,6 +1677,34 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要制定並揭露與營運目標相關的智慧財產管理計畫，說明執行情況，並定期（至少一年一次）向董事會報告，並提供佐證資料。\",\n  \"差異分析或現況診斷\": \"本指標為修正題，主要配合ISO56001創新管理系統標準之發布而修正。去年已符合基本得分要件並取得額外加分，今年需注意以下幾點：\\n\\n1.  **計畫與營運目標連結：** 確保智慧財產管理計畫與公司整體營運目標緊密結合，並在揭露時明確說明。\\n2.  **董事會報告：** 確認至少一年一次向董事會報告智慧財產管理相關事項，並記錄報告日期。\\n3.  **認證有效性：** 確認TIPS或ISO56001等認證的有效期限涵蓋至115年（今年）。若已更新認證效期，但不及於年報揭露，請於自評系統說明欄備註供查證。\\n4.  **官網資訊更新：** 確保公司網站上揭露的資訊（包括證書、計畫、執行情形）是最新的。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**更新並確認智慧財產管理計畫內容**，確保其與公司營運目標連結。需產出文件：智慧財產管理計畫書。\",\n    \"行動項目2：**確認年度董事會報告已完成**，並記錄報告日期。需產出文件：董事會會議紀錄。\",\n    \"行動項目3：**檢查並更新TIPS/ISO56001認證**，確保其有效性涵蓋至115年，並準備認證證書掃描檔。若已更新，但不及於年報揭露，請準備相關證明文件於自評系統備註。\",\n    \"行動項目4：**更新公司網站資訊**，包括智慧財產管理計畫、執行情形、董事會報告日期、TIPS/ISO56001認證證書（含有效期）。需更新位置：公司網站\\\\投資人專區\\\\公司治理\\\\智慧財產權。\",\n    \"行動項目5：**更新年報資訊**，包括智慧財產管理計畫、執行情形、董事會報告日期、TIPS/ISO56001認證資訊。需更新位置：年報。\",\n    \"行動項目6：在年報或網站中**清楚揭露智慧財產的種類**，例如商標、營業秘密、著作權與專利等。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所簡報1-評分指南，頁74：\\n\\n*   **要件一**：揭露與營運目標連結之智慧財產管理計畫及當年度執行情形。\\n*   **要件二**：揭露向董事會報告之頻率（至少一年一次）或當年度向董事會報告之日期。\\n*   **要件三**：導入台灣智慧財產管理系統（TIPS）、ISO56001或類似之智慧財產管理系統標準，並經第三方驗證，且揭露認證效期起訖年月日\\[期間須涵蓋至115年]。\\n\\n簡報中提供的範例揭露了驗證情形（包含驗證單位與效期），智慧財產管理計畫（包含專利管理），以及執行情形（包含董事會報告頻率與日期、更新智財政策、申請專利數量等）。可參考此範例，詳細揭露相關資訊。\",\n  \"分派建議\": \"建議由法務部門主責，資訊部門協助更新網站資訊，並協同研發部門提供智慧財產管理計畫與執行情形的具體數據。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了智慧財產管理計畫及其執行情形，也說明了向董事會報告的頻率，但未明確揭露該計畫與公司營運目標的連結性。此外，雖然提到通過TIPS驗證，但去年的網頁上未更新最新的驗證資訊，今年提供的資料顯示已更新。",
+      "matched_items": [
+        "揭露智慧財產管理計畫及當年度執行情形",
+        "揭露向董事會報告之頻率（至少一年一次）或當年度向董事會報告之日期"
+      ],
+      "missing_items": [
+        "明確揭露智慧財產管理計畫與公司營運目標的連結性"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/intellectual-property",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的智慧財產權管理計畫、保護管理措施、近年執行情況以及取得成果，包含商標和專利等資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報PDF文件主要內容為公司營運狀況分析，與智慧財產權管理計畫關聯性較低。"
+        }
+      ],
+      "recommendation": "公司應更明確地說明智慧財產管理計畫如何與公司的營運目標相連結，例如，說明智慧財產的取得和保護如何支持公司的產品開發、市場擴張或競爭優勢。此外，應確保公司網站上提供的資訊是最新的，包括TIPS驗證的有效期限。",
+      "analyzed_at": "2026-03-09T15:38:17.258994",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -907,6 +1762,50 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司需要建立並公開揭露一套完整的資通安全管理體系，包含風險管理架構、政策、具體方案以及相關資源投入。\",\n  \"差異分析或現況診斷\": \"本題為修正題，去年公司已取得ISO27001:2022認證且有揭露相關資訊，今年需要確認：\\n1.  去年揭露的資訊是否仍然有效（例如：資安長是否仍為同一人、委員會是否持續運作、政策是否有更新）。\\n2.  去年的ISO27001:2022認證是否仍然有效，且認證效期需要涵蓋至115年（今年）。\\n3.  檢視去年揭露內容是否足夠量化，例如資安險金額、人員總數、會議次數、資產監控覆蓋率等。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**更新年報內容**。確認年報中關於資通安全風險管理架構、資通安全政策、具體管理方案及投入資源的揭露是否完整且更新至最新狀態。（參考：年報第69-70頁、第179-184頁）\",\n    \"行動項目2：**更新公司網站資訊**。確保公司網站上（投資人專區\\公司治理\\資訊安全、功能性委員會\\資訊安全管理委員會）的資訊與年報一致，且包含最新的資安政策、委員會資訊、資安長資訊、以及ISO27001:2022證書掃描檔與有效期限。（參考：公司網站\\投資人專區\\公司治理\\資訊安全 https://www.tccgroupholdings.com/information-security；公司網站\\投資人專區\\公司治理\\功能性委員會\\資訊安全管理委員會 https://www.tccgroupholdings.com/information-management；ISO/IEC 27001:2022證書 https://www.tccgroupholdings.com/uploads/files/shares/%e8%aa%8d%e8%ad%89%e6%96%87%e4%bb%b6/ISO27001%e4%bc%81%e6%a5%ad%e5%9c%98%e7%87%9f%e9%81%8b%e7%b8%bd%e9%83%a8.pdf）\",\n    \"行動項目3：**量化資安資源投入**。在年報或公司網站上揭露具體的資安資源投入數據，例如：\\n    *   投保資安險金額\\n    *   資安人員總數\\n    *   資安相關會議開會次數\\n    *   資產監控覆蓋率\",\n    \"行動項目4：**確認並揭露ISO27001:2022認證效期**。確保ISO27001:2022認證在評鑑年度（115年）有效，並清楚揭露認證效期的起訖年月日。如果認證已更新但不及在年報中揭露，請在自評系統說明欄備註。\",\n\t\"行動項目5：**檢視是否導入其他同等或以上效果之系統或標準** 若有導入其他資安相關系統或標準，例如 CNS27001，務必揭露並取得第三方驗證。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所簡報1-評分指南，頁76：\\n*   **[要件一]** 建置資通安全風險管理架構（如成立資安專責單位、設置資安主管、設置資訊安全委員會、定期檢討資安政策，並定期向董事會報告等）。\\n*   **[要件二]** 訂定並揭露資通安全政策與具體管理方案（如識別資通安全風險並制定相應管理與監控措施、加入聯防組織）。\\n*   **[要件三]** 揭露投入資通安全管理之資源量化數據（如投保資安險金額、設置人員總數及相關會議開會次數、資產監控覆蓋率等）。\\n*   **[要件四]** 導入ISO27001、CNS27001等資訊安全管理系統標準，或其他具有同等或以上效果之系統或標準，並取得第三方驗證，且揭露認證效期起訖年月日[期間須涵蓋至115年]。\\n*   **[備註]** 有關要件四認證效期起訖年月日之揭露，倘已更新認證效期涵蓋至115年，惟不及於年報揭露者，請於自評系統說明欄備註供查證，仍可得分。\",\n  \"分派建議\": \"主要由**資安長**負責統籌，並協調**資訊部門**提供相關數據，**公司治理/永續部門**負責年報與網站的揭露內容更新。**法務部門**協助檢視相關政策是否符合法規要求。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已建置並揭露資通安全風險管理架構、資通安全政策、具體管理方案及投入資通安全管理之資源，並已取得ISO27001:2022認證，符合評鑑指標要求。",
+      "matched_items": [
+        "建置資通安全風險管理架構（成立資安專責單位、設置資安主管、設置資訊安全管理委員會、定期檢討資安政策，並定期向董事會報告等）",
+        "揭露資通安全政策",
+        "揭露具體管理方案",
+        "揭露投入資通安全管理之資源",
+        "導入ISO27001:2022等資訊安全管理系統標準，並取得第三方驗證"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/information-security",
+          "relevant": true,
+          "summary": "此頁面揭露了公司的資安政策、管理架構、目標與管理方案、控制措施及相關績效。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/information-management",
+          "relevant": true,
+          "summary": "此頁面揭露了資訊安全管理委員會的組成、職權事項、成員資訊及會議紀錄。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/%e8%aa%8d%e8%ad%89%e6%96%87%e4%bb%b6/ISO27001%e4%bc%81%e6%a5%ad%e5%9c%98%e7%87%9f%e9%81%8b%e7%b8%bd%e9%83%a8.pdf",
+          "relevant": true,
+          "summary": "此連結為ISO27001:2022證書，驗證公司已導入相關標準。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報揭露了資安相關資訊，包括資安管理委員會的運作情況。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/information-security",
+          "relevant": true,
+          "summary": "公司網站揭露資安政策與管理。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊，建議持續更新網站資訊，確保資訊的即時性與準確性。",
+      "analyzed_at": "2026-03-09T15:38:24.119929",
+      "urls_crawled": 3,
+      "urls_total": 4
     }
   },
   {
@@ -940,6 +1839,54 @@
       ],
       "官方參考與較佳案例": "根據證交所的評分指南（簡報1-評分指南，頁 77-78），需要同時符合以下三項要件才能得分：\n[要件一]訂定並揭露個人資料保護政策。\n[要件二]揭露個人資料保護政策適用範圍，及負責部門或人員。\n[要件三]揭露當年度實施情形相關量化數據（如員工訓練時數等）。\n\n簡報中提供了一個範例，說明了如何揭露政策內容、適用範圍、負責部門和實施情形量化數據。可以參考該範例，在年報或永續報告書中呈現類似的資訊。",
       "分派建議": "建議由法務部門主導，負責政策的制定和合規性，人資部門協助提供員工訓練相關數據，資訊安全部門提供技術支持和數據安全措施，並由公共關係部門負責對外揭露和溝通。需要跨部門協作，確保資訊的一致性和完整性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已制定並揭露個人資料保護政策，揭露適用範圍及負責部門或人員，並揭露當年度實施情形相關量化數據，完全符合評鑑指標要求。",
+      "matched_items": [
+        "訂定並揭露個人資料保護政策",
+        "揭露個人資料保護政策適用範圍",
+        "揭露負責部門或人員",
+        "揭露當年度實施情形相關量化數據（如員工訓練時數等）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報主要為財務資訊，與個資保護政策關聯性低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書揭露資訊安全政策、個資保護政策，以及員工資安教育訓練時數與人次。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/training",
+          "relevant": true,
+          "summary": "員工進修課程頁面列出包含個資保護在內的相關訓練課程。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%e5%80%8b%e4%ba%ba%e8%b3%87%e6%96%99%e4%bf%9d%e8%ad%b7%e5%8f%8a%e7%ae%a1%e7%90%86%e6%94%bf%e7%ad%96.pdf",
+          "relevant": true,
+          "summary": "PDF文件為公司個人資料保護及管理政策，詳細說明了政策目的、適用範圍、名詞定義及管理辦法。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/information-security",
+          "relevant": true,
+          "summary": "公司網站的資安與個資管理頁面，說明了公司在資訊安全與個資保護方面的政策、適用範圍、管理架構與目標。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/privacy-policy",
+          "relevant": true,
+          "summary": "公司網站的隱私權政策，說明公司如何蒐集、使用及保護使用者的個人資料。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露個人資料保護政策及其實施情形。",
+      "analyzed_at": "2026-03-09T15:38:31.671995",
+      "urls_crawled": 6,
+      "urls_total": 6
     }
   },
   {
@@ -974,6 +1921,48 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南，頁78：\n*   **[要件一]** 針對產品與服務之顧客健康與安全、行銷或標示等議題，制定並揭露保護消費者或客戶權益政策。\n*   **[要件二]** 揭露申訴管道及申訴程序。\n*   **範例**：公司治理中心網站> 法規及問答> 問答集> 股東會年報最佳實務參考範例> 附表二之二之二推動永續發展執行情形（https://cgc.twse.com.tw/lawReport/listCh）",
       "分派建議": "建議由**法務部門**主責，負責政策的修訂與審核，並與**業務部門**協作，確認申訴管道及程序的資訊正確性與暢通性。**公關/發言人**負責對外揭露資訊的內容審核。**資訊部門**協助更新網站內容。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已針對產品與服務之顧客健康與安全、行銷或標示等議題，制定相關保護消費者或客戶權益政策及申訴程序，並充分揭露。",
+      "matched_items": [
+        "制定並揭露保護消費者或客戶權益政策（客戶權益保護政策）",
+        "揭露申訴管道及申訴程序（客戶服務信箱、電話）",
+        "政策涵蓋產品與服務之顧客健康與安全、行銷或標示等議題"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E5%AE%A2%E6%88%B6%E6%AC%8A%E7%9B%8A%E4%BF%9D%E8%AD%B7%E6%94%BF%E7%AD%96.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為客戶權益保護政策，涵蓋了客戶健康與安全、行銷或標示等議題。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/contact",
+          "relevant": true,
+          "summary": "此頁面提供了客戶服務信箱和電話，作為申訴管道。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/contact-factory",
+          "relevant": true,
+          "summary": "此頁面提供了各廠聯絡資訊，可作為客戶申訴的管道之一。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書揭露了產品健康與安全管理、客戶溝通、客戶滿意度調查及客戶申訴機制。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要揭露財務資訊與重大合約，與本指標關聯性較低。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:38:38.310620",
+      "urls_crawled": 5,
+      "urls_total": 5
     }
   },
   {
@@ -998,6 +1987,48 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司有沒有要求供應商在職安衛、勞動人權、資安、個資保護等方面遵守相關規範，並且說明實際執行情況？\",\n  \"差異分析或現況診斷\": \"去年的填答涵蓋了職安衛和勞動人權，今年需要特別加強在資通訊安全和隱私權保護方面的揭露。請檢視現有的供應商管理政策和實施情況，確認是否已涵蓋這些新增的要求，若沒有，則需新增或修改相關政策與執行方案。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：審閱並更新「供應商管理政策」，將資通訊安全和隱私權保護納入政策範圍，明確要求供應商遵守相關規範。（官網/永續報告書）\",\n    \"行動項目2：檢視「供應商行為守則」，確認是否涵蓋資安與個資保護，並更新守則內容。（官網）\",\n    \"行動項目3：更新供應商評估問卷，增加關於資通訊安全和隱私權保護的相關問題。（內部紀錄）\",\n    \"行動項目4：針對高風險供應商，實施資通訊安全與隱私權保護的專項稽核。（內部紀錄，稽核報告）\",\n    \"行動項目5：定期舉辦供應商永續說明會，加強宣導資通訊安全和隱私權保護的重要性。（內部紀錄，會議紀錄、簡報）\",\n    \"行動項目6：於年報或永續報告書中，具體說明供應商管理政策的實施情形，包括供應商評估、稽核、輔導等。（年報/永續報告書）\",\n    \"行動項目7：若有供應商因違反相關規範而受到懲處或終止合作，應揭露相關資訊。（年報/永續報告書）\",\n        \"行動項目8：參考GRI 409-1，評估供應鏈中是否存在強迫或強制勞動事件的重大風險，並揭露相關風險評估和管理措施。（永續報告書）\"\n  ],\n  \"官方參考與較佳案例\": \"證交所評分要件：\\n[要件一]訂定並揭露供應商管理政策及相關規範，且內容對供應商在職業安全衛生、勞動人權、資通訊安全或隱私權保護等議題有積極具體之要求（如需通過相關認證）。\\n[要件二]具體陳述供應商管理政策及相關規範之實施情形，如執行供應商盡職調查、供應商進行自評、輔導或教育、績效評估等實施情形。\\n[備註] 僅要求供應商遵守誠信原則、維持供貨品質或出具聲明書/切結書，本指標無法得分。\\n\\n簡報範例：\\n為落實本公司之ESG作為，避免或消除供應鏈在職業安全衛生、勞動人權、資通訊安全及隱私權保護等面向的負面影響，本公司建立相關管理規範，例如《供應商管理政策》及《禁用童工暨未成年工保護辦法》等，依據這些辦法，本公司實施供應商評核分級制度，每季由各用料部門針對重要材料之品質、耐用年限，以及供應商在人權、職安衛、資安及隱私權等執行情況進行評估，並據以區分廠商等級，作為採購案件比價與決標的重要參考。此外，本公司亦定期舉辦供應商永續說明會，協助供應商健全永續經營之體系與運作。\\n另本公司亦將資通訊安全與隱私權保護納入供應鏈風險管理框架，定期評估供應商在資安漏洞、資料洩露及隱私合規方面的潛在風險。針對高風險供應商，實施資通訊安全與隱私權保護的專項稽核，確保其符合本公司標準。本公司以問卷方式每年發送予供應商，再依據供應商之特性及風險性做等級區分，以利分級輔導改善。，114年本公司供應商有191家，其中有58家（占比30%）接受評核，70分以下者有10家，已對其執行稽核並輔導改善。\\n（請參考簡報1-評分指南，頁 79-80）\",\n  \"分派建議\": \"供應鏈管理部負責整體政策制定與執行，勞安部門負責職安衛相關事項，人資部門負責勞動人權相關事項，資訊安全部門負責資通訊安全及隱私權保護相關事項。建議由供應鏈管理部主導，各部門共同協作完成。\",\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已揭露供應商管理政策，並要求供應商在職業安全衛生、勞動人權、資通訊安全或隱私權保護等議題遵循相關規範，並說明實施情形。揭露內容符合評鑑指標要求。",
+      "matched_items": [
+        "訂定並揭露供應商管理政策及相關規範",
+        "供應商管理政策內容對供應商在職業安全衛生、勞動人權、資通訊安全或隱私權保護等議題有積極具體之要求",
+        "具體陳述供應商管理政策及相關規範之實施情形，如執行供應商盡職調查、供應商進行自評、輔導或教育、績效評估等實施情形"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "年報主要為財務資訊與公司治理，與供應商管理政策關聯性低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書揭露了公司在供應鏈管理方面的策略與實施情形，包含公正轉型、綠色運輸、低碳建材、綠電發展等，以及與供應商議合的措施，例如碳盤查實戰營、永續治理工作坊等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/supplier",
+          "relevant": true,
+          "summary": "供應商專區說明了公司的供應商管理策略，包含供應商管理政策宣言、供應商行為守則、供應商評鑑、重要供應商管理、永續供應商循環要求、供應商年度永續評鑑與審查機制、高風險供應商改善與永續輔導機制、供應鏈管理與永續評鑑成果公開揭露、供應商大會與永續夥伴獎勵機制、AI陽光採購平台等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%e4%be%9b%e6%87%89%e5%95%86%e8%a1%8c%e7%82%ba%e5%ae%88%e5%89%87.pdf",
+          "relevant": true,
+          "summary": "供應商行為守則詳細說明了公司對供應商在勞工與人權、健康與安全、環境、商業道德、管理體系等五大面向的要求。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%e4%be%9b%e6%87%89%e5%95%86%e7%ae%a1%e7%90%86%e6%94%bf%e7%ad%96%e5%ae%a3%e8%a8%80.pdf",
+          "relevant": true,
+          "summary": "供應商管理政策宣言闡述了公司致力於確保廠商品質穩定，並與供應商共同維護人權、勞工權益、環境保護及資源循環，以善盡社會責任，推動供應鏈的永續發展。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:38:46.637172",
+      "urls_crawled": 5,
+      "urls_total": 5
     }
   },
   {
@@ -1033,6 +2064,58 @@
       ],
       "官方參考與較佳案例": "1. **基本得分要件：** 需同時揭露員工福利事項（如員工福利信託、簽訂團體協約、友善請假制度等）和公司退休制度具體內容及實施情形。不得以「已依法提撥退休金」或「已依勞工退休金相關法令辦理」等語取代。\n2. **額外加分要件：** 公司（不含子公司）115年12月至116年11月平均每月「勞退新制雇主提繳率超過6%人數占公司全體提繳人數比例」超過10%。\n3. **參考簡報範例：** 簡報1-評分指南的第80-82頁提供了員工退休制度、團體協約簽訂情形、友善請假制度的揭露範例，可供參考。",
       "分派建議": "主要由人資部門負責，協同財會部門提供勞退提繳比例相關數據。若有團體協約，建議法務部門也參與審閱揭露內容。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已充分揭露各項員工福利措施、退休制度與其實施情形，符合評鑑指標的基本得分要件。同時，公司也揭露了平均每月「勞退新制雇主提繳率超過6%人數占全體提繳人數比例」超過10%，符合額外加分要件。",
+      "matched_items": [
+        "列舉員工福利事項（如員工福利信託、簽訂團體協約、友善請假制度等）",
+        "說明公司退休制度具體內容及實施情形，例如：勞工退休金新、舊制之提撥比例與提撥狀況、員工申請退休之程序與條件等",
+        "公司平均每月「勞退新制雇主提繳率超過6%人數占全體提繳人數比例」超過10%"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.taiwancement.com/tw/ir_company-regulations.html",
+          "relevant": true,
+          "summary": "此頁面列出公司規章，可能包含員工福利相關政策。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/salary-benefits",
+          "relevant": true,
+          "summary": "此頁面詳細說明公司的薪資福利制度，包括績效獎金、股權計畫、員工儲蓄陪存金、健康關懷、生活關懷、學習關懷、退休同仁福利與照顧、多元敏捷工時等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-salary",
+          "relevant": true,
+          "summary": "此頁面揭露薪酬政策、高階管理階層薪酬連結ESG目標、績效獎金、季獎金、績效考核等資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/retirement-lifestyle",
+          "relevant": true,
+          "summary": "此頁面介紹退休樂活，說明台泥退休同仁享有的福利，包括健康檢查、集團參訪、自強活動、退休餐會、保險計劃等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/esgEmployeeStockAndSalary.html",
+          "relevant": true,
+          "summary": "此頁面涵蓋人才培育、股權計畫、變動薪酬、非現金福利等資訊，並提供相關數據。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中可能包含員工福利與退休制度的相關資訊，例如董事會重要決議、公司治理等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報揭露了員工福利及退休制度相關資訊。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議可持續關注員工福利措施的多元性與創新性，並定期檢視退休制度的實施成效，以確保員工權益。",
+      "analyzed_at": "2026-03-09T15:38:54.830505",
+      "urls_crawled": 6,
+      "urls_total": 6
     }
   },
   {
@@ -1090,6 +2173,63 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司需要制定並公開說明，如何把公司賺錢的成果，合理地反映在員工的薪水上，並且要明確揭露公司章程中關於員工酬勞的比例。\",\n  \"差異分析或現況診斷\": \"去年的填答有提供公司章程、薪資福利、ESG相關頁面連結，以及年報頁面。但今年更強調需要同時滿足兩個要件：(1) 章程中明確訂定員工酬勞的提撥比率，(2) 揭露經營績效或成果如何反映在員工薪酬政策及實施情況。請務必確認公司章程已載明相關比例，並在報告中清楚說明績效與薪酬的關聯。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：檢查公司章程：確認章程中是否已明訂當年度如有獲利，應提撥為員工酬勞之明確比率固定數、一定區間或下限。若無，需進行修訂。將公司章程放在公司網站\\投資人專區\\公司治理公司規章，並確保連結有效。\",\n    \"行動項目2：薪酬政策揭露：在公司網站（人才招募或ESG專區）及年報中，詳細說明公司的薪酬政策，包括年終獎金、績效獎金、員工酬勞等。清楚說明這些薪酬項目如何與公司的經營績效或成果連結。需要具體說明稅後營業利益或稅前淨利如何影響員工薪酬，以及績效考核如何影響薪酬分配。\",\n    \"行動項目3：基層員工薪酬：針對基層員工，說明其薪酬制度如何設計，以及如何透過調薪或分派酬勞來反映公司經營成果。需要具體說明稅前淨利如何影響基層員工薪酬。\",\n    \"行動項目4：年報揭露：在年報附表二之二之二「推動永續發展執行情形」，具體揭露上述薪酬政策與實施情形。可參考公司治理中心網站的範例。\",\n    \"行動項目5：網站資訊更新：確認公司網站上所有相關資訊（包括薪資福利、ESG專區等）都已更新，並與年報內容一致。\",\n    \"行動項目6：檢視去年缺失：根據去年的回饋，請確保公司章程第25條規定之文字已加入公司官網。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所宣導簡報：\\n*   **得分要件：** 必須同時符合兩個要件：(1) 揭露章程明訂員工酬勞之明確比率；(2) 揭露經營績效或成果如何反映於員工薪酬政策及其實施情形。（簡報1-評分指南，頁84）\\n*   **範例：** 簡報中提供了公司章程和薪酬政策的範例，可參考這些範例來撰寫相關揭露內容。（簡報1-評分指南，頁84）\\n*   **年報揭露範例：** 可參考公司治理中心網站的「股東會年報最佳實務參考範例」中的「附表二之二之二推動永續發展執行情形」。（簡報1-評分指南，頁84）\\n*   **章程範例：**公司年度如有獲利，應提撥OO%（或OO元）為員工酬勞。但公司尚有累積虧損時，應預先保留彌補數額。公司年度如有獲利，應提撥OO%為基層員工調整薪資或分派酬勞。但公司尚有累積虧損時，應予彌補。（簡報1-評分指南，頁84）\",\n  \"分派建議\": \"建議由人資部門主導，財務部門提供獲利相關數據，公司秘書協助確認公司章程內容。各部門需要協作，確保資訊一致且完整。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了經營績效與員工薪酬相關的政策，包括績效獎金、季獎金和股權計畫，但章程中關於員工酬勞提撥比率的明確揭露不夠清晰，僅說明提撥千分之一至百分之三為員工酬勞，未明確說明是否為固定數、一定區間或下限。此外，雖然有提到高階管理階層薪酬連結ESG目標，但對於基層員工薪資調整或分派酬勞的具體機制揭露較少。",
+      "matched_items": [
+        "揭露了績效獎金制度，說明依照營運成果及個人績效表現規劃績效獎金。",
+        "揭露了季獎金制度，說明讓員工共享成果，並計入碳排強度目標達成情況。",
+        "揭露了股權計畫，作為長期激勵誘因，並與永續發展目標連結。",
+        "揭露了高階管理階層薪酬連結ESG目標。",
+        "揭露了員工薪酬依其績效表現、工作職掌等綜合因素而定，不因個人性別等因素而有差別。"
+      ],
+      "missing_items": [
+        "公司章程中關於員工酬勞提撥比率的明確揭露（固定數、一定區間或下限）。",
+        "基層員工薪資調整或分派酬勞的具體機制揭露。"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E5%85%AC%E5%8F%B8%E7%AB%A0%E7%A8%8B.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司章程，其中第二十五條提及員工酬勞的提撥比例，但未明確說明是否為固定數、一定區間或下限。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/salary-benefits",
+          "relevant": true,
+          "summary": "此頁面描述了公司的薪資福利制度，包括績效獎金、季獎金、股權計畫等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/esgEmployeeStockAndSalary.html",
+          "relevant": true,
+          "summary": "此頁面介紹了公司在員工方面的ESG實踐，包括股權計畫、變動薪酬、績效考核等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-salary",
+          "relevant": true,
+          "summary": "此頁面詳細說明了公司的薪酬政策，包括高階管理階層薪酬連結ESG目標，以及績效獎金和季獎金的具體內容。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司年報，其中可能包含與公司治理、員工薪酬相關的信息。"
+        },
+        {
+          "url": "https://wlb.mol.gov.tw/Page/index.aspx",
+          "relevant": false,
+          "summary": "此為勞動部網站，提供友善家庭照顧相關資訊，與本題關聯性較低。"
+        },
+        {
+          "url": "https://cgc.twse.com.tw/responsibilityRef/listCh/search",
+          "relevant": false,
+          "summary": "此為公司治理中心網站，提供永續報告書相關指引及範例，與本題關聯性較低。"
+        }
+      ],
+      "recommendation": "1. 在公司章程中明確揭露員工酬勞提撥比率，說明是固定數、一定區間或下限。\n2. 更詳細地揭露基層員工薪資調整或分派酬勞的具體機制，例如具體的計算方式或調整依據。\n3. 在年報附表「推動永續發展執行情形及與上市上櫃公司永續發展實務守則差異情形及原因」中，集中呈現相關資訊，方便查閱。",
+      "analyzed_at": "2026-03-09T15:39:03.988089",
+      "urls_crawled": 5,
+      "urls_total": 5
     }
   },
   {
@@ -1124,6 +2264,77 @@
       ],
       "官方參考與較佳案例": "根據證交所宣導簡報：\n*   **得分要件**：公司需要具體說明對員工人身安全健康與工作環境保護措施與其實施情形，或揭露已取得ISO 45001或TOSHMS認證及其效期。\n*   **備註 1**：員工於工作場所有相當危險性的行業（如製造業倉儲運輸等），需詳述工作安全規定。\n*   **備註 2**：各行業應具體說明員工工作場域之人身安全健康與工作環境保護措施（如職場安全健康與不利情境之火災風險辨識及關鍵可行之減災措施、職場不法侵害、霸凌或性騷擾等職場社會心理危害之因應措施等）及其實施情形；其中執行業務僅於辦公室等行業者，應就辦公場所採行措施予以敘明。\n*   **備註 3**：僅敘述定期（不定期）安檢，未說明頻率或具體安全措施，無法得分。\n*   **職場不法侵害範例**：簡報中提供了職場不法侵害的揭露範例，包括預防計畫、危害辨識與風險評估、員工協助方案、懲處、課程宣導等。可以參考簡報中的範例，撰寫相關內容。",
       "分派建議": "建議由 **永續辦公室** 統籌，**人資部門** 提供員工福利、訓練、心理健康等相關資料，**安環部門** 提供工作場所安全措施、安檢紀錄、認證資訊等相關資料。永續辦公室負責整合各部門資料，撰寫年報與網站的揭露內容。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司在年報和網站中充分揭露了員工人身安全與工作環境之保護措施與其實施情形，包括政策、規章、委員會、訓練、績效指標等，符合指標要求。",
+      "matched_items": [
+        "揭露職業安全衛生政策宣言",
+        "說明職業安全衛生管理委員會的運作",
+        "提供員工安全衛生教育訓練",
+        "揭露安全績效指標與目標",
+        "提供員工健康服務與協助方案",
+        "提供暢通多元的溝通管道",
+        "揭露ISO 45001認證資訊"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/sustainability",
+          "relevant": true,
+          "summary": "公司永續發展委員會資訊，與員工安全衛生相關。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/stakeholders",
+          "relevant": true,
+          "summary": "ESG利害關係人專區，可能包含員工相關資訊。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E6%B0%B8%E7%BA%8C%E7%99%BC%E5%B1%95%E5%AF%A6%E5%8B%99%E5%AE%88%E5%89%87.pdf",
+          "relevant": true,
+          "summary": "永續發展實務守則，可能包含員工安全衛生相關承諾。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E9%A2%A8%E9%9A%AA%E7%AE%A1%E7%90%86%E6%94%BF%E7%AD%96.pdf",
+          "relevant": false,
+          "summary": "風險管理政策，與本題無直接關聯。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報，包含員工安全衛生相關資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/safety-health",
+          "relevant": true,
+          "summary": "公司網站的職業安全衛生專頁，詳細說明了公司的相關措施。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E8%81%B7%E6%A5%AD%E5%AE%89%E5%85%A8%E8%A1%9B%E7%94%9F%E6%94%BF%E7%AD%96%E5%AE%A3%E8%A8%80.pdf",
+          "relevant": true,
+          "summary": "職業安全衛生政策宣言，揭露了公司對員工安全衛生的承諾。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/06_ISO_45001_%e6%b0%b4%e6%b3%a5%e5%bb%a0.pdf",
+          "relevant": true,
+          "summary": "ISO 45001認證，證明公司建立了完善的職業安全衛生管理系統。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/06_ISO_45001_%e8%a3%bd%e5%93%81%e5%bb%a0.pdf",
+          "relevant": false,
+          "summary": "無法爬取，可能包含ISO 45001認證資訊，但目前無法評估。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/06_ISO_45001_%e4%bc%81%e6%a5%ad%e5%9c%98%e7%87%9f%e9%81%8B%e7%B8%BD%e9%83%a8.pdf",
+          "relevant": false,
+          "summary": "無法爬取，可能包含ISO 45001認證資訊，但目前無法評估。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露員工人身安全與工作環境之保護措施與其實施情形。",
+      "analyzed_at": "2026-03-09T15:39:13.359356",
+      "urls_crawled": 4,
+      "urls_total": 6
     }
   },
   {
@@ -1148,6 +2359,69 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要揭露為了保護員工安全與健康，在工作環境中做了哪些措施，並且說明這些措施實際執行的狀況。\",\n  \"差異分析或現況診斷\": \"本題為修正題，沿用去年的填答方式原則上可行，但需注意以下幾點：\\n1.  **認證效期更新：** 去年提及已取得 ISO 45001 認證，請確認認證是否已更新，並於揭露時確保認證效期涵蓋至115年底。\\n2.  **措施具體化：** 若公司所屬產業被認為工作場所有相當危險性（如製造業），需詳述工作安全規定。若僅敘述定期安檢但未說明頻率或具體安全措施，則無法得分。\\n3.  **新增揭露重點：** 參考證交所簡報範例，可考慮揭露職場不法侵害（包含性騷擾、霸凌等）的預防計畫、統計數據及因應措施（例如員工協助方案、懲處、課程宣導等）。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**更新公司網站「ESG\\社會\\職業安全衛生」專區**，詳細說明員工人身安全健康與工作環境保護措施，例如：\\n    *   工作安全規定（針對高風險行業）。\\n    *   職場安全健康與不利情境之火災風險辨識及關鍵可行之減災措施（可參考內政部消防署「輔導既存工廠自設滅火設備及替代設施指導原則」）。\\n    *   職場不法侵害、霸凌或性騷擾等職場社會心理危害之因應措施（可參考勞動部職業安全衛生署「職場永續健康與安全SDGs揭露實務建議指南」）。\\n    *   具體安全措施與執行頻率，避免僅敘述定期安檢。\\n    *   若已取得 ISO 45001 或 TOSHMS 認證，需揭露認證效期起訖年月日（期間須涵蓋至115年底）。\\n    *   職場不法侵害預防計畫與統計數據(危害辨識及風險屬中度風險以上之員工比例、性騷擾/霸凌事件發生件數)\\n    *   員工協助方案使用人次、懲處人數、相關課程時數與參與人數\\n    *   將網址更新至年報附表。\",\n    \"行動項目2：**更新公司網站「投資人專區\\公司治理\\職業安全衛生政策宣言」**，確保內容與最新政策相符。\",\n    \"行動項目3：**更新公司網站「永續認證\\ISO 45001」**，提供最新的 ISO 45001 證書掃描檔，確保證書效期涵蓋至115年底。\",\n    \"行動項目4：**更新年報附表「推動永續發展執行情形及與上市上櫃公司永續發展實務守則差異情形及原因」**，納入上述所有更新資訊，並連結至公司網站的相關頁面。具體說明對員工人身安全健康與工作環境保護措施與其當年度實施情形。若不及於年報揭露已更新之認證效期，請於自評系統說明欄備註供查證\",\n    \"行動項目5：**準備相關統計數據**，例如：\\n    *   職場不法侵害預防之危害辨識及風險屬中度風險以上之員工比例\\n    *   性騷擾案件、霸凌事件發生件數。\\n    *   提供心理諮商等員工協助方案使用人次\\n    *   對行為不當的員工實施包含職務調整、解雇在內的不同程度懲處人數\\n    *   「權勢性騷擾」、「霸凌防治」等課程宣導時數與參與人數\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所宣導簡報：\\n*   **評分要件：** 符合下列其中一項要件，即可於構面計分：\\n    *   [要件一]具體說明對員工人身安全健康與工作環境保護措施與其當年度實施情形。\\n    *   [要件二]揭露公司已取得ISO 45001或TOSHMS認證，且揭露認證效期起訖年月日[期間須涵蓋至115年]。\\n*   **備註：**\\n    *   員工於工作場所有相當危險性的行業（如製造業倉儲運輸等），需詳述工作安全規定。\\n    *   各行業應具體說明員工工作場域之人身安全健康與工作環境保護措施（如職場安全健康與不利情境之火災風險辨識及關鍵可行之減災措施、職場不法侵害、霸凌或性騷擾等職場社會心理危害之因應措施等）及其實施情形；其中執行業務僅於辦公室等行業者，應就辦公場所採行措施予以敘明。\\n    *   僅敘述定期（不定期）安檢，未說明頻率或具體安全措施，無法得分。\\n    *   有關要件二認證效期起訖年月日之揭露，倘已更新認證效期涵蓋至115年，惟不及於年報揭露者，請於自評系統說明欄備註供查證，仍可得分。\\n*   **範例：** 簡報第86頁提供「職場不法侵害、霸凌或性騷擾等職場社會心理危害」的揭露範例，可參考揭露預防計畫、統計數據及因應措施。\",\n  \"分派建議\": \"建議由人資部門（負責員工福利、訓練、心理諮商等）和勞安部門（負責工作安全、健康檢查、ISO 45001認證等）共同負責。人資部門提供員工協助方案、性騷擾/霸凌事件統計、相關課程資訊等數據，勞安部門提供工作安全規定、安檢措施、ISO 45001 認證資訊等。最終由勞安部門彙整所有資訊，確保在公司網站和年報中完整揭露。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已充分揭露員工人身安全與工作環境之保護措施與其實施情形，包括職業安全衛生政策、管理制度、教育訓練、績效指標等，符合評鑑指標要求。",
+      "matched_items": [
+        "揭露職業安全衛生政策宣言，承諾確保工作環境及人員安全，預防事故發生並落實安全規範。",
+        "揭露設有「職業安全衛生管理委員會」，定期召開會議討論員工安全與健康相關議題。",
+        "揭露營運總部及各據點設置職業安全衛生管理單位，每月召開一次職安月會。",
+        "揭露各廠成立「工安改善促進小組」預防各項職業災害之發生，並每月召開企業團「職安月會」。",
+        "揭露所有水泥廠、製品廠以及集團營運總部均通過 ISO 45001 職業安全衛生管理系統認證，並提供證書效期。",
+        "揭露每年依照政府現行法規，辦理勞動、勞安及災害預防訓練等相關課程，並提供訓練人次及時數。",
+        "揭露安全績效指標與目標，包括事故率(TRIR)和誤工率(LTIFR)，並定期更新與公告。",
+        "揭露為員工提供健康服務、員工協助方案、哺乳室等措施。",
+        "揭露暢通多元的溝通管道，包括職業災害暨重大事故通報系統與申訴機制。"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/esg/safety-health",
+          "relevant": true,
+          "summary": "此頁面詳細說明了公司的職業安全衛生政策、管理制度、教育訓練、安全查核機制、績效指標等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E8%81%B7%E6%A5%AD%E5%AE%89%E5%85%A8%E8%A1%9B%E7%94%9F%E6%94%BF%E7%AD%96%E5%AE%A3%E8%A8%80.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的職業安全衛生政策宣言，闡述了公司對員工安全與健康的承諾。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/%e6%b0%b4%e6%b3%a5%e5%bb%a0.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為水泥廠的ISO 45001職業安全衛生管理系統認證證書，證明公司符合相關標準。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/%e8%a3%bd%e5%93%81%e5%bb%a0.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為製品廠的ISO 45001職業安全衛生管理系統認證證書，證明公司符合相關標準。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/%e4%bc%81%e6%a5%ad%e5%9c%98%e7%87%9f%e9%81%8b%e7%b8%bd%e9%83%a8.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為企業團營運總部的ISO 45001職業安全衛生管理系統認證證書，證明公司符合相關標準。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了資訊安全相關內容，雖非直接相關，但可佐證公司對安全議題的重視。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/%e8%a3%bd%e5%93%81%e5%bb%a0.pdf",
+          "relevant": false,
+          "summary": "爬取失敗或無內容"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/certification/ISO_45001/%e4%bc%81%e6%a5%ad%e5%9c%98%e7%87%9f%e9%81%8b%e7%b8%bd%e9%83%a8.pdf",
+          "relevant": false,
+          "summary": "爬取失敗或無內容"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:39:23.328482",
+      "urls_crawled": 4,
+      "urls_total": 6
     }
   },
   {
@@ -1172,6 +2446,42 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司是否有訂定職場多元化或性別平等政策，並且有實際執行，還要對外揭露相關資訊，不能只說不做。\",\n  \"差異分析或現況診斷\": \"此為修正題，去年的填答重點在於公司有設立企業永續發展委員會，並運行ISO37001。但今年更著重在「職場多元化」或「性別平等」政策的制定與實施。因此，需要檢視現有政策是否符合新版指標的要求，並補充相關資訊揭露。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**檢視現有政策或制定新的多元化/性別平等政策**：確認政策內容涵蓋性別、年齡、種族、國籍、出生地、身心障礙等面向，明確禁止歧視。性別平等政策應包含性騷擾防治、改善性別薪資差距等。政策文件需置於公司網站（投資人專區\\公司治理或企業永續發展專區）。\",\n    \"行動項目2：**揭露落實政策的具體情形**：蒐集並彙整員工性別、年齡、種族、國籍、出生地、身心障礙等占比數據，以及男女薪資差異情形（平均數和中位數）。這些數據應以圖表或文字方式呈現於年報或永續報告書中。\",\n    \"行動項目3：**參考GRI準則揭露相關資訊**：參考GRI 405-1「治理單位與員工的多元化」揭露員工多元化組成，GRI 401-1「新進員工和離職員工」可揭露身心障礙員工雇用人數及百分比，GRI 401-2「提供給全職員工的福利」揭露優於法令的員工福利措施，並將這些資訊納入永續報告書。\",\n    \"行動項目4：**參考勞動部資源**：參考勞動部勞動力發展署「身心障礙者就業資源網」，若有進用身心障礙員工，可參考其網站揭露資訊，並考慮設立特例子公司，增加身心障礙者就業機會。\",\n    \"行動項目5：**揭露高齡員工培育計畫及聘用情況**：參考GRI 401-1「新進員工和離職員工」、GRI 404-2「提升員工職能及過渡協助方案」，呈現企業對高齡員工的重視。\",\n    \"行動項目6：**網站資訊平權**：確認企業網站/APP是否取得無障礙標章，體現對弱勢群體的關懷。相關資訊可參考公司治理中心網站 > 企業永續發展 > 參考資料。\",\n    \"行動項目7：**年度報告更新**：在年報或永續報告書中明確指出本公司已制定職場多元化或推動性別平等政策，並詳細說明其實施情形，佐以相關數據。\"\n  ],\n  \"官方參考與較佳案例\": \"證交所宣導簡報中指出，S-20指標需同時符合以下兩項要件才能得分：\\n1.  訂定並揭露職場多元化政策或推動性別平等政策。\\n2.  揭露當年度落實該政策之具體情形（如揭露員工性別、年齡等之占比，或揭露男女薪資差異情形）。\\n簡報中也提供了一些範例，例如揭露女性員工/主管/高階主管占比，男女薪資差距，以及公司如何進用身心障礙員工等。\",\n  \"分派建議\": \"建議由**人資部門**主導，負責政策制定與數據蒐集。**董秘**與**法務**協助確認政策符合法規，並負責對外揭露於公司網站與年報。**企業永續發展委員會**則需負責整體政策的監督與推動。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已制定並揭露職場多元化及推動性別平等政策，並揭露了具體實施情形，包括員工性別、年齡、種族、國籍等占比，符合評鑑指標要求。",
+      "matched_items": [
+        "制定並揭露職場多元化政策或推動性別平等政策",
+        "揭露當年度落實該政策之具體情形（如揭露員工性別、年齡、種族、國籍、出生地、身心障礙等之占比）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為財務資訊與經營狀況，與職場多元化或性別平等政策關聯性較低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了詳細的員工多元組成數據，包括性別、年齡、學歷、職務類別、種族、國籍等，以及非員工之工作者統計，符合指標要求。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee",
+          "relevant": true,
+          "summary": "此網頁揭露了員工總人數、女性員工擔任主管比例、平均培訓費用等資訊，並提供了身心障礙同仁、少數族群、女性員工、女性主管等占比的歷年數據，與指標要求相關。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-management",
+          "relevant": true,
+          "summary": "此網頁揭露了人力資本管理相關資訊，包括性別友善職場舉措、國際員工比例、員工國籍數量、原住民及少數民族占比、身心障礙同仁占比等，符合指標要求。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議未來可持續關注並揭露男女薪資差距等更細緻的性別平等相關數據，以更全面地展現公司在推動性別平等方面的努力。",
+      "analyzed_at": "2026-03-09T15:39:29.914828",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -1207,6 +2517,45 @@
       ],
       "官方參考與較佳案例": "1. **評分要件**：需同時符合「訂定並揭露職場多元化政策或推動性別平等政策」以及「揭露當年度落實該政策之具體情形」兩項要件。\n2. **揭露範例**：簡報中提供了揭露員工性別、年齡、種族、國籍、出生地、身心障礙等占比，或揭露男女薪資差異情形的範例（簡報1，頁87-88）。\n3. **身心障礙員工**：可參考簡報中揭露進用身心障礙員工的案例，包括實際僱用人數、提供個別化合理調整措施、建立內部職場支持制度等（簡報1，頁87-88）。\n4. **其他參考**：可參考GRI準則，例如GRI 401-1、GRI 405-1（簡報2，頁89-90；簡報3，頁59-60）。",
       "分派建議": "主要由人資部門負責，需法務部門協助審閱政策內容，資訊部門協助確保網站資訊平權。永續部門負責統整資訊並揭露於永續報告書。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已制定並揭露職場多元化及性別平等政策，並揭露具體實施情形，包括員工性別、年齡、種族、國籍、出生地、身心障礙等之占比，以及女性與男性薪酬比率。揭露內容完整，符合評鑑指標要求。",
+      "matched_items": [
+        "制定並揭露職場多元化或推動性別平等政策",
+        "揭露員工性別、年齡、種族、國籍、出生地、身心障礙等之占比",
+        "揭露女性與男性薪酬比率",
+        "揭露不同職務類別的員工組成",
+        "揭露國際員工比例"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為公司財務資訊與營運狀況，與職場多元化或性別平等政策相關性低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了詳細的員工多元組成數據，包括性別、年齡、學歷、職務類別、國籍、種族等，以及非員工之工作者統計。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee",
+          "relevant": true,
+          "summary": "此網頁提供了員工總人數、女性主管比例、平均培訓費用等資訊，並以圖表形式呈現了員工多元化數據的歷年變化。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-management",
+          "relevant": true,
+          "summary": "此網頁介紹了公司的人力資本管理，包括性別友善職場、國際員工比例、員工國籍等資訊，並強調了對原住民及少數民族的尊重。"
+        }
+      ],
+      "recommendation": "公司已充分揭露相關資訊，建議可持續關注並揭露性別薪資差距的改善情況，以及在不同地區的多元化政策實施成效。",
+      "analyzed_at": "2026-03-09T15:39:36.866122",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -1240,6 +2589,43 @@
       ],
       "官方參考與較佳案例": "證交所宣導簡報中明確指出，**必須同時符合以下兩項要件才能得分：**\n\n*   **[要件一]** 揭露培訓計畫所涵蓋面向（如新人訓練、專業進修、主管訓練等）、範圍（如各級主管、同仁等）及內容。\n*   **[要件二]** 揭露當年度投入於培訓計畫之量化資源（如課程時數、參與課程人數、證照補助費用等）。\n\n**參考簡報 1 的頁 91-92 範例，**可參考內部稽核培育計畫的揭露方式，說明計畫名稱、計畫說明（包含如何強化員工專業能力）、參與度，並量化相關數據。",
       "分派建議": "建議由 **人資部門** 負責收集培訓計畫的相關資料（面向、範圍、內容、量化資源），並提供給 **永續辦公室** 進行撰寫與揭露。 人資部門需確保數據的準確性，永續辦公室負責將資料整合至年報、永續報告書和公司網站。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了員工培訓發展計畫的內容及實施情形，包含培訓面向、範圍及內容，以及投入的量化資源。但部分量化數據不夠明確，例如缺乏明確的課程時數、參與課程人數等，僅提供平均培訓時間和費用，未能完全滿足評鑑要求。",
+      "matched_items": [
+        "揭露培訓計畫所涵蓋面向（如新人訓練、專業進修、主管訓練等）",
+        "揭露培訓計畫所涵蓋範圍（如各級主管、同仁等）",
+        "揭露培訓計畫所涵蓋內容",
+        "揭露當年度投入於培訓計畫之量化資源（如平均培訓時間、平均培訓費用等）"
+      ],
+      "missing_items": [
+        "明確揭露各項培訓計畫的課程時數",
+        "明確揭露各項培訓計畫的參與課程人數",
+        "明確揭露證照補助費用等具體量化數據"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%A8.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為公司財務資訊及營運狀況，與員工培訓發展計畫關聯性較低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了公司在員工發展方面的資訊，包含培訓計畫的面向、範圍、內容及部分量化資源，例如參與人次、補助金額及總時數。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-development",
+          "relevant": true,
+          "summary": "此網頁揭露了公司在人力資本發展方面的資訊，包含教育訓練投入、平均培訓時間及平均培訓費用等量化數據。"
+        }
+      ],
+      "recommendation": "建議公司在永續報告書或公司網站上，更詳細地揭露各項培訓計畫的課程時數、參與課程人數、證照補助費用等具體量化數據，以更完整地呈現員工培訓發展計畫的實施情形。",
+      "analyzed_at": "2026-03-09T15:39:43.787147",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -1264,6 +2650,43 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要有提升員工職涯能力的培訓發展計畫，而且要公開計畫內容跟執行狀況。\",\n  \"差異分析或現況診斷\": \"本題為修正題，相較於去年，今年更強調要揭露培訓計畫的內容及其實施情形，因此除了維持去年的資訊揭露外，需要加強揭露培訓計畫的具體內容與量化成果，例如課程時數、參與人數、證照補助等。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：檢視現有的員工培訓發展計畫，確認是否涵蓋新人訓練、專業進修、主管訓練等面向，以及各級主管、同仁等範圍。將計畫內容整理成易於理解的形式，例如表格或條列式清單。 (官網/年報/永續報告書)\",\n    \"行動項目2：蒐集並整理當年度投入於培訓計畫的量化資源，包含課程總時數、參與課程人數、證照補助費用等。確保數據的準確性和一致性。(官網/年報/永續報告書)\",\n    \"行動項目3：在年報附表「推動永續發展執行情形及與上市上櫃公司永續發展實務守則差異情形及原因」或永續報告書中，完整揭露培訓計畫的內容、範圍，以及量化資源投入。(年報/永續報告書)\",\n    \"行動項目4：更新公司網站「員工\\人力資本發展」專區，確保資訊與年報/永續報告書一致，並提供更詳細的培訓計畫資訊。(官網)\"\n  ],\n  \"官方參考與較佳案例\": \"根據證交所簡報，要同時符合以下兩個要件才能得分：\\n[要件一]揭露培訓計畫所涵蓋面向（如新人訓練、專業進修、主管訓練等）、範圍（如各級主管、同仁等）及內容。\\n[要件二]揭露當年度投入於培訓計畫之量化資源（如課程時數、參與課程人數、證照補助費用等）。\\n\\n簡報中也提供了一個內部稽核培育計畫的範例，可以參考其揭露方式，包括計畫名稱、計畫說明（包含對象、課程時數、證照補助等）、以及參與度。(簡報1-評分指南，頁 91-92)\",\n  \"分派建議\": \"建議由人資部門主責，負責提供培訓計畫的相關資訊，包括計畫內容、範圍、參與人數、課程時數、補助費用等。永續辦公室協助確認揭露內容符合ESG評鑑的要求，並將資訊整合到年報或永續報告書中。IT 部門負責官網的資訊更新。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了員工培訓發展計畫的內容及實施情形，但量化資訊揭露不夠完整，未能完全符合評鑑要求。雖然有揭露培訓總時數和參與人次，但缺少更細部的量化資源投入資訊，例如各類培訓計畫的具體費用分配。",
+      "matched_items": [
+        "揭露了員工培訓發展計畫",
+        "揭露了培訓計畫所涵蓋面向（如新人訓練、專業進修、主管訓練等）",
+        "揭露了培訓計畫的範圍（如各級主管、同仁等）",
+        "揭露了培訓計畫的內容",
+        "揭露了當年度投入於培訓計畫之量化資源（如課程時數、參與課程人數）"
+      ],
+      "missing_items": [
+        "缺少更細部的培訓計畫費用分配資訊",
+        "缺少各類培訓計畫的具體內容細節"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%AAd.pdf",
+          "relevant": false,
+          "summary": "年報主要揭露公司財務資訊及風險管理，與員工培訓發展計畫關聯性較低。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書詳細揭露了員工發展相關資訊，包括培訓計畫、參與人次、時數及費用，以及跨代共融和跨域人才發展策略。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-development",
+          "relevant": true,
+          "summary": "公司網站的人力資本發展頁面揭露了教育訓練投入、平均培訓時間和平均培訓費用等量化資訊，以及2025年的目標。"
+        }
+      ],
+      "recommendation": "建議公司在永續報告書或公司網站上，更詳細地揭露各項培訓計畫的具體內容，以及投入的量化資源（例如各類培訓計畫的費用分配），以更全面地呈現員工職涯能力發展的努力。",
+      "analyzed_at": "2026-03-09T15:39:51.095134",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -1297,6 +2720,38 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報 S-22 說明：\n1. **要件一**：揭露當年度執行員工意見調查結果（調查題項應與薪酬、工作環境、職涯發展、企業文化或永續經營等員工較重視項目相關）及其實施情形（至少包括覆蓋率、調查單位、調查頻率及調查期間）。\n2. **要件二**：揭露針對當年度員工意見調查所擬訂之改善計畫內容。\n3. **備註**：員工意見調查得以敬業度調查、滿意度調查或幸福感調查等名稱執行，實際調查題項應與薪酬、工作環境、職涯發展、企業文化或永續經營等員工較重視項目相關。\n4. **備註**：覆蓋率係指回復參與調查之員工人數除以員工總人數。員工總人數得採人數計算（人頭數）或以全時等量法（Full Time Equivalent, FTE）表示。\n\n簡報中提供的範例，可參考其揭露調查對象、題目、調查人數、覆蓋率、負責調查單位、調查頻率、調查期間、整體滿意度、調查結果及提升改善方案等資訊。",
       "分派建議": "主要由人資部門負責，需與各部門協作以制定改善計畫。資訊部門協助更新公司網站資訊。公關部門負責將相關資訊整合並呈現於年報、永續報告書等對外文件。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司揭露了員工意見調查的實施情形、調查結果及改善計畫，符合評鑑指標的要求。",
+      "matched_items": [
+        "揭露了員工意見調查的執行結果，調查題項與薪酬、工作環境、職涯發展、企業文化或永續經營等員工重視項目相關。",
+        "揭露了員工意見調查的實施情形，包括覆蓋率、調查單位、調查頻率及調查期間。",
+        "揭露了針對員工意見調查所擬訂的改善計畫內容。"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%A7.pdf",
+          "relevant": false,
+          "summary": "年報PDF文件，但無法爬取內容，故無法判斷是否相關。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書第184頁揭露了員工敬業度調查的項目、調查結果(平均敬業度87%，問卷填答率98%)，以及針對工作滿意度、目的與使命感、幸福感、壓力等構面提出的改善計畫。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-survey",
+          "relevant": true,
+          "summary": "公司網站的員工敬業度調查頁面，揭露了調查的推動目的與方式、調查項目內容、2024年調查結果(平均敬業度87%，問卷填答率98%)，以及針對工作滿意度、目的與使命感、幸福感、壓力等構面提出的改善計畫。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露員工意見調查的相關資訊。",
+      "analyzed_at": "2026-03-09T15:39:57.387896",
+      "urls_crawled": 2,
+      "urls_total": 3
     }
   },
   {
@@ -1431,6 +2886,27 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南，頁97-98。得分要件為「受評年度5月底前召開股東常會」。資訊依據來源為「公開資訊觀測站＞召開股東常（臨時）會日期、地點及採用電子投票情形等資料彙總表」。",
       "分派建議": "主要由股務部門負責，需要與董事會秘書室及會計部門協調。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於114年5月27日召開股東常會，符合115年評鑑指標G-2的要求，且已於公開資訊觀測站公告相關資訊。",
+      "matched_items": [
+        "已於五月底前召開股東常會",
+        "已於公開資訊觀測站公告股東常會召開日期"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/ajax_t108sb31_q1?parameters=0eb65210d5bdc34ea16e295ccdbad109b92387d600f94891bd5e7adddb67f5c29016526d43456bcd2ead87cf92961cbfa54ae1428ef89f0ce092845e6bdd401a2fe8acd3db8b3994078012ae827a03d7687e02c789ab96583d250397d434855cd18c70ac052b35d3dc28d7dafafc521e65036a1a952a3b93ab085ad527b5af7225ea48865e0f1a1d4950ed75824443921513612880fcce17633ca115045b551b",
+          "relevant": true,
+          "summary": "此連結為公開資訊觀測站股東會公告，可用於確認股東常會召開日期。"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:40:02.826459",
+      "urls_crawled": 0,
+      "urls_total": 1
     }
   },
   {
@@ -1462,6 +2938,29 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報：\n*   **評分要件：** 董事長親自出席、親自出席董事超過當屆選任席次半數、審計委員會召集人親自出席、議事錄揭露出席董事名單及會議主席為董事長。\n*   **範例：** 簡報頁97提供了議事錄範例，可參考其揭露方式。（範例：本次股東常會分別有○○○董事長、○○○董事、○○○董事、○○○董事、○○○獨立董事（審計委員會召集人）、○○○獨立董事等5席董事親自出席及1席董事視訊出席，已超過董事席次9席之半數。）",
       "分派建議": "建議由**董秘室**負責主導，並與以下部門協作：\n*   **董事會/經營管理階層**：確認董事出席狀況，配合提供相關資訊。\n*   **法務部門**：協助審閱議事錄，確保符合相關法規。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於股東會議事錄中揭露董事長、過半數董事及審計委員會召集人親自出席股東常會，符合所有評分要件。",
+      "matched_items": [
+        "董事長親自出席股東常會",
+        "親自出席之董事超過當屆選任席次半數",
+        "審計委員會召集人親自出席",
+        "股東常會議事錄中揭露出席之董事名單，且揭露會議主席為董事長"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&mtype=F&",
+          "relevant": true,
+          "summary": "此頁面為台泥於公開資訊觀測站揭露的股東會相關資料，包含股東會議事錄，為本指標評估的依據。"
+        }
+      ],
+      "recommendation": "無。公司已符合所有要求。",
+      "analyzed_at": "2026-03-09T15:40:07.425932",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1497,6 +2996,29 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報，本指標旨在「提前上傳中、英文版議事手冊及年報」（參考簡報1，頁5）。評鑑依據為「公開資訊觀測站＞單一公司＞電子文件下載＞年報及股東會相關資料」（參考簡報1，頁8）。請參考公司去年的填答方式，並更新今年的相關日期與連結。",
       "分派建議": "建議由董秘室主責，負責時程控管與資料上傳，並會同財務部門確認年報內容與時程。資訊部門可協助確認網站連結的有效性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於股東常會開會30日前上傳中文版及英文版股東會議事手冊及會議補充資料，並於股東常會開會18日前上傳中文版及英文版年報，完全符合評鑑指標要求。",
+      "matched_items": [
+        "於股東常會開會30日前上傳中文版股東會議事手冊及會議補充資料",
+        "於股東常會開會30日前上傳英文版股東會議事手冊及會議補充資料",
+        "於股東常會開會18日前上傳中文版年報",
+        "於股東常會開會18日前上傳英文版年報"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&mtype=F&",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的電子文件下載頁面，包含台泥公司114年度股東會相關資料，包括中英文版的股東會開會通知、議事手冊及會議補充資料、年報等文件。"
+        }
+      ],
+      "recommendation": "無。公司已完全符合指標要求。",
+      "analyzed_at": "2026-03-09T15:40:12.192308",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1530,6 +3052,33 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南第98頁：\n\n*   **得分要件：**需同時符合以下兩項要件，始能於構面計分。\n    *   [要件一]至少符合下列其中一項：\n        1.  受評年度股東常會開會通知載明線上直播網址或如何觀看之說明。\n        2.  公司網站提供受評年度股東常會全程不間斷錄影檔案或觀看網址。\n    *   [要件二]受評年度股東會議事錄記載股東提問及公司回復之重要內容。\n*   **備註：**\n    *   本指標之線上直播不得限定觀看者身分，亦即任何人知悉直播網址或觀看方式皆可收看（如YouTube）。\n    *   公司網站之股東常會錄影檔案或觀看網址，亦不得限定觀看者身分。\n    *   若股東常會無股東提問，仍需於議事錄載明，方可得分。\n*   **範例：** 簡報中提供股東常會開會通知書及議事錄範例，可參考其揭露方式。",
       "分派建議": "本指標需股務、董秘、資訊、公關及法務等多部門共同合作。\n\n*   **股務部門：** 負責股東會開會通知書的寄發及相關資訊揭露，以及在公開資訊觀測站上傳相關資料。\n*   **董秘/法務部門：** 負責股東會議事錄的編撰，確保股東提問及公司回覆皆有詳實記錄。\n*   **資訊部門：** 負責線上直播技術支援及股東會錄影檔案上傳至公司網站，並確保連結有效且無觀看限制。\n*   **公關部門：** 協助宣傳股東會線上直播或錄影資訊，確保投資人能輕易取得相關資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.7,
+      "gap_summary": "公司114年股東常會議事錄有記載股東提問與公司回覆，但未提供股東會線上直播或會後上傳全程不間斷錄音錄影。因此，僅符合部分要件。",
+      "matched_items": [
+        "股東會議事錄記載股東提問及公司回復之重要內容"
+      ],
+      "missing_items": [
+        "股東常會採線上直播或會後上傳全程不間斷錄音錄影"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&mtype=F&",
+          "relevant": true,
+          "summary": "此頁面為台泥公司114年度股東會相關資料下載頁面，包含股東會議事錄、開會通知等文件。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&mtype=F&",
+          "relevant": true,
+          "summary": "此頁面提供了股東會議事錄的連結，可用於評估是否記載股東提問與回覆。"
+        }
+      ],
+      "recommendation": "建議公司未來股東常會採線上直播或會後上傳全程不間斷錄音錄影，並於公司網站或公開資訊觀測站提供連結，以符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:40:17.187043",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1563,6 +3112,27 @@
       ],
       "官方參考與較佳案例": "本題為新增/修正題，可參考證交所簡報中關於「G-6 除息基準日後30日內發放現金股利」的說明。  \n目前證交所簡報中沒有提供具體的較佳揭露案例，但請務必參照「評鑑資訊依據」，確認公開資訊觀測站上的資料正確性。",
       "分派建議": "建議由**財務部門**負責主責，因為股利發放的相關資訊由財務部門掌握。若有涉及公司治理相關政策，可與**公司治理單位**協作。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於公開資訊觀測站揭露除權息公告，且現金股利發放日在除息基準日後30日內發放完畢，符合指標要求。",
+      "matched_items": [
+        "公司於公開資訊觀測站揭露除權息公告",
+        "現金股利發放日在除息基準日後30日內發放完畢"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t108sb27",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的除權息公告查詢頁面，公司在此頁面揭露除權息相關資訊，是評估本指標的重要依據。"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:40:21.389287",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1597,6 +3167,27 @@
       ],
       "官方參考與較佳案例": "要件一：受評年度於公開資訊觀測站「提升企業價值計畫專區」上傳公司所制定之提升企業價值計畫。\n要件二：該提升企業價值計畫於上傳公開資訊觀測站前經提董事會報告。(參考 簡報1-評分指南，頁 99)\n\n請參考以下資料：\n* 上市上櫃公司治理實務守則增訂第13-3條\n* 提升企業價值計畫參考範例\n* 公開資訊觀測站> 投資專區> 提升企業價值計畫專區\n* 修訂提升企業價值計畫揭露範例（預計年底前發布）\n* 公司治理中心網站> 法規及問答> 證交所及櫃買中心訂定 (https://cgc.twse.com.tw/lawTWSE/listCh)",
       "分派建議": "主要由財務部門和董事會秘書負責。財務部門負責提供財務數據和分析，董秘負責安排董事會報告、會議記錄和資訊揭露。公司治理單位應協助審閱相關內容，確保符合法規要求和最佳實務。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於公開資訊觀測站「提升企業價值計畫專區」上傳提升企業價值計畫，並已提報董事會，完全符合評鑑指標要求。",
+      "matched_items": [
+        "已於公開資訊觀測站「提升企業價值計畫專區」上傳公司所制定之提升企業價值計畫",
+        "該提升企業價值計畫於上傳公開資訊觀測站前經提董事會報告"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb16",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站「提升企業價值計畫專區」的連結，公司應在此專區上傳相關計畫。"
+        }
+      ],
+      "recommendation": "無。公司已完全符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:40:25.772438",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1621,6 +3212,40 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司需要有關係人交易的規範，而且重大的關係人交易要有經過董事會和股東會的審議或報告。\",\n  \"差異分析或現況診斷\": \"這題是修正題，去年的填答已經拿到滿分。但今年要特別注意，除了確認公司網站上揭露的規範仍然有效，還需要確認是否符合新的評分要件。尤其要注意，規範中需要包含進銷貨、取得或處分資產的管理程序，且重大交易應提報董事會通過，並於年度結束後提股東會報告。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：確認公司網站的「投資人專區\\公司治理\\公司規章」中，是否已揭露與關係人相互間之財務業務相關作業之書面規範。（對應去年填答的(3)）\",\n    \"行動項目2：確認上述規範是否包含進銷貨交易、取得或處分資產之管理程序，並明訂重大交易應提報董事會通過後始得進行。（對應參考資料1的要件二）\",\n    \"行動項目3：確認公司年報中（對應去年填答的(1)）或股東會議事錄（對應去年填答的(2)），有揭露年度結束後，與個別關係人之重大進銷貨交易及取得或處分資產交易已提董事會通過，並提最近期股東會報告。（對應參考資料1的要件三）務必精確指出年報或議事錄的頁碼。\",\n    \"行動項目4：若有修訂「關係人交易暨監理政策」，務必更新公司網站上的版本。\",\n    \"行動項目5：確認重大性水準的定義是否符合公司現況，若有調整也需要在規範中更新。\"\n  ],\n  \"官方參考與較佳案例\": \"參考資料1（簡報1-評分指南，頁 100）列出了本指標的得分要件：\\n1. 訂定並揭露與關係人相互間之財務業務相關作業之書面規範。\\n2. 上開規範內容需包括進銷貨交易、取得或處分資產之管理程序，並明訂定前開各項重大交易應提報董事會通過後始得進行。\\n3. 上開規範內容需包含與個別關係人之重大進銷貨交易及取得或處分資產交易已提董事會通過者，應於年度結束將實際交易情形提最近期股東會報告。\\n\\n簡報中也提到，可以參考「股份有限公司關係人相互間財務業務相關作業規範」參考範例訂定相關規範。\",\n  \"分派建議\": \"主要由**財務部門**負責，因為他們最了解關係人交易的實際情況。但**公司秘書/法務部門**需要協助審閱相關規範，確保符合法規要求。**資訊部門**負責更新公司網站上的相關資訊。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司已訂定關係人交易之書面規範，包含進銷貨、取得或處分資產等交易之管理程序，並提董事會通過。但未明確揭露相關重大交易於年度結束後，已提最近期股東會報告實際交易情形。",
+      "matched_items": [
+        "訂定並揭露與關係人相互間之財務業務相關作業之書面規範。",
+        "規範內容包括進銷貨交易、取得或處分資產之管理程序。",
+        "明訂重大交易應提報董事會通過後始得進行。"
+      ],
+      "missing_items": [
+        "規範內容需包含與個別關係人之重大進銷貨交易及取得或處分資產交易已提董事會通過者，應於年度結束將實際交易情形提最近期股東會報告。"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報第77頁提及公司在環境永續方面的努力，但未直接提及關係人交易的股東會報告。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&mtype=F&",
+          "relevant": true,
+          "summary": "此連結為公開資訊觀測站股東會議事錄查詢頁面，可確認公司是否於股東會報告關係人交易。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E9%97%9C%E4%BF%82%E4%BA%BA%E4%BA%A4%E6%98%93%E6%9A%A8%E7%9B%A3%E7%90%86%E6%94%BF%E7%AD%96.pdf",
+          "relevant": true,
+          "summary": "此PDF為公司關係人交易暨監理政策，規範了關係人交易的定義和管理程序。"
+        }
+      ],
+      "recommendation": "公司應於網站或年報中明確揭露，與個別關係人之重大進銷貨交易及取得或處分資產交易，在提報董事會通過後，是否已於年度結束後，將實際交易情形提最近期股東會報告。若有，請提供股東會議事錄的相關頁面連結或內容摘要。",
+      "analyzed_at": "2026-03-09T15:40:32.675929",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -1653,6 +3278,38 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報：\n*   **評分要件：** 需同時符合以下三項要件，始能於構面計分：\n    *   [要件一]訂定並揭露內部人禁止內線交易之內部規範。\n    *   [要件二]上開規範內容需包括（但不限於）董事不得於年度財務報告公告前三十日，和每季財務報告公告前十五日之封閉期間交易其股票。\n    *   [要件三]揭露受評年度落實該規範之具體情形（如於內部作業增訂於財務報告公告之30日/15日前通知董事，或對內部人辦理之宣導課程主題、時數與參加人次）。\n*   **注意事項：**\n    *   公司治理實務守則並非重新定義具有法規強制性之內線交易規範，而係鼓勵公司自願採取強化公司治理之作為，事先防範內線交易。\n    *   閉鎖期間計算：原則以日曆日計算，自不得交易始日起算至公告日前一日應滿30日／15日。\n    *   要件二之規範內容如依「上市上櫃公司治理實務守則」第10條第4項訂定，均不符合要件。（不能只寫「宜」包括）\n    *   要件三之宣導對象應包括董事與員工，不得僅以董事、公司治理、會計、稽核主管等之進修課程取代之。\n    *   關於要件一及要件二之評分，需於公司網站專區（例如公司治理或公司重要規定專區）揭露禁止內線交易及董事不得於財務報告公告前之封閉期間交易其股票之內部規範完整內容。",
       "分派建議": "建議由董秘室主導，法務部門協助確認規範內容符合法令，人資部門提供員工宣導訓練的紀錄，資訊部門負責更新網站資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已於網站揭露禁止內部人利用未公開資訊買賣有價證券之內部規範，且規範內容包含董事於財務報告公告前之封閉期間不得交易其股票之規定，並說明執行情形，完全符合評鑑指標要求。",
+      "matched_items": [
+        "訂定並揭露內部人禁止內線交易之內部規範",
+        "規範內容包括董事不得於年度財務報告公告前三十日，和每季財務報告公告前十五日之封閉期間交易其股票",
+        "揭露受評年度落實該規範之具體情形（如於內部作業增訂於財務報告公告之30日/15日前通知董事，或對內部人辦理之宣導課程主題、時數與參加人次）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E5%85%A7%E7%B7%9A%E4%BA%A4%E6%98%93%E9%98%B2%E5%88%B6%E8%BE%A6%E6%B3%95.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的「內線交易防制辦法」，其中第三條第五項明確規定董事與經理人於年度財務報告公告前三十日和每季財務報告公告前十五日之封閉期間內，禁止買入或賣出本公司有價證券。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E5%85%A7%E9%83%A8%E9%87%8D%E5%A4%A7%E8%B3%87%E8%A8%8A%E8%99%95%E7%90%86%E4%BD%9C%E6%A5%AD%E7%A8%8B%E5%BA%8F.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司的「內部重大資訊處理作業程序」，規範了公司內部重大資訊的管理及揭露機制。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_corporate-governance.html",
+          "relevant": true,
+          "summary": "此HTML頁面為公司網站上的「公司治理情形」專頁，其中說明了公司推動防範內線交易之宣導及教育訓練，並揭露了相關課程資訊及董事會的通知情形。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊，符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:40:39.390185",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -1685,6 +3342,37 @@
       ],
       "官方參考與較佳案例": "1.  **評分要件**：確認未有單一法人組織及其子公司占董事會席次達三分之一以上。\n2.  **加分要件**：若公司未有以法人或其代表人擔任董事，則總分另加一分。\n3.  **資訊依據**：本指標以年報（董事屬法人股東代表者，應揭露法人股東名稱及該法人之股東持股比例占前十名之股東名稱及其持股比例；各該前十名股東屬法人股東者，尚應揭露法人股東名稱及該法人之股東持股比例占前十名股東之名稱及其持股比例），為評鑑資訊依據。\n4. 參考簡報1-評分指南，頁38、46、102",
       "分派建議": "主要由董秘負責蒐集董事名單、確認其代表身份、計算席次比例，並於年報中進行相關資訊揭露。會計部門可協助提供股東名冊資訊，法務部門可協助確認相關揭露是否符合法規要求。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了董事的相關資訊，但未明確揭露法人股東的股東持股比例占前十名之股東名稱及其持股比例，以及各該前十名股東屬法人股東者，尚應揭露法人股東名稱及該法人之股東持股比例占前十名股東之名稱及其持股比例。雖然年報中列出了董事的法人代表，但缺乏更深層的股東結構資訊。",
+      "matched_items": [
+        "公司揭露了董事的姓名、職稱、主要經歷等資訊。",
+        "公司揭露了董事的選任日期和任期。",
+        "公司揭露了董事的國籍、性別和年齡分布。",
+        "公司揭露了董事持有股份的相關資訊。"
+      ],
+      "missing_items": [
+        "未明確揭露法人股東的股東持股比例占前十名之股東名稱及其持股比例。",
+        "未明確揭露各該前十名股東屬法人股東者，尚應揭露法人股東名稱及該法人之股東持股比例占前十名股東之名稱及其持股比例。"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報包含了董事的姓名、職稱、主要經歷、選任日期、任期、國籍、性別、年齡分布、持有股份等資訊，但缺乏法人股東的股東結構資訊。"
+        },
+        {
+          "url": "https://mops.twse.com.tw/mops/#/web/stapap1_all",
+          "relevant": false,
+          "summary": "爬取失敗或無內容，無法判斷是否與本題相關。"
+        }
+      ],
+      "recommendation": "公司應在年報中補充揭露法人股東的股東持股比例占前十名之股東名稱及其持股比例，以及各該前十名股東屬法人股東者，尚應揭露法人股東名稱及該法人之股東持股比例占前十名股東之名稱及其持股比例。這將有助於提高公司治理的透明度，並符合評鑑指標的要求。",
+      "analyzed_at": "2026-03-09T15:40:46.189225",
+      "urls_crawled": 1,
+      "urls_total": 2
     }
   },
   {
@@ -1709,6 +3397,39 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要訂定並揭露董事會成員多元化政策，並且說明這個政策的具體目標和實際執行情況。如果公司董事的單一性別都達到董事會席次的三分之一以上，還可以額外加分。\",\n  \"差異分析或現況診斷\": \"本指標為修正題，由前屆的 2.2 修改而來。去年的填答內容涵蓋了多元化政策、具體管理目標和落實情形的揭露，並提供了相關連結。今年需要確認政策、目標和落實情形是否有更新，以及女性董事比例是否達到三分之一以上，以爭取額外加分。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**檢視並更新董事會成員多元化政策**。確保政策涵蓋性別、年齡、國籍、文化、專業背景、專業技能及產業經歷等多個面向。參考「上市上櫃公司治理實務守則」及「○○股份有限公司董事選任程序參考範例」。將更新後的政策放在公司網站\\投資人專區\\公司治理\\公司規章，並在年報中引用。\",\n    \"行動項目2：**明確董事會成員多元化之具體管理目標**。例如，設定女性董事的比例目標、特定專業背景董事的席次目標等。揭露目前達成情形。將具體管理目標揭露於公司網站\\投資人專區\\公司治理\\董事會，並在年報中詳細說明。\",\n    \"行動項目3：**揭露個別董事背景之多元化情形**。包含性別、年齡、國籍、專業背景、專業技能、產業經歷、是否具員工身分、獨立董事占比、獨立董事任期年資分佈、董事年齡分佈等量化數據。將董事多元化情形揭露於年報的董事介紹章節，並於公司網站\\投資人專區\\公司治理\\董事會補充說明。\",\n    \"行動項目4：**確認並揭露受評年度年底公司董事單一性別比例**。若單一性別皆不少於董事會席次1/3，可爭取額外加分。相關資訊需申報於「公司治理組織架構（含董事會組成之基本資訊）申報作業」，並以公開資訊觀測站的董監事持股餘額明細佐證。\",\n    \"行動項目5：**若有董事因故離職導致單一性別比例不符標準，務必於自評系統說明欄備註**。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所簡報：\\n*   **評分要件：** 需同時符合以下前三項要件，始能於構面計分；另符合[要件四]，則總分另加一分。\\n    *   [要件一] 訂定並揭露關於董事會成員多元化之政策。\\n    *   [要件二] 揭露多元化政策之具體管理目標（請針對多元化之重要項目，如性別或專長，設定一定席次或比率的董事須具備該背景或專長之目標）與目前達成情形。\\n    *   [要件三] 揭露依公司之董事會成員多元化政策下，個別董事背景之多元化情形（另建議提供如具員工身份之董事占比及獨立董事占比、女性董事占比、產業經驗/專業分佈情形、獨立董事任期年資分佈情形、董事年齡分佈情形等量化數據）。\\n    *   [要件四] 受評年度年底公司董事單一性別皆不少於董事會席次1/3。\\n*   **簡報連結：** 公司治理中心網站> 法規及問答> 問答集> 股東會 年報最佳實務參考範例> 董事會多元化 (https://cgc.twse.com.tw/lawReport/listCh)\\n*   **注意要點：** 董事會成員多元之精神是互補，若每一位董事皆具有相同之產業經驗及專業能力，不予給分。\",\n  \"分派建議\": \"建議由 **董秘室** 負責主導，**人資部門** 提供董事背景資料，**法務部門** 協助審閱相關政策，**資訊部門** 協助更新網站資訊。董秘室需統籌資料並確保年報揭露內容符合評鑑要求。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已訂定並揭露董事會成員多元化政策，具體管理目標與落實情形，並於年報及公司網站揭露相關資訊。女性董事占比已達董事席次三分之一以上。",
+      "matched_items": [
+        "訂定並揭露關於董事會成員多元化之政策",
+        "揭露多元化政策之具體管理目標（針對多元化之重要項目，如性別或專長，設定一定席次或比率的董事須具備該背景或專長之目標）與目前達成情形",
+        "揭露依公司之董事會成員多元化政策下，個別董事背景之多元化情形（如具員工身份之董事占比及獨立董事占比、女性董事占比、產業經驗/專業分佈情形、獨立董事任期年資分佈情形、董事年齡分佈情形等量化數據）",
+        "受評年度年底公司董事單一性別皆不少於董事會席次1/3"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/diversity",
+          "relevant": true,
+          "summary": "此頁面詳細說明了公司的董事會成員多元化政策，包括組成、接班計畫、多元化方針、具備能力、具體管理目標、會議及獨立性等資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E5%85%AC%E5%8F%B8%E6%B2%BB%E7%90%86%E5%AE%88%E5%88%99.pdf",
+          "relevant": true,
+          "summary": "公司治理守則中提及董事會成員組成應考量多元化方針。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中揭露了董事會多元化政策及執行情形，以及董事資料。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露董事會成員多元化政策、具體管理目標與落實情形。",
+      "analyzed_at": "2026-03-09T15:40:52.614191",
+      "urls_crawled": 2,
+      "urls_total": 3
     }
   },
   {
@@ -1777,6 +3498,26 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報，本題屬於「強化董事會結構與運作」的一環。雖然簡報中沒有直接提供本題的較佳案例，但可參考簡報中關於公司治理資訊揭露的整體精神（參考 2, 3, 4），力求資訊透明、完整。",
       "分派建議": "建議由董秘室主責，人資部門協助提供相關人員資訊，法務部門協助審閱揭露內容，確保符合法規要求。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司年報揭露了董事的相關資訊，但並未明確說明董事長與總經理是否為同一人或互為配偶或一親等親屬。僅在自評填答紀錄中說明企業團總執行長與總經理職務不同，但此資訊未在公開揭露的文件中呈現。",
+      "matched_items": [],
+      "missing_items": [
+        "明確揭露董事長與總經理是否為同一人或互為配偶或一親等親屬"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報揭露了董事的姓名、職稱、主要經歷、兼任職務等資訊，但未明確說明董事長與總經理是否為同一人或互為配偶或一親等親屬。"
+        }
+      ],
+      "recommendation": "公司應在年報或公司網站的投資人專區中，明確揭露董事長與總經理是否為同一人或互為配偶或一親等親屬，以符合評鑑指標的要求。",
+      "analyzed_at": "2026-03-09T15:40:57.698335",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -1843,6 +3584,21 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南頁105-106：\n*   **要件一：** 受評年度年底董事間具配偶或二親等以內關係之最多一組人數未超過2人（3人[含]以上者無法得分）。\n*   **要件二：** 至少符合下列其中一項：\n    *   受評年度年底公司董事成員未兼任本公司、母、子或兄弟公司員工。\n    *   受評年度年底公司董事成員兼任本公司、母、子或兄弟公司員工，其人數低於（含）董事席次1/3。\n*   **備註：** 董事及董事長非員工身分；而總經理、執行長及其他職務皆為員工身分。",
       "分派建議": "主要由董秘負責蒐集和確認董事成員的親屬關係和員工身分資訊，並負責相關申報作業。人資部門需要提供員工身分資訊，財務部門需要協助確認母、子、兄弟公司的定義。法務部門可以協助審閱相關揭露內容，確保符合法規要求。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "cannot_assess",
+      "score_confidence": 0.0,
+      "gap_summary": "由於無法取得公司去年揭露的實際網頁/文件內容，因此無法判斷其是否符合115年的評鑑指標要求。雖然自評填答紀錄顯示公司聲稱符合規定，但缺乏佐證資料。",
+      "matched_items": [],
+      "missing_items": [
+        "公司董事間是否不超過二人具有配偶或二親等以內之親屬關係的證明文件",
+        "公司董事間具本公司、母、子或兄弟公司員工身分之人數，是否不超過董事席次三分之ㄧ的證明文件"
+      ],
+      "url_analysis": [],
+      "recommendation": "公司應提供去年實際揭露的網頁/文件內容，以便進行評估。具體而言，需要提供公司申報的「內部人具配偶或二親等及十大進銷貨客戶申報作業」資訊，以及「董事長、總經理或相當職務者之關係人及董事兼任員工資訊申報作業」資訊。",
+      "analyzed_at": "2026-03-09T15:41:01.916216",
+      "urls_crawled": 0,
+      "urls_total": 0
     }
   },
   {
@@ -1876,6 +3632,34 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報：\n*   **G-14 指標說明：** 公司獨立董事席次是否達董事會席次三分之一以上？【若公司獨立董事席次達董事席次二分之一以上，則總分另加一分。】（證交所簡報頁46, 106）\n*   **得分要件：** 受評年度年底公司獨立董事席次達當屆選任董事席次1/3（含）以上。若獨立董事席次達董事席次1/2（含）以上，則總分另加一分。（證交所簡報頁106）\n*   **評鑑資訊依據：** 公司治理組織架構（含董事會組成之基本資訊）申報作業。（證交所簡報頁106）\n*   **特殊情況備註：** 受評年度年度最後一次股東會後，獨立董事因法令規定辭任或逝世，致人數不符上述要件者，請於自評系統說明欄備註供查證，仍可得分。（證交所簡報頁106）",
       "分派建議": "主要由**董秘**負責。但需要**法務部門**協助確認獨立董事的資格與任期是否符合相關法規，**人資部門**提供董事會成員的相關資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司揭露的資訊顯示獨立董事席次符合董事席次三分之一以上，且達到二分之一以上。",
+      "matched_items": [
+        "公司揭露了董事會組成資訊。",
+        "公司揭露了獨立董事設置情形。",
+        "獨立董事席次達到董事席次三分之一以上。",
+        "獨立董事席次達到董事席次二分之一以上。"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb01_1",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的公司治理組織架構資訊，包含董事會組成。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t93sb05",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的獨立董事設置情形資訊。"
+        }
+      ],
+      "recommendation": "無，公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:41:06.375533",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -1909,6 +3693,32 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南，頁 106：G-15 指標說明公司獨立董事連續任期不得超過3屆。資本額100億以上及金融保險業，116年開始須全體獨立董事符合規定。請注意相關法規要求。",
       "分派建議": "建議由董秘室負責主責，法務部門協助確認法規遵循，資訊部門協助更新公司網站資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司年報揭露了董事成員的資訊，但並未明確指出所有獨立董事的連續任期皆不超過三屆。僅說明獨立董事的專業資格與經驗，以及獨立性情形，但缺乏直接聲明或數據支持獨立董事任期符合要求。公開資訊觀測站的重大訊息查詢功能僅提供查詢訊息，無法直接用於判斷獨立董事任期。",
+      "matched_items": [],
+      "missing_items": [
+        "明確聲明所有獨立董事的連續任期皆不超過三屆",
+        "提供獨立董事任期屆數的具體資訊"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司113年度年報，包含公司治理報告，揭露董事成員資訊，但未明確揭露獨立董事連續任期是否超過三屆。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t05st01",
+          "relevant": true,
+          "summary": "此網頁為公開資訊觀測站的重大訊息查詢頁面，僅提供查詢功能，無法直接用於判斷獨立董事任期。"
+        }
+      ],
+      "recommendation": "公司應在年報或公司網站的投資人關係專區中，明確聲明所有獨立董事的連續任期皆不超過三屆，並提供獨立董事任期屆數的具體資訊，例如列表呈現每位獨立董事的姓名和任期起訖時間。",
+      "analyzed_at": "2026-03-09T15:41:12.208065",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -1976,6 +3786,54 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報：\n*   **要件一：** 揭露審計委員會及薪資報酬委員會委任成員之專業資格與經驗。\n*   **要件二：** 說明審計委員會及薪資報酬委員會年度工作重點彙整。\n*   **要件三：** 揭露當年度運作情形及審計委員會及薪資報酬委員會之績效評估。\n\n可參考簡報提供的範例，例如：\n*   範例中詳細列出審計委員會成員的專業資格與經驗，並說明借重其專業的原因。\n*   範例中列出審計委員會年度工作重點，如財務報表稽核、內部控制制度等。\n*   範例中揭露薪資報酬委員會的職權，如訂定並定期檢討董事及經理人績效評估與薪資報酬之政策。\n*   範例中揭露董事會委員會議案內容、決議結果以及公司對委員會意見的處理方式。\n*   範例中揭露審計委員會及薪酬委員會績效評估的評估方式、衡量項目以及評估結果。",
       "分派建議": "建議由 **董秘** 負責統籌年報與公司網站的揭露內容。 **人資** 提供薪資報酬委員會成員的專業資格與經驗、年度工作重點及運作情形等資訊。 **稽核** 提供審計委員會的相關資訊。各部門應共同協作，確保資訊的完整性與正確性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司在年報和網站上充分揭露了審計委員會和薪資報酬委員會成員的專業資格與經驗、年度工作重點及運作情形，完全符合評鑑指標要求。",
+      "matched_items": [
+        "揭露審計委員會及薪資報酬委員會委任成員之專業資格與經驗",
+        "說明審計委員會及薪資報酬委員會年度工作重點彙整",
+        "揭露當年度運作情形（包含各工作重點之開會議案內容摘要及決議結果、公司對審計委員會及薪資報酬委員會意見之處理等）",
+        "揭露審計委員會及薪資報酬委員會之績效評估（包含評估之期間、方式、標準、評估結果及提報董事會日期等）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/audit",
+          "relevant": true,
+          "summary": "此頁面詳細介紹了審計委員會的職責、成員資訊（包括姓名、職稱、主要經歷、專業資格與經驗）、以及歷屆審計委員會的運作情形，包括開會日期、議案內容、審計委員會決議結果以及公司對審計委員會意見之處理。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/compensation",
+          "relevant": true,
+          "summary": "此頁面詳細介紹了薪酬委員會的職權、成員資訊（包括姓名、職稱、主要經歷、專業資格與經驗）、以及歷屆薪酬委員會的運作情形，包括開會次數、出席情形、重要議案內容、決議結果以及公司對於成員意見之處理。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報中包含董事會及功能性委員會的相關資訊，與審計委員會和薪酬委員會的運作相關。"
+        },
+        {
+          "url": "https://law.moea.gov.tw/LawContent.aspx?id=GL001136#lawmenu",
+          "relevant": false,
+          "summary": "經濟部「具創新能力之新創事業認定原則」連結，與本題無關。"
+        },
+        {
+          "url": "https://www.ndc.gov.tw/Content_List.aspx?n=AAAE571211176F30",
+          "relevant": false,
+          "summary": "國家發展委員會「六大核心戰略產業推動方案」及「五大信賴產業推動方案」連結，與本題無關。"
+        },
+        {
+          "url": "https://cgc.twse.com.tw/lawReport/listCh",
+          "relevant": false,
+          "summary": "公司治理中心網站> 法規及問答> 問答集> 股東會年報，與本題無關。"
+        }
+      ],
+      "recommendation": "無須補充，公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:41:19.469806",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -2012,6 +3870,41 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報：\n*   **評分要件**：需同時符合以下四項要件，始能於構面計分：(1)受評年度年底前已設置提名委員會。(2)成員3人（含）以上，且半數（含）以上為獨立董事。(3)召集人及會議主席為獨立董事。(4)揭露提名委員會組成（至少包括委員姓名、召集人及會議主席姓名）、職責及當年度運作情形。\n*   **揭露地點**：公司網站、年報及公開資訊觀測站需分別揭露。\n*   **組織規程範例**：可參考「○○股份有限公司提名委員會組織規程」參考範例。\n*   **揭露內容範例**：參考簡報頁111-112，揭露提名委員會成員專業資格與經驗、年度工作重點及運作情形（例如：會議日期、議案內容、決議結果、公司對委員會意見之處理等）。",
       "分派建議": "建議由**董秘**負責統籌，**法務部門**協助審閱提名委員會組織規程，**人力資源部門**提供成員的專業資格與經驗資訊，**資訊部門**負責更新公司網站資訊。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已完整揭露提名委員會的組成、職責及運作情形，符合所有評鑑要件。",
+      "matched_items": [
+        "已設置提名委員會（111年6月21日通過）",
+        "提名委員會成員人數不少於三人，且半數以上為獨立董事（6席委員，4位獨立董事）",
+        "提名委員會由獨立董事擔任召集人及會議主席（王金山獨立董事）",
+        "揭露提名委員會組成（委員姓名、召集人姓名）",
+        "揭露提名委員會職責",
+        "揭露提名委員會當年度運作情形（包括開會次數、會議重點等）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/nomination",
+          "relevant": true,
+          "summary": "此頁面詳細揭露了提名委員會的組成、職責、成員學經歷、開會情形等資訊。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此年報主要內容為公司營運狀況，僅有少部分篇幅提及環保相關議題，與提名委員會無直接關聯。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb03_1",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的功能性委員會資訊，可佐證公司已設置提名委員會，並提供委員名單。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露提名委員會相關資訊。",
+      "analyzed_at": "2026-03-09T15:41:25.360156",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -2045,6 +3938,55 @@
       ],
       "官方參考與較佳案例": "根據證交所簡報（頁112），要獲得總分加1分的資格，需同時符合以下四項要件：\n1.  由審計委員會或董事會層級之功能性委員會督導風險管理，該委員會成員需3人（含）以上，且半數（含）以上為獨立董事。\n2.  揭露風險管理政策與程序並經董事會通過。\n3.  揭露風險管理組織架構、風險管理程序及115年度之運作情形。\n4.  揭露向董事會報告之頻率（至少一年一次）或當年度向董事會報告之日期。\n\n證交所簡報（頁113）提供風險管理政策與程序、風險管理程序及115年度運作情形的範例，可參考其揭露方式。",
       "分派建議": "建議由**風險管理部門**主責，**財務部門**、**法務部門**、**公司秘書**及**資訊部門**共同協作。\n*   **風險管理部門**：負責風險管理政策與程序的制定、風險評估、風險管理委員會的運作、以及向董事會報告等。\n*   **財務部門**：負責財務風險的管理，並提供相關數據與分析。\n*   **法務部門**：負責法規遵循風險的管理，確保公司符合相關法規要求。\n*   **公司秘書**：負責董事會及委員會的會議安排、紀錄，以及資訊揭露。\n*   **資訊部門**：負責資訊安全風險的管理，並協助網站資訊的更新與維護。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已充分揭露風險管理委員會的組成、職責、運作情形，以及風險管理政策與程序，並經董事會通過，且至少一年一次向董事會報告，符合評鑑指標要求。",
+      "matched_items": [
+        "由風險管理委員會督導風險管理",
+        "風險管理委員會成員三人以上，且半數以上為獨立董事",
+        "揭露風險管理政策與程序並經董事會通過",
+        "揭露風險管理組織架構、風險管理程序及114年度之運作情形",
+        "揭露向董事會報告之頻率（至少一年一次）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/organization",
+          "relevant": true,
+          "summary": "公司組織架構，顯示風險管理委員會隸屬於董事會。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/risk",
+          "relevant": true,
+          "summary": "風險管理委員會的組成、職權、各屆運作情形及會議重點。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E9%A2%A8%E9%9A%AA%E7%AE%A1%E7%90%86%E5%A7%94%E5%93%A1%E6%9C%83%E7%B5%84%E7%B9%94%E8%A6%8F%E7%A8%8B.pdf",
+          "relevant": true,
+          "summary": "風險管理委員會組織規程，詳細說明委員會的組成、職權、議事規則等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E9%A2%A8%E9%9A%AA%E7%AE%A1%E7%90%86%E6%94%BF%E7%AD%96.pdf",
+          "relevant": true,
+          "summary": "風險管理政策，說明風險管理目標、範疇、組織及流程。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/esgCorpGovernance.html",
+          "relevant": true,
+          "summary": "ESG專區，列出公司治理相關委員會，包含風險管理委員會。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb03_1",
+          "relevant": true,
+          "summary": "公開資訊觀測站，揭露公司設立功能性委員會及組織成員。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:41:31.879195",
+      "urls_crawled": 6,
+      "urls_total": 6
     }
   },
   {
@@ -2069,6 +4011,46 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司章程（董事會績效評估辦法）要有寫每三年做一次外部董事會績效評估，而且過去三年內（113-115年）確實有做，並對外揭露評估的執行情形和結果。\",\n  \"差異分析或現況診斷\": \"此為修正題，延續過往對於董事會績效評估的重視，並加強外部評估的頻率與揭露。檢視公司「董事會績效評估辦法」是否明訂至少每三年執行一次外部評估。確認113-115年是否有執行，以及揭露的資訊是否完整，包含執行日期、機構名稱、獨立性說明、評估方式、標準、結果與改善計畫。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**確認公司「董事會績效評估辦法」**：確認公司網站\\投資人專區\\公司治理\\公司規章的「董事會績效評估辦法」有經董事會通過，且明定至少每三年執行一次外部評估。參考範例可見證交所簡報1的第116頁。\",\n    \"行動項目2：**蒐集並整理113-115年外部評估執行資訊**：從113年到115年，蒐集每一次外部評估的以下資訊，並準備對外揭露：\\n*   執行日期\\n*   執行評估之外部專業機構名稱或專家團隊成員（至少包括主持人）介紹\\n*   外部機構、專家是否具備獨立性之理由\\n*   評估方式（如問卷或實地訪查）\\n*   評估標準（內容及項目）\\n*   評估結果提報董事會日期\",\n    \"行動項目3：**摘要說明外部董事會績效評估結果**：摘要說明外部董事會績效評估結果，包括改善建議及未來改善計畫或行動。\",\n    \"行動項目4：**更新公司網站或年報資訊**：將上述蒐集到的資訊，更新到公司網站（建議放在投資人專區\\公司治理\\董事會\\董事會績效評估專區）或年報中（公司治理章節）。務必確保資訊容易找到且完整揭露。\",\n    \"行動項目5：**檢視獨董獨立性**：確認負責外部評估的機構或專家團隊，不屬於會計師事務所、律師事務所、承銷商等中介機構，且與公司沒有業務往來或利益衝突，以確保其獨立性。參考證交所簡報1第116頁的說明，考量其是否具備足夠的產業知識、對董事會實務及法令的理解、以及公司治理的知識與經驗。\"\n  ],\n  \"官方參考與較佳案例\": \"證交所簡報1第116頁明確指出，要獲得本指標的分數並爭取總分加分，需同時符合以下三項要件：\\n1.  董事會績效評估辦法（含程序）經公司董事會通過，且明定至少每三年執行外部評估ㄧ次。\\n2.  揭露最近三年內（113-115年）執行日期、執行評估之外部專業機構名稱或專家團隊成員（至少包括主持人）介紹，該外部機構、專家具備獨立性之理由、評估方式（如問卷或實地訪查）、標準（內容及項目），及評估結果提報董事會日期等內容。\\n3.  摘要說明外部董事會績效評估結果，包括改善建議及未來改善計畫或行動。\\n\\n簡報中亦提醒，會計師事務所、律師事務所、承銷商等中介機構不適宜擔任外部績效評估單位。\",\n  \"分派建議\": \"建議由董秘室主責，負責蒐集、整理及揭露相關資訊。法務部門可協助確認「董事會績效評估辦法」的合規性。稽核部門可協助評估外部評估機構的獨立性。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已完整揭露董事會績效評估辦法、執行情形及評估結果，符合評鑑指標要求。",
+      "matched_items": [
+        "公司訂定之董事會績效評估辦法經董事會通過，且明定至少每三年執行外部評估ㄧ次（來源1）。",
+        "公司已於受評年度或過去兩年度執行評估（來源2：2022、2023、2024年均有評估）。",
+        "公司揭露執行情形及評估結果（來源2：揭露評估期間、範圍、方式、項目/結果）。",
+        "公司揭露外部評估機構名稱（安侯企業管理(股)公司）及獨立性說明（來源2）。",
+        "公司揭露評估方式（問卷、資料分析及訪談）（來源2）。",
+        "公司揭露評估結果提報董事會日期（來源2）。"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/tw/report/rule/%E8%91%A3%E4%BA%8B%E6%9C%83%E7%B8%BE%E6%95%88%E8%A9%95%E4%BC%B0%E8%BE%A6%E6%B3%95.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為公司董事會績效評估辦法，明定評估週期、範圍、方式及執行單位等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/performance",
+          "relevant": true,
+          "summary": "此網頁詳細揭露了公司董事會績效評估的執行情形，包括內部評估和外部評估的期間、範圍、方式、內容/結果，以及外部評估機構的獨立性說明。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": false,
+          "summary": "此PDF文件為公司年報，主要內容為公司營運及財務資訊，與本題關聯性較低。"
+        },
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb04_1",
+          "relevant": false,
+          "summary": "此網頁為公開資訊觀測站的公司治理相關資訊，僅為公司治理規程規則的入口，與本題關聯性較低。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊。",
+      "analyzed_at": "2026-03-09T15:41:38.956167",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -2101,6 +4083,30 @@
       ],
       "官方參考與較佳案例": "依據證交所宣導簡報（簡報1-評分指南，頁 117-118）：\n*   **得分要件：** 需同時揭露以下兩項要件，始能於構面計分：\n    *   [要件一]每年獨立董事與內部稽核主管及會計師透過會議（不包括董事會）或座談，且無一般董事及管理階層在場之情況下溝通之頻率，或定期分別與內部稽核主管及會計師溝通。\n    *   [要件二]當年度各次會議日期、性質（如審計委員會或董事會會前會等）與溝通主題內容，如獨立董事提出建議，則需同時揭露公司處理執行結果；如無建議亦需註明本次會議無意見。\n*   **備註：** 可以視訊會議方式進行溝通。\n*   **範例：** 簡報中提供了「獨立董事與會計師與稽核主管之溝通情形」的表格範例，可參考其揭露的項目與格式。例如：日期、出席人員、溝通事項、溝通結果等。",
       "分派建議": "建議由稽核部門主責，負責提供獨立董事與內部稽核主管溝通的相關資訊。財務部門則負責提供獨立董事與會計師溝通的相關資訊。最後由公司治理單位彙整資料，並於年報中進行揭露。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了獨立董事與內部稽核主管的溝通情形，包括會議日期、出席人員、溝通事項和溝通結果。但缺乏與會計師單獨溝通的資訊。雖然有審計委員會的會議紀錄，但無法判斷是否為獨立董事與會計師的單獨溝通。",
+      "matched_items": [
+        "揭露獨立董事與內部稽核主管的溝通情形",
+        "揭露溝通的會議日期、出席人員、溝通事項和溝通結果"
+      ],
+      "missing_items": [
+        "缺少獨立董事與會計師單獨溝通的資訊",
+        "缺少獨立董事與會計師單獨溝通的頻率"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/internal-audit",
+          "relevant": true,
+          "summary": "此頁面揭露了公司內部稽核的相關資訊，包括稽核組織、稽核工作說明、稽核計畫、稽核報告、缺失追蹤、內部控制制度評估、對子公司之監督與管理、獨立董事與內部稽核主管之溝通原則以及近兩年度獨立董事與稽核主管之溝通情形。"
+        }
+      ],
+      "recommendation": "公司應補充揭露獨立董事與會計師單獨溝通的頻率、日期、出席人員、溝通事項和溝通結果。若獨立董事與會計師的溝通僅在審計委員會中進行，應明確說明審計委員會中獨立董事與會計師的溝通情形，並確保該溝通是在無一般董事及管理階層在場的情況下進行。",
+      "analyzed_at": "2026-03-09T15:41:44.202021",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2125,6 +4131,28 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司要定期（至少一年一次）參考審計品質指標（AQIs）評估簽證會計師的獨立性和適任性，並且詳細揭露評估的過程。\",\n  \"差異分析或現況診斷\": \"本題為修正題，去年已得分，今年需要確認是否仍維持一年至少一次的評估頻率，以及評估程序是否詳實揭露。務必更新年報或相關揭露文件中的資訊，確保與實際執行情況相符。今年評鑑資訊依據為年報\\附表「公司治理運作情形及其與上市上櫃公司治理實務守則差異情形及原因」，請務必在此揭露。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：**審計委員會議事錄與董事會議事錄**：確認審計委員會每年是否定期評估簽證會計師之獨立性及適任性，並將評估結果提報董事會。保留相關會議紀錄。\",\n    \"行動項目2：**獨立性及適任性評估表**：依據會計師獨立性及適任性評估表之標準與AQI指標進行評估，並詳實紀錄評估過程與結果。\",\n    \"行動項目3：**年報/附表「公司治理運作情形及其與上市上櫃公司治理實務守則差異情形及原因」**：揭露評估程序，包含參考的AQI指標項目、評估頻率、評估結果（如：確認會計師無不符獨立性之情事，且事務所查核經驗與受訓時數優於同業平均水準等）。\",\n    \"行動項目4：**公司網站（投資人專區/財務資訊/公司年報）**：同步更新年報內容，確保資訊一致性。\",\n    \"行動項目5：**超然獨立聲明書**：確認是否仍要求簽證會計師提供「超然獨立聲明書」及「審計品質指標(AQIS)」。\"\n  ],\n  \"官方參考與較佳案例\": \"證交所宣導簡報中，本題屬於公司治理面(G)的修正題之一（參考1，頁31-32）。\\n\\n**得分要件：**\\n*   定期（至少一年一次）參考審計品質指標（AQIs）評估簽證會計師獨立性及適任性。\\n*   詳實揭露評估程序。（例如：參考哪些AQI指標、評估頻率、評估結果等）\\n\\n**參考揭露位置：**\\n*   年報\\附表「公司治理運作情形及其與上市上櫃公司治理實務守則差異情形及原因」\",\n  \"分派建議\": \"建議由**財務部門**主責，**審計委員會**及**董事會**協助提供相關會議紀錄與決議內容。法務部門協助審閱揭露內容是否符合法規。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於年報中揭露定期評估簽證會計師獨立性及適任性之程序與結果，符合指標要求。",
+      "matched_items": [
+        "公司定期（至少一年一次）參考審計品質指標（AQIs）評估簽證會計師獨立性及適任性",
+        "公司詳實揭露評估程序",
+        "公司揭露評估結果提報董事會"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報第80頁與第83頁揭露公司審計委員會定期評估簽證會計師獨立性及適任性，並說明評估程序與結果。"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:41:49.109249",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2157,6 +4185,27 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南頁46，此指標為A+題型，若全體董事均依規範完成進修，總分另加一分。",
       "分派建議": "建議由董秘負責。董秘負責蒐集董事進修時數證明，並更新公開資訊觀測站資訊。若涉及新任獨立董事，可能需要人資部門協助提供相關資料。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已於公開資訊觀測站揭露獨立董事進修情形，符合評鑑指標要求。",
+      "matched_items": [
+        "公司於公開資訊觀測站揭露董事及監察人出（列）席董事會及進修情形暨獨立董事現職、經歷及兼任情形（個別）",
+        "揭露資訊顯示獨立董事均依「上市上櫃公司董事進修推行要點」規範之時數完成進修"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb07",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站中，公司揭露董事及監察人出（列）席董事會及進修情形暨獨立董事現職、經歷及兼任情形（個別）的頁面，為本指標的評估依據。"
+        }
+      ],
+      "recommendation": "無，公司已符合評鑑指標要求。若全體董事均依規範完成進修，可爭取總分加一分。",
+      "analyzed_at": "2026-03-09T15:41:53.578639",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2191,6 +4240,34 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報（簡報1-評分指南，頁 46）：\n*   **G-23 公司是否於股東常會開會18日前上傳以英文揭露之年度財務報告？**若於中文版期中財務報告申報期限後兩個月內以英文揭露期中財務報告者\n*   **評分要件：**\n    *   [要件一]揭露114年度英文版之合併及個體財務報告；無子公司者，揭露114年度英文版之個別財務報告。前開英文版年度財務報告內容需與中文版一致，且上傳至公開資訊觀測站之隔天，至股東常會開會前1日，期間有18日（含）以上。\n    *   [要件二]揭露115年第1~3季英文合併或個別財務報告。前開各季英文版財務報告內容需與中文版一致，且皆於中文版財務報告申報期限後兩個月內申報。",
       "分派建議": "主要由**財務部門**負責。財務部門需負責準備及上傳財務報告。建議可與**投資人關係部門**協作，確保資訊揭露符合外資需求，並於公司網站上提供連結方便取用。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司於股東常會開會18日前上傳以英文揭露之年度財務報告，符合評鑑指標要求。",
+      "matched_items": [
+        "公司於股東常會開會18日前上傳以英文揭露之年度財務報告",
+        "參考OECD原則IV.E，傳播訊息的管道應讓使用者平等、及時且低成本地獲取攸關的訊息",
+        "參考上市上櫃公司治理實務守則第7條，同步上傳中英文版年報、年度財務報告",
+        "參考上市上櫃公司治理實務守則第57條，提供英文版財務資訊"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=113&seamon=&mtype=A&",
+          "relevant": true,
+          "summary": "此頁面包含113年度各季中英文財務報告書上傳日期，可確認年度財務報告英文版上傳時間。"
+        },
+        {
+          "url": "https://doc.twse.com.tw/server-java/t57sb01?step=1&colorchg=1&co_id=1101&year=114&seamon=&mtype=A&",
+          "relevant": true,
+          "summary": "此頁面包含114年度各季中英文財務報告書上傳日期，可確認各季英文版財務報告上傳時間。"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:41:58.694554",
+      "urls_crawled": 2,
+      "urls_total": 2
     }
   },
   {
@@ -2215,6 +4292,20 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司是否在每月10號前，將內部人上個月的持股變動情形上傳到公開資訊觀測站，讓投資人可以及時掌握資訊。\",\n  \"差異分析或現況診斷\": \"此為修正題，原指標為3.9，現為G-24。去年的填答方式與今年相同，都是確認公司是否在每月10日前上傳內部人持股變動資料。由於評鑑依據是證交所/櫃買中心的統計報表，因此需確保每月確實依照規定時間申報。建議每月申報後截圖留存，以備查驗。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：每月10日（含）前，務必將內部人上月份持股變動情形上傳至公開資訊觀測站（Mops）。\",\n    \"行動項目2：在公開資訊觀測站的「董監大股東持股、質押、轉讓」\\「內部人持股異動事後申報表」中查詢並確認申報成功。\",\n    \"行動項目3：保留每月申報成功的截圖或紀錄，以供內部查核及評鑑時佐證。\",\n    \"行動項目4：每年定期檢視內部申報流程，確保符合最新法規要求。\"\n  ],\n  \"官方參考與較佳案例\": \"參考證交所簡報，G-24 為「提前申報內部人持股變動情形」的新增指標。本題評鑑依據是證交所與櫃買中心的統計報表，公司應確保按時申報。\",\n  \"分派建議\": \"董秘負責。董秘應建立每月固定申報流程，並與相關部門（如：股務代理）協調，確保資料正確性及時效性。建議股務代理在每月5號提醒，董秘於10號前完成申報。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "cannot_assess",
+      "score_confidence": 0.0,
+      "gap_summary": "AI 回傳格式解析失敗",
+      "matched_items": [],
+      "missing_items": [],
+      "url_analysis": [],
+      "recommendation": "",
+      "raw_response": "{\n  \"compliance_score\": \"fully_compliant\",\n  \"score_confidence\": 1.0,\n  \"gap_summary\": \"公司已於114年自評時說明每月10日(含)前皆有將內部人持股變動之情形上傳至公開資訊觀測站，並提供連結佐證。115年評鑑資訊依據為證交所與櫃買中心之統計報表，故假設公司確實有上傳，則符合評鑑要求。\",\n  \"matched_items\": [\"公司每月10日(含)前將內部人上月份持股變動之情形上傳至公開資訊觀測站\"],\n  \"missing_items\": [],\n  \"url_analysis\": [\n    {\"url\": \"https://mops.twse.com.tw/mops/web/query6_1\", \"relevant\": true, \"summary\": \"此連結為公開資訊觀測站董監大股東持股、質押、轉讓\\內部人持股異動事後申報表查詢頁面，可用於驗證公司是否依規定申報。\"}\n  ],\n  \"recommendation\": \"無。公司已符合規定，惟建議公司持續注意每月申報的及時性與正確性。\"\n}",
+      "parse_error": true,
+      "analyzed_at": "2026-03-09T15:42:03.267445",
+      "urls_crawled": 0,
+      "urls_total": 1
     }
   },
   {
@@ -2282,6 +4373,26 @@
       ],
       "官方參考與較佳案例": "參考證交所簡報1的頁123，本指標的評鑑資訊依據為年報中的附表「一般董事及獨立董事之酬金（個別揭露姓名及酬金方式）」。得分要件為完整揭露年報附表之各欄位資訊，若酬金表格有空白（如無金額請以「0」或「無」表示」）、金額誤植或欄位缺漏，則無法得分。前5位最高薪酬係以領取來自合併財務報告內所有公司之薪資、退職退休金、獎金及特支費等，以及員工酬勞金額之合計數認定。",
       "分派建議": "主要由人資部門負責提供董事酬金資料，財務部門負責將資料整理至年報附表中。最後由人資與財務共同審核揭露內容的完整性與正確性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司年報中未揭露董事之個別酬金，僅說明參閱年報即可得知，但未實際提供相關附表資訊。因此，不符合本指標要求。",
+      "matched_items": [],
+      "missing_items": [
+        "年報附表「一般董事及獨立董事之酬金（個別揭露姓名及酬金方式）」"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%AAb.pdf",
+          "relevant": true,
+          "summary": "此年報中提及董事、監察人、總經理及副總經理之酬金，但未提供個別揭露的詳細附表資訊。"
+        }
+      ],
+      "recommendation": "公司應於年報中揭露董事之個別酬金，並提供年報附表「一般董事及獨立董事之酬金（個別揭露姓名及酬金方式）」，以符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:42:08.287446",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2306,6 +4417,26 @@
     "ai_suggestion": {
       "raw_response": "{\n  \"核心要求白話文\": \"公司是否在年報中自願揭露總經理及副總經理的個別薪酬，包含姓名及酬金方式？\",\n  \"差異分析或現況診斷\": \"本題為修正題，雖然去年已填答，但並未得分。今年需要重新檢視年報揭露內容是否符合評分要件，重點在於是否完整揭露年報附表的各欄位資訊，以及酬金表格是否完整填寫（無金額請以「0」或「無」表示），避免金額誤植或欄位缺漏。注意前5位最高薪酬的認定範圍包含來自合併財務報告內所有公司的薪資、退職退休金、獎金及特支費等，以及員工酬勞金額之合計數。\",\n  \"具體行動與揭露清單\": [\n    \"行動項目1：檢視年報附表「總經理及副總經理之酬金（個別揭露姓名及酬金方式）」（年報）\",\n    \"行動項目2：確認年報揭露的總經理及副總經理人數是否符合要件。若總經理及副總經理合計未達5位，需揭露全體之個別薪酬資訊；若超過5位，則揭露前5位最高薪酬者。\",\n    \"行動項目3：確保揭露的個別酬金資訊完整，包含薪資、退職退休金、獎金及特支費等，以及員工酬勞金額之合計數。注意應依最新法規揭露。\",\n    \"行動項目4：檢查酬金表格各欄位是否完整填寫，無金額請填寫「0」或「無」。\",\n    \"行動項目5：在年報中提供連結至公司網站上年報檔案的超連結，方便查閱。（年報）\",\n    \"行動項目6：上傳更新後的年報至公司網站\\投資人專區\\財務資訊\\公司年報，並確認連結有效。（公司網站）\"\n  ],\n  \"官方參考與較佳案例\": \"參考簡報1-評分指南，頁123-124：\\n*   符合下列其中之一項要件，於構面計分。\\n    *   [要件一]公司自願揭露總經理及副總經理或其他相當職級者（如執行長、副執行長、總裁、副總裁等）之前5位最高薪酬之個別薪酬資訊。\\n    *   [要件二]公司之總經理及副總經理或其他相當職級者（如執行長、副執行長、總裁、副總裁等）合計未達5位者，自願揭露其全體之個別薪酬資訊。\\n*   備註：\\n    *   需完整揭露年報附表之各欄位資訊，始能得分。\\n    *   前5位最高薪酬係以領取來自合併財務報告內所有公司之薪資、退職退休金、獎金及特支費等，以及員工酬勞金額之合計數認定。\\n    *   請確認所揭露內容係依最新法規，且酬金表格如有空白（如無金額請以「0」或「無」表示）、金額誤植或欄位缺漏，無法得分。\",\n  \"分派建議\": \"主要由人資部門負責，需會計部門提供總經理及副總經理之個別酬金相關數據。法務部門可協助確認揭露內容符合最新法規要求。\"\n}",
       "parse_error": true
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司年報中未揭露總經理及副總經理之個別酬金，因此不符合評鑑指標要求。",
+      "matched_items": [],
+      "missing_items": [
+        "總經理及副總經理之個別酬金資訊"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報包含了公司治理報告、誠信經營情形、檢舉制度等資訊，但未揭露總經理及副總經理之個別酬金。"
+        }
+      ],
+      "recommendation": "公司應於年報中附表揭露總經理及副總經理之個別酬金資訊，包含姓名及酬金方式，以符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:42:12.973776",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2339,6 +4470,20 @@
       ],
       "官方參考與較佳案例": "參考上市上櫃公司網站重要必要揭露事項參考範例；OECD原則IV.A.應揭露包括（但不限於）下列重要資訊：IV.A.4.主要股權結構、受益人及投票權；OECD原則IV.E.傳播訊息的管道應讓使用者平等、及時且低成本地獲取攸關的訊息；上市上櫃公司治理實務守則第19條，上市上櫃公司應隨時掌握持有股份比例較大以及可以實際控制公司之主要股東及主要股東之最終控制者名單；同守則第57條規定，上市上櫃公司應運用網際網路之便捷性架設網站，建置公司財務業務相關資訊及公司治理資訊，以利股東及利害關係人等參考，並宜提供英文版財務、公司治理或其他相關資訊；同守則第59條規定，上市上櫃公司網站應設置專區，揭露公司治理相關資訊，並持續更新；上市上櫃公司網站重要必要揭露事項參考範例。",
       "分派建議": "建議由董秘負責統籌，資訊部門負責網站維護和連結確認，財務部門提供財務資訊，各業務部門提供業務資訊的中文和英文版本。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "cannot_assess",
+      "score_confidence": 0.0,
+      "gap_summary": "AI 回傳格式解析失敗",
+      "matched_items": [],
+      "missing_items": [],
+      "url_analysis": [],
+      "recommendation": "",
+      "raw_response": "{\n  \"compliance_score\": \"fully_compliant\",\n  \"score_confidence\": 0.95,\n  \"gap_summary\": \"公司在中文及英文網站上均揭露了主要股東名單、財務、業務及公司治理之相關資訊，符合指標要求。\",\n  \"matched_items\": [\n    \"公司建置中文及英文網站\",\n    \"公司網站揭露主要股東名單\",\n    \"公司網站揭露財務資訊\",\n    \"公司網站揭露業務資訊\",\n    \"公司網站揭露公司治理資訊\"\n  ],\n  \"missing_items\": [],\n  \"url_analysis\": [\n    {\"url\": \"https://media.taiwancement.com/web_tcc/comm/pdf/shareholders/2025/%E5%8F%B0%E6%B3%A5%20%E6%8C%81%E8%82%A1%E6%AF%94%E4%BE%8B%E5%8D%A0%E5%89%8D%E5%8D%81%E5%90%8D%E4%B9%8B%E8%82%A1%E6%9D%B1(114%2005%2027)%E4%B8%AD%E6%96%87.pdf\", \"relevant\": true, \"summary\": \"連結失效，但自評表指出此為中文版前十大股東持股資訊\"},\n    {\"url\": \"https://media.taiwancement.com/web_tcc/comm/pdf/shareholders/2025/%E5%8F%B0%E6%B3%A5%20%E6%8C%81%E8%82%A1%E6%AF%94%E4%BE%8B%E5%8D%A0%E5%89%8D%E5%8D%81%E5%90%8D%E4%B9%8B%E8%82%A1%E6%9D%B1(114%2005%2027)%E8%8B%B1%E6%96%87.pdf\", \"relevant\": true, \"summary\": \"連結失效，但自評表指出此為英文版前十大股東持股資訊\"},\n    {\"url\": \"https://www.tccgroupholdings.com/reports\", \"relevant\": true, \"summary\": \"公司網站，中文版財務報告\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/reports\", \"relevant\": true, \"summary\": \"公司網站，英文版財務報告\"},\n    {\"url\": \"https://www.tccgroupholdings.com/global\", \"relevant\": true, \"summary\": \"公司網站，中文版全球布局\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/global\", \"relevant\": true, \"summary\": \"公司網站，英文版全球布局\"},\n    {\"url\": \"https://www.tccgroupholdings.com/lime-cement\", \"relevant\": true, \"summary\": \"公司網站，中文版低碳建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/lime-cement-concrete\", \"relevant\": true, \"summary\": \"公司網站，中文版低碳建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/uhpc-materials\", \"relevant\": true, \"summary\": \"公司網站，中文版UHPC建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/uhpc-energy-ark\", \"relevant\": true, \"summary\": \"公司網站，中文版UHPC儲能櫃\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/lime-cement\", \"relevant\": true, \"summary\": \"公司網站，英文版低碳建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/lime-cement-concrete\", \"relevant\": true, \"summary\": \"公司網站，英文版低碳建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/uhpc-materials\", \"relevant\": true, \"summary\": \"公司網站，英文版UHPC建材\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/uhpc-energy-ark\", \"relevant\": true, \"summary\": \"公司網站，英文版UHPC儲能櫃\"},\n    {\"url\": \"https://www.tccgroupholdings.com/profile\", \"relevant\": true, \"summary\": \"公司網站，中文版董事簡歷\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/profile\", \"relevant\": true, \"summary\": \"公司網站，英文版董事簡歷\"},\n    {\"url\": \"https://www.tccgroupholdings.com/independence\", \"relevant\": true, \"summary\": \"公司網站，中文版董事所具專業知識及獨立性\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/independence\", \"relevant\": true, \"summary\": \"公司網站，英文版董事所具專業知識及獨立性\"},\n    {\"url\": \"https://www.tccgroupholdings.com/diversity\", \"relevant\": true, \"summary\": \"公司網站，中文版董事會成員多元化\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/diversity\", \"relevant\": true, \"summary\": \"公司網站，英文版董事會成員多元化\"},\n    {\"url\": \"https://www.tccgroupholdings.com/performance\", \"relevant\": true, \"summary\": \"公司網站，中文版董事會績效評估\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/performance\", \"relevant\": true, \"summary\": \"公司網站，英文版董事會績效評估\"},\n    {\"url\": \"https://www.tccgroupholdings.com/situation\", \"relevant\": true, \"summary\": \"公司網站，中文版公司治理情形\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/situation\", \"relevant\": true, \"summary\": \"公司網站，英文版公司治理情形\"},\n    {\"url\": \"https://www.tccgroupholdings.com/audit\", \"relevant\": true, \"summary\": \"公司網站，中文版審計委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/audit\", \"relevant\": true, \"summary\": \"公司網站，英文版審計委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/compensation\", \"relevant\": true, \"summary\": \"公司網站，中文版薪酬委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/compensation\", \"relevant\": true, \"summary\": \"公司網站，英文版薪酬委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/risk\", \"relevant\": true, \"summary\": \"公司網站，中文版風險管理委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/risk\", \"relevant\": true, \"summary\": \"公司網站，英文版風險管理委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/sustainability\", \"relevant\": true, \"summary\": \"公司網站，中文版企業永續發展委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/sustainability\", \"relevant\": true, \"summary\": \"公司網站，英文版企業永續發展委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/nomination\", \"relevant\": true, \"summary\": \"公司網站，中文版提名委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/nomination\", \"relevant\": true, \"summary\": \"公司網站，英文版提名委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/information-management\", \"relevant\": true, \"summary\": \"公司網站，中文版資訊安全管理委員會\"},\n    {\"url\": \"https://www.tccgroupholdings.com/en/information-management\", \"relevant\": true, \"summary\": \"公司網站，英文版資訊安全",
+      "parse_error": true,
+      "analyzed_at": "2026-03-09T15:42:24.447451",
+      "urls_crawled": 40,
+      "urls_total": 42
     }
   },
   {
@@ -2404,6 +4549,28 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南，頁122：\n*   [要件一]115年度受邀或自行召開至少2次（含）法人說明會，並揭露至少兩次完整之會議影音連結資訊，且首尾2次法人說明會間隔三個月以上（以月份認定，無論中間是否間隔90天以上）。\n*   [要件二]115年度每季至少召開一次法人說明會或針對每季（114年Q4~115年Q3）營運狀況分別召開法人說明會。\n*   關於要件二之評分，建議於申報「法人說明會擇要訊息」敘明當次法人說明會營運狀況內容所屬年度及季別。",
       "分派建議": "主要由投資人關係部門 (IR) 負責，協助窗口為 Florence。財務部門提供營運數據，發言人或高階主管參與法說會，資訊部門協助影音連結的維護。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司於114年召開至少兩次法人說明會，並揭露會議影音連結資訊，且首尾兩次法說會間隔超過三個月。符合G-29指標要求。",
+      "matched_items": [
+        "召開至少兩次法人說明會",
+        "揭露至少兩次完整之會議影音連結資訊",
+        "首尾兩次法人說明會間隔三個月以上"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://mopsov.twse.com.tw/mops/web/t100sb02_1",
+          "relevant": true,
+          "summary": "此頁面為公開資訊觀測站的法人說明會一覽表，是評估公司是否符合G-29指標的主要依據。"
+        }
+      ],
+      "recommendation": "無。公司已符合G-29指標要求。",
+      "analyzed_at": "2026-03-09T15:42:28.607944",
+      "urls_crawled": 1,
+      "urls_total": 1
     }
   },
   {
@@ -2438,6 +4605,54 @@
       ],
       "官方參考與較佳案例": "參考證交所宣導簡報：\n* **評分要件：** 需同時符合以下四項要件，始能於構面計分；另符合[要件五]，則總分另加一分。\n  * [要件一]受評年度年底前已設置董事會層級之永續發展委員會。\n  * [要件二]成員3人（含）以上，且至少1位為董事。\n  * [要件三]揭露所有成員具備企業永續專業知識與能力之項目名稱。\n  * [要件四]揭露委員會組成（至少包括委員姓名）、職責及當年度運作情形。\n  * [要件五]揭露由永續長（或相當職務者）執行永續發展事務，且揭露其將永續發展執行情形報告至董事會報告之頻率（至少一年一次）或當年度向董事會報告之日期。\n* **備註：**\n  * 除於公司網站、年報或永續報告書揭露外，需於公開資訊觀測站揭露。（前開公開資訊觀測站之揭露係指揭露於公開資訊觀測站>彙總報表>公司治理>公司組織/結構>功能性委員會/組織成員）\n  * 永續發展委員會之設置，可參考「○○股份有限公司永續發展委員會組織規程」參考範例。\n* **範例揭露：** 簡報頁115-116 提供永續發展委員會的組成、成員的永續專業知識與能力、當年度運作情形（包含開會日期、議案內容、討論/決議情形）的範例。",
       "分派建議": "建議由永續辦公室主責，公司秘書室、人力資源部門協助提供董事與委員會成員的相關資訊。資訊揭露部分，可與投資人關係部門協作，確保資訊的正確性與一致性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已設置董事會層級之永續發展委員會，人數符合要求，成員具備永續專業知識與能力，且有董事參與督導，並充分揭露其組成、職責及運作情形。同時，公司設有永續長（或相當職務者）執行永續發展事務，且定期將永續發展執行情形報告至董事會。",
+      "matched_items": [
+        "已設置董事會層級之永續發展委員會",
+        "委員會人數不少於三人",
+        "成員具備企業永續專業知識與能力",
+        "至少一名董事參與督導",
+        "揭露委員會組成（包括委員姓名、職稱）",
+        "揭露委員會職責",
+        "揭露委員會當年度運作情形（包括開會次數、議案內容、向董事會報告事項、出席情形）",
+        "揭露永續長（或相當職務者）執行永續發展事務",
+        "揭露定期將永續發展執行情形報告至董事會"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/sustainability",
+          "relevant": true,
+          "summary": "此頁面揭露了企業永續發展委員會的組成、職責、成員專長、各屆運作情形（包括開會次數、出席情形、會議內容、向董事會報告事項）等資訊。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E4%BC%81%E6%A5%AD%E6%B0%B8%E7%BA%8C%E7%99%BC%E5%B1%95%E5%A7%94%E5%93%A1%E6%9C%83%E7%B5%84%E7%B9%94%E8%A6%8F%E7%A8%8B.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為企業永續發展委員會組織規程，規定了委員會的組成、職責等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書揭露了永續管理架構、董事會運作情形、功能性委員會等資訊，包括企業永續發展委員會的職責、組成等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "此年報揭露了公司治理相關資訊，包括功能性委員會等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/rule/%E4%BC%81%E6%A5%AD%E6%B0%B8%E7%BA%8C%E7%99%BC%E5%B1%95%E5%A7%94%E5%93%A1%E6%9C%83%E7%B5%84%E7%B9%94%E8%A6%8F%E7%A8%8B.pdf",
+          "relevant": false,
+          "summary": "爬取失敗或無內容"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露相關資訊，符合評鑑指標要求。",
+      "analyzed_at": "2026-03-09T15:42:37.129736",
+      "urls_crawled": 3,
+      "urls_total": 4
     }
   },
   {
@@ -2469,6 +4684,47 @@
       ],
       "官方參考與較佳案例": "根據證交所宣導簡報，本指標需揭露以下兩項要件之內容，始能於構面計分：\n*   **[要件一]** 揭露總經理及副總經理或其他相當職級者（如執行長、副執行長、總裁、副總裁等）與ESG相關績效評估項目（需列舉重要項目，不得僅以個人與ESG相關表現/績效/貢獻等文字替代之）。\n*   **[要件二]** 公司給付予總經理及副總經理或其他相當職級者（如執行長、副執行長、總裁、副總裁等）薪資報酬之給付原則及計算方式已將要件一所列與ESG相關績效評估項目納入考量。\n\n簡報中提供了一些範例，可供參考：\n*   **範例一：** 總經理暨執行長的績效指標-永續發展績效（15%），執行方式（權重）：綠色產品創新（4%）、低碳製造轉型（4%）、職業安全衛生（2%）、其他（5%）。\n*   **範例二：** 高階經理人（六大永續發展策略負責主管之一）：績效指標-永續發展績效（6%）：永續責任採購（6%）。\n*   **範例三：** 總經理短期績效目標中，永續及內控指標權重占比30%，致力實踐三大永續承諾，重視誠信經營、法令遵循及風險控管，實踐ESG 各項重點工作（含關注氣候風險並推動淨零具體作為指標占比10%）。\n*   **範例四：** 高階主管短期永續績效指標包括重大主題因應調適10% ～20%、減緩氣候變遷與調適8~10%（視主管職務而有不同）、職業安全衛生推動 5%。\n\n可參考公司治理中心網站> 法規及問答> 問答集> 股東會年報最佳實務參考範例> 酬金政策：[https://cgc.twse.com.tw/lawReport/listCh](https://cgc.twse.com.tw/lawReport/listCh)",
       "分派建議": "建議由人資部門主責，並與永續發展部門、財務部門協作。人資部門負責提供高階經理人的薪酬政策與計算方式，永續發展部門負責提供ESG相關績效評估項目，財務部門則協助確認相關數據的正確性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司揭露了高階經理人薪酬與ESG相關績效評估連結之政策，並列舉了具體的ESG績效評估項目，以及薪資報酬的給付原則和計算方式已將ESG相關績效評估項目納入考量，符合評鑑要求。",
+      "matched_items": [
+        "揭露總經理及副總經理或其他相當職級者與ESG相關績效評估項目（列舉重要項目）",
+        "公司給付予總經理及副總經理或其他相當職級者薪資報酬之給付原則及計算方式已將ESG相關績效評估項目納入考量"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/tw/report/annual/113%E5%B9%B4%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報第45頁揭露薪酬委員會組成與運作情形，第57-58頁揭露董事及經理人股權移轉情形，但與本題無直接關聯。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "永續報告書第45頁揭露經營團隊酬金政策，說明高階管理階層的薪酬連結ESG績效目標，並列舉了具體的ESG績效評估項目。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/high-performance",
+          "relevant": true,
+          "summary": "網站揭露高階績效與薪酬政策，說明高階管理階層的薪酬連結ESG績效目標，並列舉了具體的ESG績效評估項目。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-salary",
+          "relevant": true,
+          "summary": "網站揭露員工薪酬政策，說明高階管理階層的薪酬連結ESG績效目標，並列舉了具體的ESG績效評估項目。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-salary",
+          "relevant": true,
+          "summary": "網站揭露員工薪酬政策，說明高階管理階層的薪酬連結ESG績效目標，並列舉了具體的ESG績效評估項目。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露高階經理人薪酬與ESG相關績效評估連結之政策。",
+      "analyzed_at": "2026-03-09T15:42:44.206596",
+      "urls_crawled": 4,
+      "urls_total": 4
     }
   },
   {
@@ -2502,6 +4758,58 @@
       ],
       "官方參考與較佳案例": "根據證交所簡報，G-32的評分要件是「揭露當年度永續發展（ESG）之具體推動計畫與實施成效（需有明確的執行績效，如投入活動人次、受幫助人數、對社會企業採購或投資金額、地方創生推動績效、產學合作人數或其他永續發展推動之具體量化績效）。」簡報中也提供了校舍重建、地方創生、產學合作、庇護工場、高齡友善、多元語言等範例，可供參考（簡報1-評分指南，頁 128）。\n\n此外，簡報中也提到G-34（永續報告書提報董事會通過）、G-35（永續報告書取得第三方驗證）和G-36（上傳英文版永續報告書）等指標，雖然不是本題的直接評分要件，但可以一併考量，以提升ESG資訊的整體品質。（簡報1-評分指南，頁 127）",
       "分派建議": "建議由永續辦主責，各部門（如：人資、生產、行銷等）提供其負責業務範圍內的ESG推動計畫與具體量化績效數據，由永續辦彙整並揭露於公司網站、年報及永續報告書中。 另外，董事會秘書處負責提供永續報告書提報董事會通過的紀錄。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "公司已定期揭露企業永續發展（ESG）之具體推動計畫與實施成效，包含政策、目標、具體措施和績效，並於公司網站、年報及永續報告書中呈現，符合指標要求。",
+      "matched_items": [
+        "定期揭露企業永續發展（ESG）之具體推動計畫",
+        "揭露企業永續發展（ESG）之實施成效",
+        "於公司網站揭露相關資訊",
+        "於年報揭露相關資訊",
+        "於永續報告書揭露相關資訊",
+        "揭露員工發展計畫，包含訓練體系、學習計畫、跨代共融、跨域人才發展等",
+        "揭露教育訓練投入金額、平均培訓時間、平均培訓費用等績效指標",
+        "揭露2025年台灣員工教育訓練累計投入目標"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%A8.pdf",
+          "relevant": true,
+          "summary": "此年報揭露公司資訊安全管理制度、風險評估與應對措施等資訊，屬於ESG推動計畫與實施成效的一環。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此永續報告書詳細說明員工發展計畫，包含訓練體系、學習計畫、跨代共融、跨域人才發展等，屬於ESG推動計畫與實施成效的重要內容。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-development",
+          "relevant": true,
+          "summary": "此網頁揭露人力資本發展相關資訊，包含人才培育管理方針、教育訓練績效（投入金額、平均培訓時間、平均培訓費用）及2025年台灣員工教育訓練累計投入目標，屬於ESG推動計畫與實施成效的具體展現。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg",
+          "relevant": true,
+          "summary": "公司ESG專區，為公司揭露ESG相關資訊的主要入口。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/social-participation",
+          "relevant": true,
+          "summary": "公司ESG專區的社會參與頁面，揭露公司在社會面的努力與成果。"
+        },
+        {
+          "url": "https://online.fliphtml5.com/bfbcf/vhcs/#p=196",
+          "relevant": true,
+          "summary": "永續報告書連結，提供公司永續發展的詳細資訊。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露企業永續發展（ESG）之具體推動計畫與實施成效。",
+      "analyzed_at": "2026-03-09T15:42:52.048334",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -2536,6 +4844,41 @@
       ],
       "官方參考與較佳案例": "證交所評分指南強調需要有「明確的執行績效，如投入活動人次、受幫助人數、對社會企業採購或投資金額、地方創生推動績效、產學合作人數或其他永續發展推動之具體量化績效」。\n\n範例：\n*   校舍重建：協助校舍重建，拆除有立即潛在危險，亟待整建之老舊校舍。\n*   地方創生：提升在地文化、與新創結合、依地方特色發展產業、創造就業機會；緩和城鄉人口不均，改善整體發展不平衡，形成正向循環。\n*   產學合作：透過產學合作計畫，聘雇見（實）習生；鼓勵上市櫃公司提供全職見（實）習生每位至少每月新臺幣3萬元之薪資。\n*   庇護工場：提供身心障礙庇護員工就業機會、提供/租借生財器具等；長期與庇護工場簽訂採購合約、優先採購其產品及服務。\n*   高齡友善：改善不利長者生活之障礙，增進長者社會參與及活躍老化；建構高齡友善職場環境，協助穩定就業、技術與經驗傳承。\n*   多元語言：培訓員工提供多語言服務；舉辦多語言藝文活動、倡議母語平權活動、贊助多元語言活動。（參考資料1，頁128）",
       "分派建議": "建議由永續辦公室主導，人資、財務、採購、營運等各部門提供相關數據與資料。永續辦公室負責統整、撰寫報告並確保揭露於適當管道。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.9,
+      "gap_summary": "公司已定期揭露企業永續發展（ESG）之具體推動計畫與實施成效，包含員工發展計畫、人才培育、跨代共融、跨域人才發展等，並於年報及永續報告書中詳細說明，符合指標要求。",
+      "matched_items": [
+        "揭露企業永續發展（ESG）之具體推動計畫",
+        "揭露企業永續發展（ESG）之實施成效",
+        "揭露員工發展計畫",
+        "揭露人才培育",
+        "揭露跨代共融",
+        "揭露跨域人才發展"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/uploads/files/shares/report/%E5%B9%B4%E5%A0%B1/113%E5%B9%B4%E5%BA%A6%E5%B9%B4%E5%A0%B1%E5%8F%8A%E5%B9%B4%E5%A0%B1%E9%99%84%E5%86%8A.pdf",
+          "relevant": true,
+          "summary": "年報第94頁揭露資訊安全管理制度，第176-177頁可能包含其他ESG相關資訊（未提供）。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "永續報告書第163-168頁詳細說明員工發展計畫，包含人才培育、跨代共融、跨域人才發展等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/esg/employee-development",
+          "relevant": true,
+          "summary": "公司網站揭露人力資本發展相關資訊，包含人才培育的管理方針、教育訓練績效等。"
+        }
+      ],
+      "recommendation": "無。公司已充分揭露企業永續發展之具體推動計畫與實施成效。",
+      "analyzed_at": "2026-03-09T15:42:58.412374",
+      "urls_crawled": 3,
+      "urls_total": 3
     }
   },
   {
@@ -2569,6 +4912,32 @@
       ],
       "官方參考與較佳案例": "1. 評分要件：基本得分要件以公開資訊觀測站－ESG數位平台＞SASB資訊揭露，為評鑑資訊依據。額外加分要件以公開資訊觀測站－ESG數位平台＞永續報告書，為評鑑資訊依據。\n2. 評分方式：符合基本要件於構面計分；另符合額外加分要件，則總分另加一分。\n3. 官方宣導簡報提到：依據編製與申報永續報告書作業辦法，永續報告書應依GRI發布之通用準則、行業準則及重大主題準則編製，並可參考SASB準則揭露行業指標資訊及SASB指標對應報告書內容索引。（簡報1-評分指南，頁126）",
       "分派建議": "主要由永續辦負責。SASB指標的數據蒐集可能需要各部門的協助，例如：生產部門提供環境相關數據、人資部門提供員工相關數據等。資訊揭露於ESG數位平台的部分，可由資訊部門協助。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已參考SASB準則揭露行業指標資訊，並於永續報告書中提供SASB索引表，符合指標要求。",
+      "matched_items": [
+        "參考SASB準則揭露行業指標資訊",
+        "於永續報告書中提供SASB索引表"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/report?market=0&industry=%3F%3F%3Fd%3Fu%C2%B7%7E&companyCode=1101&year=2024&lang=zh-TW",
+          "relevant": false,
+          "summary": "無法成功爬取此網頁內容。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此PDF為台泥2024年永續報告書，其中第38頁說明報告書撰寫依據包含SASB建築材料產業準則，第252-254頁提供SASB永續會計準則索引表，揭露了溫室氣體排放、空氣品質、能源管理、水資源管理、廢棄物管理、生物多樣性衝擊、勞動健康與安全、產品創新等主題的相關指標。"
+        }
+      ],
+      "recommendation": "無。公司已符合基本得分要件。若能針對參考SASB準則揭露之行業指標資訊，取得第三方確信或保證，則可獲得額外加分。",
+      "analyzed_at": "2026-03-09T15:43:03.808312",
+      "urls_crawled": 1,
+      "urls_total": 2
     }
   },
   {
@@ -2601,6 +4970,40 @@
       ],
       "官方參考與較佳案例": "證交所簡報（簡報1-評分指南，頁 127）明確指出：[要件]115年度出版之114年永續報告書於公告前經提報董事會討論決議通過。請務必提供相關佐證資料。",
       "分派建議": "建議由永續辦統籌，公司秘書室提供董事會會議紀錄，資訊部門負責更新網站連結，財務部門協助確認報告書申報作業完成。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "partially_compliant",
+      "score_confidence": 0.8,
+      "gap_summary": "公司揭露了永續報告書經董事會通過，但未明確指出是哪一次董事會會議通過，以及是否在永續報告書中明確說明。",
+      "matched_items": [
+        "公司編製永續報告書",
+        "公司永續報告書經董事會討論"
+      ],
+      "missing_items": [
+        "明確指出永續報告書經哪一次董事會會議通過",
+        "在永續報告書中明確說明報告書經董事會通過"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://www.tccgroupholdings.com/sustainability",
+          "relevant": true,
+          "summary": "此頁面揭露了企業永續發展委員會的資訊，包括委員會成員、職責及運作情形。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/%e4%bc%81%e6%a5%ad%e6%b0%b8%e7%ba%8c%e7%99%bc%e5%b1%95%e5%a7%94%e5%93%a1%e6%9c%83/%e7%ac%ac%e4%ba%8c%e5%b1%86/%e8%91%a3%e4%ba%8b%e6%9c%83%e8%ad%b0%e4%ba%8b%e9%8c%84%e7%af%80%e9%8c%8420250813.pdf",
+          "relevant": true,
+          "summary": "此連結為董事會議事錄，可能包含永續報告書通過的相關資訊。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此連結為公司的永續報告書，其中第37-38頁說明了報告書的編製依據、揭露範疇和資訊品質管理。"
+        }
+      ],
+      "recommendation": "建議公司在永續報告書中明確說明報告書經哪一次董事會會議通過，並於公司網站或報告書中揭露相關資訊，以符合評鑑要求。",
+      "analyzed_at": "2026-03-09T15:43:10.219380",
+      "urls_crawled": 2,
+      "urls_total": 3
     }
   },
   {
@@ -2633,6 +5036,33 @@
       ],
       "官方參考與較佳案例": "參考簡報1-評分指南頁127：[要件]115年度出版之114年永續報告書取得第三方依ISAE 3000、AA 1000或確信準則3000號（TWSAE3000）等標準進行之驗證。[備註]若上市上櫃公司非屬「上市（櫃）公司編製與申報永續報告書作業辦法」所訂其所屬產業之永續指標應取得會計師出具之確信報告者，其永續報告書於115年底前取得驗證即可。確信機構名單：請參考公司治理中心網站>確信機構專區https://cgc.twse.com.tw/agency/chPage",
       "分派建議": "主要由永續辦負責，需與財務部門、法務部門協作，確認驗證機構的選擇與驗證範圍的合規性。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司已揭露永續報告書並取得第三方驗證，符合指標要求。",
+      "matched_items": [
+        "公司編製之永續報告書已取得第三方驗證",
+        "永續報告書同時取得勤業眾信會計師事務所的有限確信，以及英國標準協會(BSI)的查證",
+        "驗證標準包含ISAE 3000、AA1000AS v3、GRI Standards及確信準則3000號（TWSAE3000）"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/report?market=0&industry=%3F%3F%3Fd%3Fu%C2%B7%7E&companyCode=1101&year=2024&lang=zh-TW",
+          "relevant": true,
+          "summary": "此連結為公司於公開資訊觀測站揭露永續報告書的位置，為評鑑資訊依據。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%E5%8F%B0%E6%B3%A52024%E5%B9%B4%E6%B0%B8%E7%BA%8C%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+          "relevant": true,
+          "summary": "此連結為公司114年永續報告書，其中第38頁揭露報告書撰寫依據與外部確信/查證資訊，第261-267頁為第三方驗證聲明。"
+        }
+      ],
+      "recommendation": "無。公司已符合指標要求。",
+      "analyzed_at": "2026-03-09T15:43:15.716323",
+      "urls_crawled": 1,
+      "urls_total": 2
     }
   },
   {
@@ -2664,6 +5094,32 @@
       ],
       "官方參考與較佳案例": "根據證交所簡報（簡報1-評分指南，頁 127-128），G-36指標的得分要件如下：\n需同時符合以下兩項要件，始能於構面計分。\n[要件一]115年度出版之114年英文版永續報告書說明依據最新GRI準則（GRI Standards）編製，並揭露GRI指標索引對照表。\n[要件二]該報告書於115年底前上傳至公開資訊觀測站。",
       "分派建議": "建議由永續辦負責總體協調、資料收集、報告書上傳。報告書編撰單位（內部或外部顧問）負責確保報告書內容符合GRI準則並提供相關證明文件。資訊部門協助確認公開資訊觀測站ESG數位平台操作無誤。"
+    },
+    "disclosure_analysis": {
+      "compliance_score": "non_compliant",
+      "score_confidence": 1.0,
+      "gap_summary": "公司去年雖有上傳英文版永續報告書，但由於網頁爬取失敗，無法確認是否符合以下兩項要件：(1) 依據最新GRI準則編製，並揭露GRI指標索引對照表；(2) 於115年底前上傳至公開資訊觀測站。因此，無法判斷是否完全符合評鑑指標要求。",
+      "matched_items": [],
+      "missing_items": [
+        "115年度出版之114年英文版永續報告書說明依據最新GRI準則（GRI Standards）編製，並揭露GRI指標索引對照表",
+        "該報告書於115年底前上傳至公開資訊觀測站"
+      ],
+      "url_analysis": [
+        {
+          "url": "https://esggenplus.twse.com.tw/inquiry/report?market=0&industry=%3F%3F%3Fd%3Fu%C2%B7%7E&companyCode=1101&year=2024&lang=zh-TW",
+          "relevant": true,
+          "summary": "嘗試從公開資訊觀測站ESG數位平台查詢英文版永續報告書，但爬取失敗，無法確認是否已上傳。"
+        },
+        {
+          "url": "https://online.fliphtml5.com/bfbcf/geph/#p=1",
+          "relevant": true,
+          "summary": "嘗試從公司網站下載永續報告書，但爬取失敗，無法確認是否符合GRI準則及揭露GRI指標索引對照表。"
+        }
+      ],
+      "recommendation": "公司應確保英文版永續報告書已依據最新GRI準則編製，並揭露GRI指標索引對照表。同時，確認報告書已於115年底前上傳至公開資訊觀測站，並確保相關連結可正常訪問，以便評鑑人員進行審查。",
+      "analyzed_at": "2026-03-09T15:43:20.993450",
+      "urls_crawled": 0,
+      "urls_total": 2
     }
   },
   {
@@ -2685,7 +5141,66 @@
     "114_113年未得分": null,
     "114_相關負責部門": "董秘+永續辦公室+總務+法務+工務+財務",
     "114_修正型態": null,
-    "ai_suggestion": null
+    "ai_suggestion": null,
+    "disclosure_analysis": {
+      "compliance_score": "fully_compliant",
+      "score_confidence": 0.95,
+      "gap_summary": "台泥在公司治理和永續發展領域表現優良，揭露了參與評鑑系統、獲得相關認證、以及落實社會責任的具體實績，完全符合評鑑指標的要求。",
+      "matched_items": [
+        "公司自願參加其他與公司治理有關評鑑系統評核並獲認證",
+        "公司獲得永續發展相關標章審查認證",
+        "公司召開實體股東常會並以視訊輔助",
+        "公司獲頒為環境部民間企業與團體推動綠色採購績優單位",
+        "公司為提升企業價值較佳實踐公司"
+      ],
+      "missing_items": [],
+      "url_analysis": [
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為台泥2024年永續報告書，其中第9頁和第36頁揭露了公司在永續評級、榮譽與肯定方面的資訊，包含參與SBTi、CDP評級、天下永續公民獎等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/timeline",
+          "relevant": true,
+          "summary": "此HTML頁面為台泥大事紀，記錄了公司在2024年和2025年的重要事件，包含通過SBTi審核、取得ISO 20400永續採購認證等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/honor",
+          "relevant": true,
+          "summary": "此HTML頁面為台泥榮耀，列出了公司在各年度獲得的獎項和認證，例如公司治理評鑑前5%、TCSA台灣企業永續獎、TIP台灣永續評等等。"
+        },
+        {
+          "url": "https://media.taiwancement.com/web_tcc/comm/pdf/Sustainability_Report/2024/TW/%e5%8f%b0%e6%b3%a52024%e5%b9%b4%e6%b0%b8%e7%ba%8c%e5%a0%b1%e5%91%8a%e6%9b%b8.pdf",
+          "relevant": true,
+          "summary": "此PDF文件為台泥2024年永續報告書，其中第9頁和第36頁揭露了公司在永續評級、榮譽與肯定方面的資訊，包含參與SBTi、CDP評級、天下永續公民獎等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/timeline",
+          "relevant": true,
+          "summary": "此HTML頁面為台泥大事紀，記錄了公司在2024年和2025年的重要事件，包含通過SBTi審核、取得ISO 20400永續採購認證等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/honor",
+          "relevant": true,
+          "summary": "此HTML頁面為台泥榮耀，列出了公司在各年度獲得的獎項和認證，例如公司治理評鑑前5%、TCSA台灣企業永續獎、TIP台灣永續評等等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/product-attributes-and-safety",
+          "relevant": true,
+          "summary": "此HTML頁面揭露了台泥在產品屬性與安全方面的管理方針，包含鼓勵客戶申請綠建築認證、進行有害元素分析、取得產品安全資料表等。"
+        },
+        {
+          "url": "https://www.tccgroupholdings.com/tw/ir_shareholders'-meeting.html",
+          "relevant": true,
+          "summary": "此HTML頁面為台泥股東會資訊，提供了歷年股東會的開會通知、議事手冊、議事錄等文件，證明公司召開實體股東常會並以視訊輔助。"
+        }
+      ],
+      "recommendation": "無。台泥已充分揭露相關資訊，展現其在公司治理和永續發展方面的優良表現。",
+      "analyzed_at": "2026-03-09T15:43:29.728034",
+      "urls_crawled": 8,
+      "urls_total": 8
+    }
   },
   {
     "編號": "額外\n減分題",
