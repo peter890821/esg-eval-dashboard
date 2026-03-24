@@ -10,7 +10,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app">
+  <!-- Login Overlay -->
+  <div class="login-overlay" id="loginOverlay">
+    <div class="login-card">
+      <div class="login-logo">
+        <span class="login-logo-icon">ESG</span>
+        <h1>115 年度 ESG 評鑑看板</h1>
+        <p>第一屆證交所ESG評鑑 | 台泥企業團</p>
+      </div>
+      <div class="login-form">
+        <div class="login-field">
+          <label>部門 <span class="required">*</span></label>
+          <select id="loginDept" class="login-input">
+            <option value="">請選擇部門...</option>
+          </select>
+        </div>
+        <div class="login-field">
+          <label>姓名 <span class="required">*</span></label>
+          <input type="text" id="loginName" class="login-input" placeholder="請輸入姓名">
+        </div>
+        <div class="login-field">
+          <label>Gemini API Key <span class="login-optional">(選填，啟用 AI 檢核)</span></label>
+          <input type="password" id="loginApiKey" class="login-input" placeholder="AIza...">
+          <div class="login-hint">Key 僅儲存在您的瀏覽器中，不會上傳至任何伺服器</div>
+        </div>
+        <button class="login-btn" id="loginBtn" onclick="handleLogin()">進入看板</button>
+        <div class="login-error hidden" id="loginError"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
     <!-- Header -->
     <header class="header">
       <div class="header-left">
@@ -24,6 +54,7 @@
       </div>
       <div class="header-right">
         <div class="stats" id="stats"></div>
+        <div class="user-info" id="userInfo"></div>
         <button class="btn btn-export" id="btnExport" title="匯出 Excel">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           匯出
@@ -39,6 +70,7 @@
           <button class="btn btn-view" data-view="table" id="btnTable">表格</button>
         </div>
         <div class="filter-group">
+          <!-- V2 面板 -->
           <select id="filterFace" class="filter-select">
             <option value="">全部構面</option>
             <option value="E">環境面 (E)</option>
@@ -47,8 +79,9 @@
           </select>
           <select id="filterStatus" class="filter-select">
             <option value="">全部狀態</option>
-            <option value="New_2026">新增指標</option>
-            <option value="Modified_2026">修正指標</option>
+            <option value="新增">新增指標</option>
+            <option value="修正">修正指標</option>
+            <option value="無改變">無改變</option>
           </select>
           <select id="filterCompliance" class="filter-select">
             <option value="">全部合規度</option>
@@ -56,11 +89,18 @@
             <option value="fully_compliant">🟢 完全符合</option>
             <option value="cannot_assess">⚪ 無法評估</option>
           </select>
+          <!-- Additional V2 Filter -->
           <select id="filterPlatform" class="filter-select">
             <option value="">全部揭露平台</option>
           </select>
           <select id="filterDept" class="filter-select">
             <option value="">全部部門</option>
+          </select>
+          <select id="filterFilled" class="filter-select">
+            <option value="">全部填答狀態</option>
+            <option value="filled">✅ 已填答</option>
+            <option value="draft">📝 有草稿</option>
+            <option value="empty">⬜ 未填答</option>
           </select>
         </div>
       </div>
@@ -89,6 +129,7 @@
             <th>題型</th>
             <th>114得分</th>
             <th>負責部門</th>
+            <th>填答</th>
             <th>操作</th>
           </tr>
         </thead>
@@ -111,6 +152,7 @@
     </div>
   </div>
 
+  <script src="ai-validator.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,34 +1,115 @@
 /**
- * ESG Kanban Dashboard - Main Application Logic (Updated)
- * ========================================================
- * Updated to support new fields: 指標分類, 狀態標記, 揭露平台,
- * 負責部門列表, 填答建議_簡要, 年度差異說明, compliance_note.
- * Kanban grouped by compliance level. Filters updated.
+ * ESG Kanban Dashboard - Main Application Logic (V2 + Dept Fill-in + AI)
+ * ====================================================================
+ * V2 Features: 指標分類, 揭露平台, 負責部門列表, 填答建議_簡要, 年度差異說明
+ * New Features: Login system, structured fill-in form, AI validation via Gemini,
+ * auto-save drafts, Google Sheets write-back.
  */
 
 // === Config ===
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbxijoVvZzODBf0zQ6libnIhSEP6_DZ9V3dIY1hScHOsWDl3iPnT1KHhSU_BsJrTZjc2/exec';
-const ALLOWED_EMAIL_DOMAIN = 'taiwancement.com';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxijoVvZzODBf0zQ6libnIhSEP_6_DZ9V3dIY1hScHOsWDl3iPnT1KHhSU_BsJrTZjc2/exec';
 
 // === State ===
 let allData = [];
 let filteredData = [];
-let currentView = 'kanban'; // 'kanban' or 'table'
-let currentModalItem = null; // track current item for draft submission
+let currentView = 'kanban';
+let currentModalItem = null;
+let currentUser = { dept: '', name: '', apiKey: '' };
+let submittedIndicators = new Set(); // track submitted indicators
 
 // === Init ===
 document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
+  loadSubmittedState();
+  initLogin();
+});
+
+// === Login ===
+function initLogin() {
+  const saved = localStorage.getItem('esg_login');
+  if (saved) {
+    try { currentUser = JSON.parse(saved); } catch {}
+  }
+
+  // Populate department dropdown from data (using V2 負責部門列表)
+  const depts = new Set();
+  allData.forEach(d => {
+    const deptList = d['負責部門列表'];
+    if (Array.isArray(deptList)) {
+      deptList.forEach(dep => { if (dep) depts.add(dep); });
+    } else {
+      const dept = d['114_相關負責部門'];
+      if (dept) depts.add(dept);
+    }
+  });
+
+  const sel = document.getElementById('loginDept');
+  [...depts].sort((a, b) => a.localeCompare(b, 'zh-TW')).forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d;
+    sel.appendChild(opt);
+  });
+
+  if (currentUser.dept) sel.value = currentUser.dept;
+  if (currentUser.name) document.getElementById('loginName').value = currentUser.name;
+  if (currentUser.apiKey) document.getElementById('loginApiKey').value = currentUser.apiKey;
+
+  if (currentUser.dept && currentUser.name) {
+    enterDashboard();
+  }
+}
+
+function handleLogin() {
+  const dept = document.getElementById('loginDept').value;
+  const name = document.getElementById('loginName').value.trim();
+  const apiKey = document.getElementById('loginApiKey').value.trim();
+  const errEl = document.getElementById('loginError');
+
+  if (!dept) {
+    errEl.textContent = '請選擇部門';
+    errEl.classList.remove('hidden');
+    return;
+  }
+  if (!name) {
+    errEl.textContent = '請輸入姓名';
+    errEl.classList.remove('hidden');
+    return;
+  }
+
+  currentUser = { dept, name, apiKey };
+  localStorage.setItem('esg_login', JSON.stringify(currentUser));
+  enterDashboard();
+}
+
+function enterDashboard() {
+  document.getElementById('loginOverlay').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
+
+  document.getElementById('userInfo').innerHTML = `
+    <span class="user-badge" title="點擊登出" onclick="handleLogout()">
+      👤 ${currentUser.dept} — ${currentUser.name}
+      ${currentUser.apiKey ? ' 🤖' : ''}
+    </span>
+  `;
+
   setupEventListeners();
   applyFilters();
-});
+}
+
+function handleLogout() {
+  if (!confirm('確定要登出嗎？')) return;
+  localStorage.removeItem('esg_login');
+  currentUser = { dept: '', name: '', apiKey: '' };
+  document.getElementById('loginOverlay').classList.remove('hidden');
+  document.getElementById('app').classList.add('hidden');
+}
 
 // === Data Loading ===
 async function loadData() {
   try {
     const ts = Date.now();
     let resp;
-    // Try suggestions_output_fixed.json first, then suggestions_output.json, then data.json
     try {
       resp = await fetch(`suggestions_output_fixed.json?t=${ts}`);
       if (!resp.ok) throw new Error();
@@ -41,44 +122,40 @@ async function loadData() {
       }
     }
     allData = await resp.json();
-
-    // Filter out non-indicator rows (category headers, extra items)
     allData = allData.filter(d => d['編號'] && /^[ESG]-\d+$/.test(d['編號']));
-
+    
     populateDeptFilter();
     populatePlatformFilter();
-    updateStatusFilterOptions();
     renderStats();
   } catch (e) {
     console.error('Failed to load data:', e);
     document.getElementById('kanbanBoard').innerHTML =
-      '<div style="padding:40px;color:#f06565;">Failed to load data. Check console for details.</div>';
+      '<div style="padding:40px;color:#f06565;">Failed to load data. 檢查檔案是否存在。</div>';
   }
 }
 
-// === Filters ===
+function loadSubmittedState() {
+  const saved = localStorage.getItem('esg_submitted');
+  if (saved) {
+    try { submittedIndicators = new Set(JSON.parse(saved)); } catch {}
+  }
+}
 
-/**
- * Populate department filter from 負責部門列表 arrays.
- * Each indicator may have multiple departments; we collect all unique values.
- */
+function saveSubmittedState() {
+  localStorage.setItem('esg_submitted', JSON.stringify([...submittedIndicators]));
+}
+
+// === Filters ===
 function populateDeptFilter() {
   const depts = new Set();
   allData.forEach(d => {
-    const deptList = d['負責部門列表'];
-    if (Array.isArray(deptList)) {
-      deptList.forEach(dep => { if (dep) depts.add(dep); });
-    } else {
-      // Fallback to old field
-      const dept = d['114_相關負責部門'];
-      if (dept) depts.add(dept);
-    }
+    if (Array.isArray(d['負責部門列表'])) {
+      d['負責部門列表'].forEach(dep => { if (dep) depts.add(dep); });
+    } else if (d['114_相關負責部門']) depts.add(d['114_相關負責部門']);
   });
-
   const sel = document.getElementById('filterDept');
-  // Clear existing options except the first "全部部門"
   while (sel.options.length > 1) sel.remove(1);
-  [...depts].sort((a, b) => a.localeCompare(b, 'zh-TW')).forEach(d => {
+  [...depts].sort().forEach(d => {
     const opt = document.createElement('option');
     opt.value = d;
     opt.textContent = d;
@@ -86,13 +163,9 @@ function populateDeptFilter() {
   });
 }
 
-/**
- * Populate the 揭露平台 filter dropdown.
- */
 function populatePlatformFilter() {
   const sel = document.getElementById('filterPlatform');
-  if (!sel) return; // If HTML doesn't have this element yet, skip
-  // Options are static per requirements, but ensure they exist
+  if (!sel) return;
   const staticOptions = ['年報', '永續報告書', '官網', '公開資訊觀測站', 'ESG數位平台', '其他'];
   while (sel.options.length > 1) sel.remove(1);
   staticOptions.forEach(p => {
@@ -103,61 +176,38 @@ function populatePlatformFilter() {
   });
 }
 
-/**
- * Update the filterStatus dropdown to use 指標分類 values.
- */
-function updateStatusFilterOptions() {
-  const sel = document.getElementById('filterStatus');
-  if (!sel) return;
-  // Replace options to match 指標分類 field
-  sel.innerHTML = `
-    <option value="">全部分類</option>
-    <option value="新增">新增指標</option>
-    <option value="修正">修正指標</option>
-    <option value="無改變">無改變</option>
-  `;
-}
-
 function applyFilters() {
   const face = document.getElementById('filterFace').value;
-  const statusFilter = document.getElementById('filterStatus').value; // Now filters on 指標分類
+  const statusFilter = document.getElementById('filterStatus').value; // from 指標分類
   const compliance = document.getElementById('filterCompliance').value;
   const dept = document.getElementById('filterDept').value;
+  const filled = document.getElementById('filterFilled').value;
   const search = document.getElementById('searchInput').value.toLowerCase().trim();
   const platformEl = document.getElementById('filterPlatform');
   const platform = platformEl ? platformEl.value : '';
 
   filteredData = allData.filter(d => {
     if (face && d['構面'] !== face) return false;
-
-    // 指標分類 filter (replaces old 狀態標記 filter)
     if (statusFilter && d['指標分類'] !== statusFilter) return false;
 
-    // Department filter: match against 負責部門列表 array
     if (dept) {
-      const deptList = d['負責部門列表'];
-      if (Array.isArray(deptList)) {
-        if (!deptList.includes(dept)) return false;
+      if (Array.isArray(d['負責部門列表'])) {
+        if (!d['負責部門列表'].includes(dept)) return false;
       } else {
-        // Fallback to old field
         if (d['114_相關負責部門'] !== dept) return false;
       }
     }
 
-    // 揭露平台 filter
     if (platform) {
-      const platforms = d['揭露平台'];
-      if (Array.isArray(platforms)) {
-        if (!platforms.includes(platform)) return false;
+      if (Array.isArray(d['揭露平台'])) {
+        if (!d['揭露平台'].includes(platform)) return false;
       } else {
-        return false; // No platform data, filter out
+        return false;
       }
     }
 
-    // Compliance filter
     if (compliance) {
-      const score = d.disclosure_analysis && d.disclosure_analysis.compliance_score
-        ? d.disclosure_analysis.compliance_score : 'cannot_assess';
+      const score = d.disclosure_analysis?.compliance_score || 'cannot_assess';
       if (compliance === 'low') {
         if (score !== 'partially_compliant' && score !== 'non_compliant') return false;
       } else {
@@ -165,7 +215,15 @@ function applyFilters() {
       }
     }
 
-    // Search
+    if (filled) {
+      const code = d['編號'];
+      const isSubmitted = submittedIndicators.has(code);
+      const hasDraft = !!localStorage.getItem(`esg_draft_${code}`);
+      if (filled === 'filled' && !isSubmitted) return false;
+      if (filled === 'draft' && (!hasDraft || isSubmitted)) return false;
+      if (filled === 'empty' && (isSubmitted || hasDraft)) return false;
+    }
+
     if (search) {
       const haystack = [
         d['編號'], d['評鑑指標'], d['指標說明'],
@@ -186,29 +244,24 @@ function renderStats() {
   const total = filteredData.length;
   const newCount = filteredData.filter(d => d['指標分類'] === '新增').length;
   const modCount = filteredData.filter(d => d['指標分類'] === '修正').length;
-  const unchangedCount = filteredData.filter(d => d['指標分類'] === '無改變').length;
-  const aiCount = filteredData.filter(d => d['ai_suggestion'] && !d['ai_suggestion'].error).length;
+  const filledCount = filteredData.filter(d => submittedIndicators.has(d['編號'])).length;
 
   document.getElementById('stats').innerHTML = `
     <span class="stat-item">
       <span class="stat-count">${total}</span> 指標
     </span>
     <span class="stat-item">
-      <span class="stat-dot" style="background:var(--new-color, #a855f7)"></span>
+      <span class="stat-dot" style="background:var(--new-color)"></span>
       <span class="stat-count">${newCount}</span> 新增
     </span>
     <span class="stat-item">
-      <span class="stat-dot" style="background:var(--mod-color, #06b6d4)"></span>
+      <span class="stat-dot" style="background:var(--mod-color)"></span>
       <span class="stat-count">${modCount}</span> 修正
     </span>
     <span class="stat-item">
-      <span class="stat-dot" style="background:var(--text-muted, #888)"></span>
-      <span class="stat-count">${unchangedCount}</span> 無改變
+      <span class="stat-dot" style="background:var(--score-pass)"></span>
+      <span class="stat-count">${filledCount}</span> 已填答
     </span>
-    ${aiCount > 0 ? `<span class="stat-item">
-      <span class="stat-dot" style="background:var(--accent-purple, #a855f7)"></span>
-      <span class="stat-count">${aiCount}</span> AI建議
-    </span>` : ''}
   `;
 }
 
@@ -218,10 +271,10 @@ function setupEventListeners() {
   document.getElementById('filterStatus').addEventListener('change', applyFilters);
   document.getElementById('filterCompliance').addEventListener('change', applyFilters);
   document.getElementById('filterDept').addEventListener('change', applyFilters);
+  document.getElementById('filterFilled').addEventListener('change', applyFilters);
+  if (document.getElementById('filterPlatform')) document.getElementById('filterPlatform').addEventListener('change', applyFilters);
+  
   document.getElementById('searchInput').addEventListener('input', debounce(applyFilters, 200));
-
-  const platformEl = document.getElementById('filterPlatform');
-  if (platformEl) platformEl.addEventListener('change', applyFilters);
 
   document.getElementById('btnKanban').addEventListener('click', () => switchView('kanban'));
   document.getElementById('btnTable').addEventListener('click', () => switchView('table'));
@@ -235,33 +288,6 @@ function setupEventListeners() {
   });
 
   document.getElementById('btnExport').addEventListener('click', exportCSV);
-
-  // Inject 揭露平台 filter into toolbar if not present in HTML
-  injectPlatformFilter();
-}
-
-/**
- * Dynamically inject the 揭露平台 filter select into the toolbar
- * if the HTML doesn't already include it.
- */
-function injectPlatformFilter() {
-  if (document.getElementById('filterPlatform')) return;
-  const filterGroup = document.querySelector('.filter-group');
-  if (!filterGroup) return;
-
-  const sel = document.createElement('select');
-  sel.id = 'filterPlatform';
-  sel.className = 'filter-select';
-  sel.innerHTML = '<option value="">全部平台</option>';
-  // Insert after filterCompliance or at the end
-  const complianceSel = document.getElementById('filterCompliance');
-  if (complianceSel && complianceSel.nextSibling) {
-    filterGroup.insertBefore(sel, complianceSel.nextSibling);
-  } else {
-    filterGroup.appendChild(sel);
-  }
-  sel.addEventListener('change', applyFilters);
-  populatePlatformFilter();
 }
 
 function switchView(view) {
@@ -275,12 +301,11 @@ function switchView(view) {
   else renderTable();
 }
 
-// === Kanban Rendering (grouped by COMPLIANCE level) ===
+// === Kanban Rendering (V2 behavior: Grouped by Compliance) ===
 function renderKanban() {
   const board = document.getElementById('kanbanBoard');
   board.innerHTML = '';
 
-  // Define compliance columns in order
   const complianceColumns = [
     { key: 'fully_compliant', title: '完全符合', color: '#22c55e' },
     { key: 'partially_compliant', title: '部分符合', color: '#eab308' },
@@ -288,14 +313,12 @@ function renderKanban() {
     { key: 'cannot_assess', title: '無法評估', color: '#9ca3af' }
   ];
 
-  // Group data by compliance level
   const groups = new Map();
   complianceColumns.forEach(c => groups.set(c.key, []));
 
   filteredData.forEach(d => {
     const da = d['disclosure_analysis'];
     let score = (da && da.compliance_score) ? da.compliance_score : 'cannot_assess';
-    // Normalize unknown scores to cannot_assess
     if (!groups.has(score)) score = 'cannot_assess';
     groups.get(score).push(d);
   });
@@ -342,17 +365,13 @@ function createCard(item) {
   const scoreVal = item['114_得分數值'];
   const scoreText = item['114_自評得分'] || '';
   const hasAI = item['ai_suggestion'] && !item['ai_suggestion']?.error && !item['ai_suggestion']?.parse_error;
-  const da = item['disclosure_analysis'];
-  const complianceBadge = da ? getComplianceBadgeHTML(da.compliance_score, 'small') : '';
+  
+  const isSubmitted = submittedIndicators.has(id);
+  const hasDraft = !!localStorage.getItem(`esg_draft_${id}`);
 
-  // Badge based on 指標分類
   let badgeHtml = '';
-  if (category === '新增') {
-    badgeHtml = '<span class="card-badge new">NEW</span>';
-  } else if (category === '修正') {
-    badgeHtml = '<span class="card-badge modified">MOD</span>';
-  }
-  // 無改變: no badge
+  if (category === '新增') badgeHtml = '<span class="card-badge new">NEW</span>';
+  else if (category === '修正') badgeHtml = '<span class="card-badge modified">MOD</span>';
 
   let scoreClass = 'na';
   let scoreDisplay = '--';
@@ -362,24 +381,21 @@ function createCard(item) {
   else if (scoreText) { scoreDisplay = scoreText.substring(0, 6); scoreClass = 'pass'; }
 
   const title = (item['評鑑指標'] || '').replace(/\n/g, ' ').substring(0, 100);
-
-  // Show department(s)
   const deptDisplay = Array.isArray(item['負責部門列表']) && item['負責部門列表'].length > 0
-    ? item['負責部門列表'].join(', ')
-    : (item['114_相關負責部門'] || '');
+    ? item['負責部門列表'].join(', ') : (item['114_相關負責部門'] || '');
 
   card.innerHTML = `
     <div class="card-header">
       <span class="card-id ${faceClass}">${id}</span>
       ${badgeHtml}
-      ${complianceBadge}
+      ${isSubmitted ? '<span class="card-filled-badge">✅</span>' : (hasDraft ? '<span class="card-draft-badge">📝</span>' : '')}
     </div>
     <div class="card-title">${title}</div>
     <div class="card-footer">
       <span class="card-type">${item['題型'] || ''}</span>
       <span class="card-score ${scoreClass}">${isNew ? '(新增)' : scoreDisplay}</span>
     </div>
-    ${deptDisplay ? `<div class="card-dept" style="font-size:11px;color:var(--text-muted, #888);margin-top:4px;">${deptDisplay}</div>` : ''}
+    ${deptDisplay ? `<div class="card-dept" style="font-size:11px;color:var(--text-muted);margin-top:4px;">${deptDisplay}</div>` : ''}
     ${hasAI ? '<div class="card-ai-badge">&#x2728; AI 建議</div>' : ''}
   `;
 
@@ -398,37 +414,37 @@ function renderTable() {
     const category = item['指標分類'] || '無改變';
     const isNew = category === '新增';
     const scoreVal = item['114_得分數值'];
+    
     let scoreBadge = '--';
-    if (isNew) scoreBadge = '<span style="color:var(--new-color, #a855f7)">(新增)</span>';
-    else if (scoreVal === 1) scoreBadge = '<span style="color:var(--score-pass, #22c55e)">1分</span>';
-    else if (scoreVal === 0) scoreBadge = '<span style="color:var(--score-fail, #ef4444)">0分</span>';
+    if (isNew) scoreBadge = '<span style="color:var(--new-color)">(新增)</span>';
+    else if (scoreVal === 1) scoreBadge = '<span style="color:var(--score-pass)">1分</span>';
+    else if (scoreVal === 0) scoreBadge = '<span style="color:var(--score-fail)">0分</span>';
 
     const face = item['構面'] || '';
     const faceLabel = face === 'E' ? '環境' : face === 'S' ? '社會' : face === 'G' ? '治理' : face;
+    const id = item['編號'];
 
-    // Badge
-    let badgeHtml = '';
-    if (category === '新增') {
-      badgeHtml = '<span class="card-badge new" style="font-size:11px">NEW</span>';
-    } else if (category === '修正') {
-      badgeHtml = '<span class="card-badge modified" style="font-size:11px">MOD</span>';
-    } else {
-      badgeHtml = '<span style="font-size:11px;color:var(--text-muted, #888)">--</span>';
-    }
+    let badgeHtml = category === '新增' ? '<span class="card-badge new" style="font-size:11px">NEW</span>' :
+                    category === '修正' ? '<span class="card-badge modified" style="font-size:11px">MOD</span>' :
+                    '<span style="font-size:11px;color:var(--text-muted)">--</span>';
 
-    // Department display
     const deptDisplay = Array.isArray(item['負責部門列表']) && item['負責部門列表'].length > 0
-      ? item['負責部門列表'].join(', ')
-      : (item['114_相關負責部門'] || '<span style="color:var(--text-muted, #888)">待分配</span>');
+      ? item['負責部門列表'].join(', ') : (item['114_相關負責部門'] || '<span style="color:var(--text-muted)">待分配</span>');
+
+    const isSubmitted = submittedIndicators.has(id);
+    const hasDraft = !!localStorage.getItem(`esg_draft_${id}`);
+    const filledBadge = isSubmitted ? '<span class="filled-badge-sm">✅</span>' :
+                        hasDraft ? '<span class="draft-badge-sm">📝</span>' : '<span style="color:var(--text-muted)">—</span>';
 
     tr.innerHTML = `
-      <td><strong>${item['編號'] || ''}</strong></td>
+      <td><strong>${id}</strong></td>
       <td>${badgeHtml}</td>
       <td>${faceLabel}</td>
       <td>${(item['評鑑指標'] || '').replace(/\n/g, ' ')}</td>
       <td>${item['題型'] || ''}</td>
       <td>${scoreBadge}</td>
       <td>${deptDisplay}</td>
+      <td>${filledBadge}</td>
       <td><button class="btn" style="padding:4px 8px;font-size:11px;background:var(--bg-surface);color:var(--text-secondary);">詳細</button></td>
     `;
 
@@ -447,7 +463,6 @@ function openModal(item) {
   const isNew = category === '新增';
   const isMod = category === '修正';
 
-  // Modal badge
   if (isNew) {
     badge.textContent = 'NEW 2026 新增指標';
     badge.className = 'modal-badge new card-badge';
@@ -457,13 +472,12 @@ function openModal(item) {
   } else {
     badge.textContent = '無改變';
     badge.className = 'modal-badge';
-    badge.style.background = 'var(--text-muted, #888)';
+    badge.style.background = 'var(--text-muted)';
     badge.style.color = '#fff';
   }
 
   title.textContent = `${item['編號']} — ${(item['評鑑指標'] || '').replace(/\n/g, ' ')}`;
 
-  // Score info
   const scoreVal = item['114_得分數值'];
   let scoreHtml = '';
   if (!isNew) {
@@ -472,47 +486,38 @@ function openModal(item) {
     else scoreHtml = `<span class="score-badge pass">${item['114_自評得分'] || 'N/A'}</span>`;
   }
 
-  // Department display
   const deptDisplay = Array.isArray(item['負責部門列表']) && item['負責部門列表'].length > 0
-    ? item['負責部門列表'].join(', ')
-    : (item['114_相關負責部門'] || '待分配');
+    ? item['負責部門列表'].join(', ') : (item['114_相關負責部門'] || '待分配');
 
-  // Platform display
   const platformDisplay = Array.isArray(item['揭露平台']) && item['揭露平台'].length > 0
-    ? item['揭露平台'].map(p => `<span style="display:inline-block;background:var(--bg-surface, #f3f4f6);border:1px solid var(--border-color, #e5e7eb);padding:2px 8px;border-radius:12px;font-size:12px;margin:2px;">${p}</span>`).join(' ')
+    ? item['揭露平台'].map(p => `<span style="display:inline-block;background:var(--bg-surface);border:1px solid var(--border-subtle);padding:2px 8px;border-radius:12px;font-size:12px;margin:2px;">${p}</span>`).join(' ')
     : 'N/A';
 
   let html = '';
 
-  // ============================================================
-  // 填答建議 section - FIRST thing departments see (Requirement #1)
-  // ============================================================
+  // V2 specific displays: 填答建議_簡要 & 年度差異說明
   if (item['填答建議_簡要']) {
     html += `
-      <div class="modal-section" style="background:linear-gradient(135deg, #fef3c7, #fde68a); border:2px solid #f59e0b; border-radius:12px; padding:20px; margin-bottom:20px;">
-        <div class="modal-section-title" style="color:#92400e; font-size:16px; font-weight:700; margin-bottom:10px;">
+      <div class="modal-section" style="background:linear-gradient(135deg, rgba(245,158,11,0.1), rgba(253,230,138,0.1)); border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius); padding:20px; margin-bottom:20px;">
+        <div class="modal-section-title" style="color:var(--accent-orange); font-size:15px; font-weight:700; margin-bottom:10px; border-bottom:1px solid rgba(245,158,11,0.2);">
           &#x1F4A1; 填答建議（給負責部門）
         </div>
-        <div style="color:#78350f; font-size:14px; line-height:1.8; white-space:pre-wrap;">${item['填答建議_簡要']}</div>
+        <div style="color:var(--text-secondary); font-size:14px; line-height:1.7; white-space:pre-wrap;">${item['填答建議_簡要']}</div>
       </div>
     `;
   }
 
-  // ============================================================
-  // 年度差異說明 - Only for 修正 indicators (Requirement #2)
-  // ============================================================
   if (isMod && item['年度差異說明']) {
     html += `
-      <div class="modal-section" style="background:linear-gradient(135deg, #dbeafe, #bfdbfe); border:2px solid #3b82f6; border-radius:12px; padding:20px; margin-bottom:20px;">
-        <div class="modal-section-title" style="color:#1e40af; font-size:15px; font-weight:700; margin-bottom:10px;">
+      <div class="modal-section" style="background:linear-gradient(135deg, rgba(59,130,246,0.1), rgba(191,219,254,0.1)); border:1px solid rgba(59,130,246,0.3); border-radius:var(--radius); padding:20px; margin-bottom:20px;">
+        <div class="modal-section-title" style="color:var(--accent-blue); font-size:15px; font-weight:700; margin-bottom:10px; border-bottom:1px solid rgba(59,130,246,0.2);">
           &#x1F504; 年度差異說明（與上屆比較）
         </div>
-        <div style="color:#1e3a5f; font-size:14px; line-height:1.8; white-space:pre-wrap;">${item['年度差異說明']}</div>
+        <div style="color:var(--text-secondary); font-size:14px; line-height:1.7; white-space:pre-wrap;">${item['年度差異說明']}</div>
       </div>
     `;
   }
 
-  // === Info Cards ===
   html += `
     <div class="modal-section">
       <div class="modal-info-grid">
@@ -547,20 +552,17 @@ function openModal(item) {
       </div>
     </div>
 
-    <!-- 指標說明 -->
     <div class="modal-section">
       <div class="modal-section-title">&#x1F4CB; 115年 指標說明</div>
       <div class="modal-section-content">${item['指標說明'] || 'N/A'}</div>
     </div>
 
-    <!-- 評鑑資訊依據 -->
     <div class="modal-section">
       <div class="modal-section-title">&#x1F4CE; 評鑑資訊依據</div>
       <div class="modal-section-content">${item['評鑑資訊依據'] || 'N/A'}</div>
     </div>
   `;
 
-  // 114 Self-evaluation (only for non-new)
   if (!isNew && item['114_自評來源及說明']) {
     html += `
       <div class="modal-section">
@@ -570,24 +572,6 @@ function openModal(item) {
     `;
   }
 
-  // 114 gaps
-  if (!isNew) {
-    const gaps = [];
-    if (item['114_公司官網有缺']) gaps.push(`官網: ${item['114_公司官網有缺']}`);
-    if (item['114_年報有缺']) gaps.push(`年報: ${item['114_年報有缺']}`);
-    if (item['114_113年未得分']) gaps.push(`113年: ${item['114_113年未得分']}`);
-    if (item['114_修正型態']) gaps.push(`修正型態: ${item['114_修正型態']}`);
-    if (gaps.length > 0) {
-      html += `
-        <div class="modal-section">
-          <div class="modal-section-title">&#x26A0;&#xFE0F; 缺失與修正</div>
-          <div class="modal-section-content">${gaps.join('\n')}</div>
-        </div>
-      `;
-    }
-  }
-
-  // AI Suggestion
   const ai = item['ai_suggestion'];
   if (ai && !ai.error && !ai.parse_error) {
     html += `
@@ -604,83 +588,82 @@ function openModal(item) {
         <div class="ai-item">
           <div class="ai-item-label">具體行動與揭露清單</div>
           <div class="ai-item-content">
-            ${Array.isArray(ai['具體行動與揭露清單'])
-        ? '<ul>' + ai['具體行動與揭露清單'].map(a => `<li>${a}</li>`).join('') + '</ul>'
-        : (ai['具體行動與揭露清單'] || 'N/A')}
+            ${Array.isArray(ai['具體行動與揭露清單']) ? '<ul>' + ai['具體行動與揭露清單'].map(a => `<li>${a}</li>`).join('') + '</ul>' : (ai['具體行動與揭露清單'] || 'N/A')}
           </div>
         </div>
         <div class="ai-item">
           <div class="ai-item-label">官方參考與較佳案例</div>
           <div class="ai-item-content">${ai['官方參考與較佳案例'] || 'N/A'}</div>
         </div>
-        <div class="ai-item">
-          <div class="ai-item-label">分派建議</div>
-          <div class="ai-item-content">${ai['分派建議'] || 'N/A'}</div>
-        </div>
-      </div>
-    `;
-  } else if (ai && (ai.raw_response || ai.parse_error)) {
-    const rawContent = ai.raw_response || JSON.stringify(ai, null, 2);
-    html += `
-      <div class="modal-section ai-section">
-        <div class="modal-section-title">&#x2728; AI 填答建議 (Gemini)</div>
-        <div class="modal-section-content" style="white-space:pre-wrap;font-size:13px;line-height:1.7">${rawContent}</div>
-      </div>
-    `;
-  } else {
-    html += `
-      <div class="modal-section ai-section">
-        <div class="modal-section-title">&#x2728; AI 填答建議</div>
-        <div class="ai-placeholder">尚未生成 AI 建議。請執行 generate_suggestions.py 後重新載入。</div>
       </div>
     `;
   }
 
-  // === 揭露合規分析 ===
   const da = item['disclosure_analysis'];
   if (da && !da.error) {
     html += renderComplianceSection(da);
-  } else if (da && da.error) {
-    html += `
-      <div class="modal-section compliance-section">
-        <div class="modal-section-title">&#x1F4CA; 揭露合規分析</div>
-        <div class="ai-placeholder">分析失敗: ${da.error}</div>
-      </div>
-    `;
   }
 
-  // === 自評草稿區塊 ===
-  const savedEmail = localStorage.getItem('esg_draft_email') || '';
-  const savedName = localStorage.getItem('esg_draft_name') || '';
+  // === 📝 Enhanced Fill-in Form (V3 Features embedded locally) ===
+  const code = item['編號'];
+  const draft = loadDraft(code);
+  const isSubmitted = submittedIndicators.has(code);
 
   html += `
     <div class="modal-section draft-section">
-      <div class="modal-section-title">&#x1F4DD; 填寫今年度自評草稿</div>
-      <div class="draft-form">
-        <div class="draft-input-row">
-          <div class="draft-field">
-            <label class="draft-label">公司信箱 <span class="draft-required">*</span></label>
-            <input type="email" id="draftEmail" class="draft-input"
-              placeholder="your.name@taiwancement.com"
-              value="${savedEmail}" />
-          </div>
-          <div class="draft-field">
-            <label class="draft-label">姓名</label>
-            <input type="text" id="draftName" class="draft-input"
-              placeholder="王小明"
-              value="${savedName}" />
-          </div>
+      <div class="modal-section-title">
+        &#x1F4DD; 115年度自評填答
+        ${isSubmitted ? '<span class="submitted-label">✅ 已送出</span>' : ''}
+      </div>
+      <div class="draft-form" id="draftForm">
+        <div class="draft-field">
+          <label class="draft-label">填答者</label>
+          <div class="draft-readonly">${currentUser.dept} — ${currentUser.name}</div>
         </div>
-        <label class="draft-label">自評內容草稿 <span class="draft-required">*</span></label>
-        <textarea id="draftText" class="draft-textarea" rows="5"
-          placeholder="請輸入本年度自評來源及說明，例如：\n- 已揭露於 113 年報 p.XX\n- 官網 ESG 專區已更新..."></textarea>
+
+        <div class="draft-field">
+          <label class="draft-label">揭露狀態 <span class="draft-required">*</span></label>
+          <select id="draftStatus" class="draft-input" onchange="autoSaveDraft()">
+            <option value="">請選擇...</option>
+            <option value="已揭露" ${draft.status === '已揭露' ? 'selected' : ''}>✅ 已揭露</option>
+            <option value="規劃中" ${draft.status === '規劃中' ? 'selected' : ''}>🔄 規劃中</option>
+            <option value="不適用" ${draft.status === '不適用' ? 'selected' : ''}>➖ 不適用</option>
+          </select>
+        </div>
+
+        <div class="draft-field">
+          <label class="draft-label">質性說明 / 自評內容 <span class="draft-required">*</span></label>
+          <textarea id="draftText" class="draft-textarea" rows="6"
+            placeholder="請說明本公司如何符合此指標的各項要件，包含：&#10;• 具體的政策、目標與措施&#10;• 量化數據（如年度數據、達成率）&#10;• 揭露位置（年報頁碼、永續報告書章節）"
+            oninput="autoSaveDraft()">${draft.text || ''}</textarea>
+        </div>
+
+        <div class="draft-field">
+          <label class="draft-label">佐證來源 / 連結</label>
+          <input type="text" id="draftEvidence" class="draft-input"
+            placeholder="例：年報 p.92、永續報告書 p.208、https://..."
+            value="${draft.evidence || ''}"
+            oninput="autoSaveDraft()">
+        </div>
+
         <div class="draft-actions">
-          <button class="draft-submit-btn" id="btnSubmitDraft" onclick="submitDraft()">
-            <span class="draft-btn-text">送出到 Google Sheets</span>
-            <span class="draft-btn-loading hidden">送出中...</span>
-          </button>
-          <div class="draft-status" id="draftStatus"></div>
+          <div class="draft-actions-left">
+            <button class="draft-ai-btn" id="btnAIValidate" onclick="runAIValidation()">
+              <span class="draft-btn-text">🤖 AI 檢核</span>
+              <span class="draft-btn-loading hidden">⏳ 分析中...</span>
+            </button>
+            <button class="draft-submit-btn" id="btnSubmitDraft" onclick="submitDraft()">
+              <span class="draft-btn-text">📤 送出到 Google Sheets</span>
+              <span class="draft-btn-loading hidden">⏳ 送出中...</span>
+            </button>
+          </div>
+          <div class="draft-save-hint" id="draftSaveHint"></div>
         </div>
+
+        <div class="draft-status" id="draftStatus2"></div>
+
+        <!-- AI Validation Result -->
+        <div class="ai-validation-result hidden" id="aiValidationResult"></div>
       </div>
     </div>
   `;
@@ -696,57 +679,196 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
+// === Draft Auto-save ===
+function loadDraft(code) {
+  const saved = localStorage.getItem(`esg_draft_${code}`);
+  if (saved) {
+    try { return JSON.parse(saved); } catch {}
+  }
+  return { text: '', evidence: '', status: '' };
+}
+
+function autoSaveDraft() {
+  if (!currentModalItem) return;
+  const code = currentModalItem['編號'];
+  const draft = {
+    text: document.getElementById('draftText')?.value || '',
+    evidence: document.getElementById('draftEvidence')?.value || '',
+    status: document.getElementById('draftStatus')?.value || '',
+    updatedAt: new Date().toISOString()
+  };
+  localStorage.setItem(`esg_draft_${code}`, JSON.stringify(draft));
+
+  const hint = document.getElementById('draftSaveHint');
+  if (hint) {
+    hint.textContent = '💾 草稿已自動儲存';
+    hint.classList.add('show');
+    setTimeout(() => hint.classList.remove('show'), 2000);
+  }
+}
+
+// === AI Validation ===
+async function runAIValidation() {
+  const text = document.getElementById('draftText')?.value?.trim();
+  const evidence = document.getElementById('draftEvidence')?.value?.trim();
+  const status = document.getElementById('draftStatus')?.value;
+  const btn = document.getElementById('btnAIValidate');
+  const resultEl = document.getElementById('aiValidationResult');
+
+  if (!text) {
+    resultEl.innerHTML = '<div class="ai-val-error">❌ 請先填寫質性說明內容</div>';
+    resultEl.classList.remove('hidden');
+    return;
+  }
+  if (!currentUser.apiKey) {
+    resultEl.innerHTML = '<div class="ai-val-error">❌ 請先在登入頁面設定 Gemini API Key</div>';
+    resultEl.classList.remove('hidden');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.querySelector('.draft-btn-text').classList.add('hidden');
+  btn.querySelector('.draft-btn-loading').classList.remove('hidden');
+  resultEl.innerHTML = '<div class="ai-val-loading">🤖 正在分析您的填答內容...</div>';
+  resultEl.classList.remove('hidden');
+
+  try {
+    const result = await validateWithAI(currentModalItem, text, evidence, status, currentUser.apiKey);
+    renderValidationResult(result);
+
+    const code = currentModalItem['編號'];
+    const draft = loadDraft(code);
+    draft.aiResult = result;
+    localStorage.setItem(`esg_draft_${code}`, JSON.stringify(draft));
+  } catch (err) {
+    resultEl.innerHTML = `<div class="ai-val-error">❌ ${err.message}</div>`;
+  } finally {
+    btn.disabled = false;
+    btn.querySelector('.draft-btn-text').classList.remove('hidden');
+    btn.querySelector('.draft-btn-loading').classList.add('hidden');
+  }
+}
+
+function renderValidationResult(result) {
+  const el = document.getElementById('aiValidationResult');
+  const complianceMap = {
+    'full': { emoji: '✅', label: '符合', cls: 'val-full' },
+    'partial': { emoji: '⚠️', label: '部分符合', cls: 'val-partial' },
+    'non': { emoji: '❌', label: '不符合', cls: 'val-non' }
+  };
+  const info = complianceMap[result.compliance] || complianceMap['partial'];
+
+  let html = `
+    <div class="ai-val-header ${info.cls}">
+      <span class="ai-val-emoji">${info.emoji}</span>
+      <span class="ai-val-label">${info.label}</span>
+      <span class="ai-val-score">${result.score || '?'}/100</span>
+      <span class="ai-val-summary">${result.summary || ''}</span>
+    </div>
+  `;
+
+  if (result.matched_items?.length > 0) {
+    html += `<div class="ai-val-section">
+      <div class="ai-val-section-title">✅ 已符合要件</div>
+      <ul>${result.matched_items.map(m => `<li>${m}</li>`).join('')}</ul>
+    </div>`;
+  }
+  if (result.missing_items?.length > 0) {
+    html += `<div class="ai-val-section">
+      <div class="ai-val-section-title">❌ 缺漏項目</div>
+      <ul class="missing-list">${result.missing_items.map(m => `<li>${m}</li>`).join('')}</ul>
+    </div>`;
+  }
+  if (result.suggestions?.length > 0) {
+    html += `<div class="ai-val-section">
+      <div class="ai-val-section-title">💡 改善建議</div>
+      <ul class="suggestion-list">${result.suggestions.map(s => `<li>${s}</li>`).join('')}</ul>
+    </div>`;
+  }
+
+  el.innerHTML = html;
+  el.classList.remove('hidden');
+}
+
+// === Draft Submission ===
+async function submitDraft() {
+  const text = document.getElementById('draftText')?.value?.trim();
+  const evidence = document.getElementById('draftEvidence')?.value?.trim();
+  const status = document.getElementById('draftStatus')?.value;
+  const btn = document.getElementById('btnSubmitDraft');
+  const statusEl = document.getElementById('draftStatus2');
+
+  if (!status) { showDraftStatus(statusEl, '❌ 請選擇揭露狀態', 'error'); return; }
+  if (!text) { showDraftStatus(statusEl, '❌ 請填入質性說明內容', 'error'); return; }
+
+  btn.disabled = true;
+  btn.querySelector('.draft-btn-text').classList.add('hidden');
+  btn.querySelector('.draft-btn-loading').classList.remove('hidden');
+  showDraftStatus(statusEl, '', '');
+
+  const item = currentModalItem;
+  const code = item['編號'];
+  const draft = loadDraft(code);
+  const aiResult = draft.aiResult;
+  const deptStr = Array.isArray(item['負責部門列表']) ? item['負責部門列表'].join(', ') : (item['114_相關負責部門'] || '');
+
+  const formData = new URLSearchParams();
+  formData.append('編號', code);
+  formData.append('構面', item['構面'] || '');
+  formData.append('評鑑指標', (item['評鑑指標'] || '').replace(/\n/g, ' ').substring(0, 200));
+  formData.append('負責部門', deptStr);
+  formData.append('填寫人姓名', currentUser.name);
+  formData.append('填寫人部門', currentUser.dept);
+  formData.append('揭露狀態', status);
+  formData.append('自評草稿', text);
+  formData.append('佐證來源', evidence || '');
+  formData.append('AI檢核結果', aiResult ? (aiResult.compliance === 'full' ? '✅符合' : aiResult.compliance === 'partial' ? '⚠️部分符合' : '❌不符合') : '未檢核');
+  formData.append('AI缺漏項目', aiResult?.missing_items?.join('；') || '');
+  formData.append('AI建議', aiResult?.suggestions?.join('；') || '');
+
+  try {
+    await fetch(GAS_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString()
+    });
+
+    submittedIndicators.add(code);
+    saveSubmittedState();
+    showDraftStatus(statusEl, '✅ 已成功送出！資料已寫入 Google Sheets', 'success');
+    applyFilters(); 
+  } catch (err) {
+    showDraftStatus(statusEl, `❌ 網路錯誤：${err.message}`, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.querySelector('.draft-btn-text').classList.remove('hidden');
+    btn.querySelector('.draft-btn-loading').classList.add('hidden');
+  }
+}
+
+function showDraftStatus(el, msg, type) {
+  if (!el) return;
+  el.textContent = msg;
+  el.className = 'draft-status' + (type ? ` draft-status-${type}` : '');
+}
+
 // === Export ===
 function exportCSV() {
   const columns = [
     { header: '編號', get: d => d['編號'] },
-    { header: '指標分類', get: d => d['指標分類'] || '' },
-    { header: '狀態標記', get: d => d['狀態標記'] },
+    { header: '指標分類', get: d => d['指標分類'] || d['狀態標記'] },
     { header: '構面', get: d => d['構面'] },
     { header: '評鑑指標', get: d => d['評鑑指標'] },
-    { header: '115年指標說明', get: d => d['指標說明'] },
     { header: '揭露平台', get: d => Array.isArray(d['揭露平台']) ? d['揭露平台'].join(', ') : '' },
     { header: '負責部門', get: d => Array.isArray(d['負責部門列表']) ? d['負責部門列表'].join(', ') : (d['114_相關負責部門'] || '') },
-    { header: '填答建議', get: d => d['填答建議_簡要'] || '' },
-    { header: '年度差異說明', get: d => d['年度差異說明'] || '' },
-    { header: '114_自評來源及說明', get: d => d['114_自評來源及說明'] },
-    {
-      header: 'AI 填答建議 (Gemini)', get: d => {
-        const ai = d.ai_suggestion;
-        if (!ai || ai.error) return '';
-        if (ai.raw_response) return ai.raw_response;
-        return `【核心要求白話文】\n${ai['核心要求白話文'] || ''}\n\n` +
-          `【差異分析或現況診斷】\n${ai['差異分析或現況診斷'] || ''}\n\n` +
-          `【具體行動與揭露清單】\n${ai['具體行動與揭露清單'] || ''}\n\n` +
-          `【官方參考與較佳案例】\n${ai['官方參考與較佳案例'] || ''}\n\n` +
-          `【分派建議】\n${ai['分派建議'] || ''}`;
-      }
-    },
-    {
-      header: '揭露合規分析及缺口分析', get: d => {
-        const da = d.disclosure_analysis;
-        if (!da || da.error) return '';
-
-        let statusStr = '';
-        if (da.compliance_score === 'fully_compliant') statusStr = '完全符合';
-        else if (da.compliance_score === 'partially_compliant') statusStr = '部分符合';
-        else if (da.compliance_score === 'non_compliant') statusStr = '不符合';
-        else statusStr = '無法評估';
-
-        return `[合規狀態: ${statusStr}]\n\n${da.gap_summary || ''}`;
-      }
-    }
+    { header: '填答狀態', get: d => submittedIndicators.has(d['編號']) ? '已送出' : localStorage.getItem(`esg_draft_${d['編號']}`) ? '有草稿' : '未填答' }
   ];
 
   const bom = '\uFEFF';
   let csv = bom + columns.map(c => `"${c.header}"`).join(',') + '\n';
-
   filteredData.forEach(d => {
-    const row = columns.map(c => {
-      let val = c.get(d) || '';
-      val = String(val).replace(/"/g, '""');
-      return `"${val}"`;
-    });
+    const row = columns.map(c => `"${String(c.get(d) || '').replace(/"/g, '""')}"`);
     csv += row.join(',') + '\n';
   });
 
@@ -759,83 +881,7 @@ function exportCSV() {
   URL.revokeObjectURL(url);
 }
 
-// === Draft Submission ===
-async function submitDraft() {
-  const email = document.getElementById('draftEmail').value.trim().toLowerCase();
-  const name = document.getElementById('draftName').value.trim();
-  const text = document.getElementById('draftText').value.trim();
-  const btn = document.getElementById('btnSubmitDraft');
-  const statusEl = document.getElementById('draftStatus');
-
-  // Validation
-  if (!email) {
-    showDraftStatus(statusEl, '請填入公司信箱', 'error');
-    return;
-  }
-  if (!email.endsWith('@' + ALLOWED_EMAIL_DOMAIN)) {
-    showDraftStatus(statusEl, `僅限 @${ALLOWED_EMAIL_DOMAIN} 信箱`, 'error');
-    return;
-  }
-  if (!text) {
-    showDraftStatus(statusEl, '請填入自評草稿內容', 'error');
-    return;
-  }
-  if (!GAS_URL) {
-    showDraftStatus(statusEl, '尚未設定 Google Sheets 連結 (GAS_URL)', 'error');
-    return;
-  }
-
-  // Save to localStorage
-  localStorage.setItem('esg_draft_email', email);
-  localStorage.setItem('esg_draft_name', name);
-
-  // Show loading
-  btn.disabled = true;
-  btn.querySelector('.draft-btn-text').classList.add('hidden');
-  btn.querySelector('.draft-btn-loading').classList.remove('hidden');
-  showDraftStatus(statusEl, '', '');
-
-  const item = currentModalItem;
-  const deptStr = Array.isArray(item['負責部門列表']) ? item['負責部門列表'].join(', ') : (item['114_相關負責部門'] || '');
-
-  try {
-    const formData = new URLSearchParams();
-    formData.append('編號', item['編號'] || '');
-    formData.append('構面', item['構面'] || '');
-    formData.append('評鑑指標', (item['評鑑指標'] || '').replace(/\n/g, ' ').substring(0, 200));
-    formData.append('負責部門', deptStr);
-    formData.append('自評草稿', text);
-    formData.append('填寫人信箱', email);
-    formData.append('填寫人姓名', name);
-
-    await fetch(GAS_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: formData.toString()
-    });
-
-    showDraftStatus(statusEl, '已成功送出！資料已寫入 Google Sheets', 'success');
-    document.getElementById('draftText').value = '';
-
-  } catch (err) {
-    console.error('Submit error:', err);
-    showDraftStatus(statusEl, `網路錯誤：${err.message || '無法連線到伺服器'}`, 'error');
-  } finally {
-    btn.disabled = false;
-    btn.querySelector('.draft-btn-text').classList.remove('hidden');
-    btn.querySelector('.draft-btn-loading').classList.add('hidden');
-  }
-}
-
-function showDraftStatus(el, msg, type) {
-  el.textContent = msg;
-  el.className = 'draft-status' + (type ? ` draft-status-${type}` : '');
-}
-
-// === Compliance Helpers ===
+// === Compliance Helpers (V2 features added) ===
 function getComplianceBadgeHTML(score, size = 'normal') {
   const map = {
     'fully_compliant': { emoji: '&#x1F7E2;', label: '完全符合', cls: 'compliance-full' },
@@ -844,9 +890,7 @@ function getComplianceBadgeHTML(score, size = 'normal') {
     'cannot_assess': { emoji: '&#x2B1C;', label: '無法評估', cls: 'compliance-na' }
   };
   const info = map[score] || map['cannot_assess'];
-  if (size === 'small') {
-    return `<span class="compliance-badge-sm ${info.cls}" title="${info.label}">${info.emoji}</span>`;
-  }
+  if (size === 'small') return `<span class="compliance-badge-sm ${info.cls}" title="${info.label}">${info.emoji}</span>`;
   return `<span class="compliance-badge ${info.cls}">${info.emoji} ${info.label}</span>`;
 }
 
@@ -867,71 +911,54 @@ function renderComplianceSection(da) {
       </div>
   `;
 
-  // Compliance contradiction note (Requirement #9)
   if (da.compliance_note) {
     html += `
-      <div style="background:#fef9c3; border:1px solid #facc15; border-radius:8px; padding:14px 16px; margin:12px 0; font-size:13px; line-height:1.7; color:#713f12;">
+      <div style="background:rgba(250,204,21,0.1); border:1px solid rgba(250,204,21,0.3); border-radius:var(--radius-sm); padding:12px; margin:12px 0; font-size:13px; line-height:1.6; color:var(--accent-orange);">
         <strong>&#x26A0;&#xFE0F; 合規判定說明：</strong> ${da.compliance_note}
       </div>
     `;
   }
 
-  // Gap summary
-  if (da.gap_summary) {
-    html += `<div class="compliance-gap">${da.gap_summary}</div>`;
-  }
+  if (da.gap_summary) html += `<div class="compliance-gap">${da.gap_summary}</div>`;
 
-  // Matched items
   if (matched.length > 0) {
-    html += `<div class="compliance-list-title">&#x2705; 已符合項目 (${matched.length})</div>
-      <ul class="compliance-list matched">`;
+    html += `<div class="compliance-list-title">&#x2705; 已符合項目 (${matched.length})</div><ul class="compliance-list matched">`;
     matched.forEach(m => { html += `<li>${m}</li>`; });
     html += `</ul>`;
   }
 
-  // Missing items
   if (missing.length > 0) {
-    html += `<div class="compliance-list-title">&#x274C; 缺口項目 (${missing.length})</div>
-      <ul class="compliance-list missing">`;
+    html += `<div class="compliance-list-title">&#x274C; 缺口項目 (${missing.length})</div><ul class="compliance-list missing">`;
     missing.forEach(m => { html += `<li>${m}</li>`; });
     html += `</ul>`;
   }
 
-  // URL coverage
   if (urlAnalysis.length > 0) {
-    html += `<div class="compliance-list-title">&#x1F517; 來源覆蓋率分析</div>
-      <div class="url-analysis-grid">`;
+    html += `<div class="compliance-list-title">&#x1F517; 來源覆蓋率分析</div><div class="url-analysis-grid" style="display:flex;flex-direction:column;gap:8px;margin-top:6px;">`;
     urlAnalysis.forEach(u => {
       const icon = u.relevant ? '&#x2705;' : '&#x26AA;';
       const shortUrl = (u.url || '').replace(/^https?:\/\//, '').substring(0, 50);
       html += `
-        <div class="url-analysis-item ${u.relevant ? 'relevant' : 'irrelevant'}">
-          <span class="url-icon">${icon}</span>
-          <div class="url-info">
-            <div class="url-path" title="${u.url}">${shortUrl}...</div>
-            <div class="url-summary">${u.summary || ''}</div>
+        <div style="background:rgba(0,0,0,0.15);padding:10px;border-radius:var(--radius-sm);display:flex;gap:10px;border:1px solid var(--border-subtle);opacity:${u.relevant?1:0.6}">
+          <span>${icon}</span>
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:11px;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${shortUrl}...</div>
+            <div style="font-size:13px;color:var(--text-secondary);margin-top:4px;line-height:1.5;">${u.summary || ''}</div>
           </div>
         </div>`;
     });
     html += `</div>`;
   }
 
-  // Recommendation
   if (da.recommendation) {
-    html += `<div class="compliance-recommendation">
-      <strong>&#x1F4A1; 建議:</strong> ${da.recommendation}
-    </div>`;
+    html += `<div class="compliance-recommendation"><strong>&#x1F4A1; 建議:</strong> ${da.recommendation}</div>`;
   }
 
   html += `</div>`;
   return html;
 }
 
-// === Utils ===
 function debounce(fn, ms) {
   let timer;
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => fn(...args), ms);
-  };
+  return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
 }
