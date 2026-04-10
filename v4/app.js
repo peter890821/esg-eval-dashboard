@@ -733,14 +733,27 @@ async function runAIValidation() {
     return;
   }
 
+  // 取出本指標的 ✨ AI 填答建議 (Gemini)，作為檢核的主要依據
+  const aiSuggestion = currentModalItem && currentModalItem['ai_suggestion'];
+  const hasSuggestion = aiSuggestion && !aiSuggestion.error && !aiSuggestion.parse_error;
+
   btn.disabled = true;
   btn.querySelector('.draft-btn-text').classList.add('hidden');
   btn.querySelector('.draft-btn-loading').classList.remove('hidden');
-  resultEl.innerHTML = '<div class="ai-val-loading">🤖 正在分析您的填答內容...</div>';
+  resultEl.innerHTML = hasSuggestion
+    ? '<div class="ai-val-loading">🤖 正在依據 ✨ AI 填答建議 檢核您的填答內容...</div>'
+    : '<div class="ai-val-loading">🤖 本指標無 AI 填答建議，將僅依得分要件檢核...</div>';
   resultEl.classList.remove('hidden');
 
   try {
-    const result = await validateWithAI(currentModalItem, text, evidence, source, currentUser.apiKey);
+    const result = await validateWithAI(
+      currentModalItem,
+      text,
+      evidence,
+      source,
+      currentUser.apiKey,
+      aiSuggestion
+    );
     renderValidationResult(result);
 
     const code = currentModalItem['編號'];

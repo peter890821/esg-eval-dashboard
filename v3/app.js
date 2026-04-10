@@ -631,26 +631,24 @@ function openModal(item) {
         </div>
 
         <div class="draft-field">
-          <label class="draft-label">揭露狀態 <span class="draft-required">*</span></label>
-          <select id="draftStatus" class="draft-input" onchange="autoSaveDraft()">
-            <option value="">請選擇...</option>
-            <option value="已揭露" ${draft.status === '已揭露' ? 'selected' : ''}>✅ 已揭露</option>
-            <option value="規劃中" ${draft.status === '規劃中' ? 'selected' : ''}>🔄 規劃中</option>
-            <option value="不適用" ${draft.status === '不適用' ? 'selected' : ''}>➖ 不適用</option>
-          </select>
-        </div>
-
-        <div class="draft-field">
-          <label class="draft-label">質性說明 / 自評內容 <span class="draft-required">*</span></label>
+          <label class="draft-label">自評說明 <span class="draft-required">*</span></label>
           <textarea id="draftText" class="draft-textarea" rows="6"
             placeholder="請說明本公司如何符合此指標的各項要件，包含：&#10;• 具體的政策、目標與措施&#10;• 量化數據（如年度數據、達成率）&#10;• 揭露位置（年報頁碼、永續報告書章節）"
             oninput="autoSaveDraft()">${draft.text || ''}</textarea>
         </div>
 
         <div class="draft-field">
-          <label class="draft-label">佐證來源 / 連結</label>
+          <label class="draft-label">自評來源</label>
+          <input type="text" id="draftSource" class="draft-input"
+            placeholder="例：年報 p.92、永續報告書 p.208、ESG數位平台、https://..."
+            value="${draft.source || ''}"
+            oninput="autoSaveDraft()">
+        </div>
+
+        <div class="draft-field">
+          <label class="draft-label">公司自評分數</label>
           <input type="text" id="draftEvidence" class="draft-input"
-            placeholder="例：年報 p.92、永續報告書 p.208、https://..."
+            placeholder="例：1分、0分、1分且總分加1分"
             value="${draft.evidence || ''}"
             oninput="autoSaveDraft()">
         </div>
@@ -694,7 +692,7 @@ function loadDraft(code) {
   if (saved) {
     try { return JSON.parse(saved); } catch {}
   }
-  return { text: '', evidence: '', status: '' };
+  return { text: '', source: '', evidence: '' };
 }
 
 function autoSaveDraft() {
@@ -702,8 +700,8 @@ function autoSaveDraft() {
   const code = currentModalItem['編號'];
   const draft = {
     text: document.getElementById('draftText')?.value || '',
+    source: document.getElementById('draftSource')?.value || '',
     evidence: document.getElementById('draftEvidence')?.value || '',
-    status: document.getElementById('draftStatus')?.value || '',
     updatedAt: new Date().toISOString()
   };
   localStorage.setItem(`esg_draft_${code}`, JSON.stringify(draft));
@@ -719,13 +717,13 @@ function autoSaveDraft() {
 // === AI Validation ===
 async function runAIValidation() {
   const text = document.getElementById('draftText')?.value?.trim();
+  const source = document.getElementById('draftSource')?.value?.trim();
   const evidence = document.getElementById('draftEvidence')?.value?.trim();
-  const status = document.getElementById('draftStatus')?.value;
   const btn = document.getElementById('btnAIValidate');
   const resultEl = document.getElementById('aiValidationResult');
 
   if (!text) {
-    resultEl.innerHTML = '<div class="ai-val-error">❌ 請先填寫質性說明內容</div>';
+    resultEl.innerHTML = '<div class="ai-val-error">❌ 請先填寫自評說明內容</div>';
     resultEl.classList.remove('hidden');
     return;
   }
@@ -752,7 +750,7 @@ async function runAIValidation() {
       currentModalItem,
       text,
       evidence,
-      status,
+      source,
       currentUser.apiKey,
       aiSuggestion
     );
@@ -815,13 +813,12 @@ function renderValidationResult(result) {
 // === Draft Submission ===
 async function submitDraft() {
   const text = document.getElementById('draftText')?.value?.trim();
+  const source = document.getElementById('draftSource')?.value?.trim();
   const evidence = document.getElementById('draftEvidence')?.value?.trim();
-  const status = document.getElementById('draftStatus')?.value;
   const btn = document.getElementById('btnSubmitDraft');
   const statusEl = document.getElementById('draftStatus2');
 
-  if (!status) { showDraftStatus(statusEl, '❌ 請選擇揭露狀態', 'error'); return; }
-  if (!text) { showDraftStatus(statusEl, '❌ 請填入質性說明內容', 'error'); return; }
+  if (!text) { showDraftStatus(statusEl, '❌ 請填入自評說明內容', 'error'); return; }
 
   btn.disabled = true;
   btn.querySelector('.draft-btn-text').classList.add('hidden');
@@ -841,9 +838,9 @@ async function submitDraft() {
   formData.append('負責部門', deptStr);
   formData.append('填寫人姓名', currentUser.name);
   formData.append('填寫人部門', currentUser.dept);
-  formData.append('揭露狀態', status);
-  formData.append('自評草稿', text);
-  formData.append('佐證來源', evidence || '');
+  formData.append('自評說明', text);
+  formData.append('自評來源', source || '');
+  formData.append('公司自評分數', evidence || '');
   formData.append('AI檢核結果', aiResult ? (aiResult.compliance === 'full' ? '✅符合' : aiResult.compliance === 'partial' ? '⚠️部分符合' : '❌不符合') : '未檢核');
   formData.append('AI缺漏項目', aiResult?.missing_items?.join('；') || '');
   formData.append('AI建議', aiResult?.suggestions?.join('；') || '');
